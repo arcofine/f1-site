@@ -16,7 +16,7 @@ export default function Driver({championship}) {
                                    <Drivers data={championship} />
                                    <div style={{display: "block", overflow: "hidden", width: "100%", height: "70vw"}}>
                                           <Iframe
-                                                 url="http://thirtheen-home.myddns.me:8000/championships/championship?cid=2"
+                                                 url="/championships/championship?cid=2"
                                                  width="100%"
                                                  height="100%"
                                                  id=""
