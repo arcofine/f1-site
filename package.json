@@ -6,8 +6,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "cls": "^0.1.5",
+    "clsx": "^1.2.1",
+    "fetch-jsonp": "^1.2.3",
+    "iframe-resizer-react": "^1.1.0",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-iframe": "^1.8.5",
+    "swr": "^2.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.58.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0"
   }
 }
