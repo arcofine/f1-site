@@ -1,15 +1,19 @@
 import Head from "next/head";
 import Layout, {siteTitle} from "../components/layout/layout";
+import styles from "../styles/Home.module.css";
+import Switch from "@mui/material/Switch";
 
-// const fetcher = (...args) => fetch(...args).then((res) => res.json())
+const label = {inputProps: {"aria-label": "Switch demo"}};
 
 export default function Home({championship}) {
        return (
               <>
-                     <Head>
-                            <title>{siteTitle}</title>
-                     </Head>
-                     <Layout data={championship} home />
+                     <div className={styles.container}>
+                            <Head>
+                                   <title>{siteTitle}</title>
+                            </Head>
+                            <Layout data={championship} notReady />
+                     </div>
               </>
        );
 }

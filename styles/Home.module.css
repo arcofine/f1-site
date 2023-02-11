@@ -1,10 +1,20 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ padding: 0 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: rgb(38, 39, 39);
+   background: #fff url("/images/Landing_bg.jpg");
+background-image: url("/images/Landing_bg.jpg");
+background-position-x: left;
+background-position-y: initial;
+background-size: cover;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-repeat: no-repeat;
 }
 
 .title a {

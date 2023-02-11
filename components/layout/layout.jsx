@@ -2,19 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
-import Container from "react-bootstrap/Container";
+import {Container} from "@mui/material";
+
 import {clsx} from "clsx";
 
 import Header from "../header/header";
 
-const name = "Your Name";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "F1 Simulation";
 
 export default function Layout({children, data, type}) {
        return (
               <>
                      <Header data={data} />
-                     <Container fluid>{children}</Container>
+                     <Container>{children}</Container>
               </>
        );
 }

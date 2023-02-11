@@ -1,3 +1,4 @@
+
 html,
 body {
   padding: 0;
@@ -6,13 +7,11 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background: #fff url("/images/nasty_fabric.png");
-background-image: url("/images/nasty_fabric.png");
+  background: #fff url("/images/Landing_bg.jpg");
+background-image: url("/images/Landing_bg.jpg");
 background-position-x: initial;
 background-position-y: initial;
 background-size: initial;
-background-repeat-x: initial;
-background-repeat-y: initial;
 background-attachment: initial;
 background-origin: initial;
 background-clip: initial;
@@ -28,12 +27,15 @@ background-color: rgb(255, 255, 255);
 }
 
 a {
-  color: #0070f3;
+  color: #f44336;
   text-decoration: none;
+}
+a:visited { 
+  color: #f44336;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {

@@ -1,16 +1,27 @@
-import SSRProvider from "react-bootstrap/SSRProvider";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
-import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
+import {ThemeProvider, createTheme} from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+const darkTheme = createTheme({
+       palette: {
+              mode: "dark",
+       },
+       breakpoints: {
+              values: {
+                     xs: 0,
+                     sm: 640,
+                     md: 1024,
+                     lg: 1200,
+                     xl: 1536,
+              },
+       },
+});
 
 export default function App({Component, pageProps}) {
        return (
-              <SSRProvider>
-                     <ThemeProvider
-                            breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-                            minBreakpoint="xxs">
-                            <Component {...pageProps} />
-                     </ThemeProvider>
-              </SSRProvider>
+              <ThemeProvider theme={darkTheme}>
+                     <CssBaseline />
+                     <Component {...pageProps} />
+              </ThemeProvider>
        );
 }

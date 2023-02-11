@@ -1,68 +1,86 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import ButtonToolbar from "react-bootstrap/ButtonToolbar";
+import React, {useState} from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header({data}) {
+       const [visible, setVisible] = useState(false);
+       const toggleDrawer = () => {
+              setVisible(!visible);
+       };
        return (
-              <Navbar bg="dark" variant="dark">
-                     <Container>
-                            <Navbar.Brand href="#home">
-                                   <img
-                                          alt=""
-                                          src="/images/logoBlanc.png"
-                                          //   width="30"
-                                          height="100"
-                                          className="align-top"
-                                   />
-                            </Navbar.Brand>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-                                   <Nav>
-                                          <ButtonToolbar aria-label="Toolbar with button groups">
-                                                 <ButtonGroup className="me-2" aria-label="First group">
-                                                        {Object.keys(data["Class Overall"]).map((x, i) => {
+              <>
+                     <Box sx={{flexGrow: 1}}>
+                            <AppBar position="fixed" component="nav">
+                                   <Toolbar>
+                                          <Box
+                                                 sx={{
+                                                        width: 50,
+                                                        height: 60,
+                                                        position: "relative",
+                                                        marginRight: 3,
+                                                 }}>
+                                                 <Link href="/">
+                                                        <Image
+                                                               priority
+                                                               src="/images/logoBlanc.png"
+                                                               className
+                                                               fill
+                                                               alt=""
+                                                        />
+                                                 </Link>
+                                          </Box>
+                                          <Typography
+                                                 variant="h6"
+                                                 component="div"
+                                                 sx={{flexGrow: 1, display: {xs: "block", sm: "block"}}}>
+                                                 F1 Simulation
+                                          </Typography>
+                                          <Box sx={{flexGrow: 1, display: {sm: "none"}}} />
+
+                                          <Box sx={{display: {xs: "none", sm: "block"}}}>
+                                                 {Object.keys(data["Class Overall"]).map((x, i) => {
+                                                        return (
+                                                               <Button color="error" key={i}>
+                                                                      <Link
+                                                                             href={`/${x.substring(
+                                                                                    x.indexOf(" ") + 1
+                                                                             )}/${x.substring(0, x.indexOf(" "))}`}>
+                                                                             {x}
+                                                                      </Link>
+                                                               </Button>
+                                                        );
+                                                 })}
+
+                                                 {Object.keys(data)
+                                                        .filter((x) => {
+                                                               return !x.includes("Class");
+                                                        })
+                                                        .map((x, i) => {
                                                                return (
-                                                                      <Button
-                                                                             variant={
-                                                                                    i % 2 === 0
-                                                                                           ? "outline-danger"
-                                                                                           : "outline-secondary"
-                                                                             }
-                                                                             key={i}>
-                                                                             <Link
-                                                                                    href={`/${x.substring(
-                                                                                           x.indexOf(" ") + 1
-                                                                                    )}/${x.substring(
-                                                                                           0,
-                                                                                           x.indexOf(" ")
-                                                                                    )}`}>
-                                                                                    {x}
-                                                                             </Link>
+                                                                      <Button color="error" key={i}>
+                                                                             {x}
                                                                       </Button>
                                                                );
                                                         })}
-                                                 </ButtonGroup>
-                                                 <ButtonGroup className="me-2" aria-label="Second group">
-                                                        {Object.keys(data)
-                                                               .filter((x) => {
-                                                                      return !x.includes("Class");
-                                                               })
-                                                               .map((x, i) => {
-                                                                      return (
-                                                                             <Button variant="outline-warning" key={i}>
-                                                                                    {x}
-                                                                             </Button>
-                                                                      );
-                                                               })}
-                                                 </ButtonGroup>
-                                          </ButtonToolbar>
-                                   </Nav>
-                            </Navbar.Collapse>
-                     </Container>
-              </Navbar>
+                                          </Box>
+                                          <IconButton
+                                                 size="large"
+                                                 edge="End"
+                                                 color="inherit"
+                                                 aria-label="menu"
+                                                 sx={{mr: 2, display: {sm: "none"}}}>
+                                                 <MenuIcon />
+                                          </IconButton>
+                                   </Toolbar>
+                            </AppBar>
+                     </Box>
+              </>
        );
 }
