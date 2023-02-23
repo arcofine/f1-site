@@ -13,12 +13,10 @@ export default function Sidebar() {
                      <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
                             <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
                                    {/* Brand */}
-                                   <Link href="/">
-                                          <a
-                                                 href="#pablo"
-                                                 className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
-                                                 {"< "} retour
-                                          </a>
+                                   <Link
+                                          href="/"
+                                          className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
+                                          <i class="fas fa-arrow-circle-left"></i> retour
                                    </Link>
 
                                    {/* Collapse */}
@@ -48,28 +46,24 @@ export default function Sidebar() {
 
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none">
                                                  <li className="items-center">
-                                                        <Link href="/admin/tables">
-                                                               <a
-                                                                      href="#pablo"
+                                                        <Link
+                                                               href="/admin/tables"
+                                                               className={
+                                                                      "text-xs uppercase py-3 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/table") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
                                                                       className={
-                                                                             "text-xs uppercase py-3 font-bold block " +
+                                                                             "fas fa-flag-checkered mr-2 text-sm " +
                                                                              (router.pathname.indexOf(
                                                                                     "/admin/table"
                                                                              ) !== -1
-                                                                                    ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                                    : "text-blueGray-700 hover:text-blueGray-500")
-                                                                      }>
-                                                                      <i
-                                                                             className={
-                                                                                    "fas fa-flag-checkered mr-2 text-sm " +
-                                                                                    (router.pathname.indexOf(
-                                                                                           "/admin/table"
-                                                                                    ) !== -1
-                                                                                           ? "opacity-75"
-                                                                                           : "text-blueGray-300")
-                                                                             }></i>{" "}
-                                                                      Classements
-                                                               </a>
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Classements
                                                         </Link>
                                                  </li>
 
@@ -100,28 +94,25 @@ export default function Sidebar() {
                                                  </li> */}
 
                                                  <li className="items-center">
-                                                        <Link href="/admin/dashboard">
-                                                               <a
-                                                                      href="#pablo"
+                                                        <Link
+                                                               href="/admin/dashboard"
+                                                               className={
+                                                                      "text-xs uppercase py-3 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/dashboard") !==
+                                                                      -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
                                                                       className={
-                                                                             "text-xs uppercase py-3 font-bold block " +
+                                                                             "fas fa-poll mr-2 text-sm " +
                                                                              (router.pathname.indexOf(
                                                                                     "/admin/dashboard"
                                                                              ) !== -1
-                                                                                    ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                                    : "text-blueGray-700 hover:text-blueGray-500")
-                                                                      }>
-                                                                      <i
-                                                                             className={
-                                                                                    "fas fa-poll mr-2 text-sm " +
-                                                                                    (router.pathname.indexOf(
-                                                                                           "/admin/dashboard"
-                                                                                    ) !== -1
-                                                                                           ? "opacity-75"
-                                                                                           : "text-blueGray-300")
-                                                                             }></i>{" "}
-                                                                      Derniers Résultats
-                                                               </a>
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Derniers Résultats
                                                         </Link>
                                                  </li>
                                           </ul>
