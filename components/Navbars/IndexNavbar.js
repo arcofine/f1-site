@@ -11,26 +11,22 @@ export default function Navbar(props) {
                      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black shadow">
                             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                                          <Link href="/">
-                                                 <a
-                                                        className="text-blueGray-300 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                                                        href="#pablo">
-                                                        F1 Simulation
-                                                 </a>
+                                          <Link
+                                                 href="/"
+                                                 className="text-blueGray-300 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
+                                                 F1 Simulation
                                           </Link>
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
                                                  type="button"
                                                  //  onClick={() => setNavbarOpen(!navbarOpen)}
                                           >
-                                                 <Link href="/admin/dashboard">
-                                                        <a
-                                                               href="#pablo"
-                                                               className={
-                                                                      "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                               }>
-                                                               Tableau de Bord
-                                                        </a>
+                                                 <Link
+                                                        href="/admin/dashboard"
+                                                        className={
+                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
+                                                        }>
+                                                        Tableau de Bord
                                                  </Link>
                                                  {/* <i className="fas fa-bars"></i> */}
                                           </button>

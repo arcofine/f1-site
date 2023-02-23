@@ -41,14 +41,12 @@ const IndexDropdown = () => {
                                    Saison 2023
                             </span>
                             <hr className="my-2 border-blueGray-300" />
-                            <Link href="/admin/tables">
-                                   <a
-                                          href="#pablo"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
-                                          }>
-                                          Classements
-                                   </a>
+                            <Link
+                                   href="/admin/tables"
+                                   className={
+                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                   }>
+                                   Classements
                             </Link>
                             {/* <Link href="/admin/settings">
                                    <a
@@ -59,14 +57,12 @@ const IndexDropdown = () => {
                                           Statistiques des pilotes
                                    </a>
                             </Link> */}
-                            <Link href="/admin/dashboard">
-                                   <a
-                                          href="#pablo"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-                                          }>
-                                          Derniers résultats
-                                   </a>
+                            <Link
+                                   href="/admin/dashboard"
+                                   className={
+                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                   }>
+                                   Derniers résultats
                             </Link>
                      </div>
               </>
