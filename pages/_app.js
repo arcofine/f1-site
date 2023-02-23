@@ -67,7 +67,7 @@ export default class MyApp extends App {
                                           name="viewport"
                                           content="width=device-width, initial-scale=1, shrink-to-fit=no"
                                    />
-                                   <title>F1 Simulation</title>
+                                   <title>F1 Simulation Canada</title>
                             </Head>
                             <Layout>
                                    <Component {...pageProps} />
