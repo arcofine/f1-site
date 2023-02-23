@@ -2462,6 +2462,9 @@ select {
   margin-top: -16rem;
 }
 
+.-mt-64 {
+  margin-top: -16rem;
+}
 .last\:mr-0:last-child {
   margin-right: 0px;
 }
@@ -3803,6 +3806,9 @@ select {
   .xs\:logo-pos{
       
     }
+    .xs\:-mt-13 {
+    margin-top: -13rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3832,6 +3838,9 @@ select {
 
   .sm\:w-6\/12 {
     width: 50%;
+  }
+  .sm\:-mt-13 {
+    margin-top: -13rem;
   }
 }
 
@@ -3902,6 +3911,13 @@ select {
 
   .md\:mt-64 {
     margin-top: 16rem;
+  }
+  .md\:-mt-64 {
+    margin-top: -16rem;
+  }
+  
+  .md\:-mt-13 {
+    margin-top: -13rem;
   }
 
   .md\:ml-64 {
@@ -4083,6 +4099,9 @@ select {
   .lg\:ml-auto {
     margin-left: auto;
   }
+   .lg\:-mt-11 {
+    margin-top: -11rem;
+  }
 
   .lg\:-ml-16 {
     margin-left: -4rem;
@@ -4202,6 +4221,9 @@ select {
 
   .xl\:w-8\/12 {
     width: 66.666667%;
+  }
+   .xl\:-mt-11 {
+    margin-top: -11rem;
   }
 }
 

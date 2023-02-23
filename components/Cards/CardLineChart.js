@@ -32,12 +32,12 @@ export default function CardLineChart() {
                                                  width="100%"
                                                  height="100%"
                                                  id=""
-                                                 className=""
+                                                 className="xl:-mt-11 lg:-mt-11 md:-mt-13 sm:-mt-13 xs:-mt-13"
                                                  display="block"
                                                  position="relative"
                                                  overflow="visible"
                                                  scrolling="yes"
-                                                 styles={{marginTop: "-180px"}}
+                                                 // styles={{marginTop: "-180px"}}
                                           />
                                    </div>
                             </div>
