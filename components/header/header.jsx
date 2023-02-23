@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {useRouter} from "next/router";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,6 +15,7 @@ export default function Header({data}) {
        const toggleDrawer = () => {
               setVisible(!visible);
        };
+       const router = useRouter();
        return (
               <>
                      <Box sx={{flexGrow: 1}}>
@@ -27,13 +29,7 @@ export default function Header({data}) {
                                                         marginRight: 3,
                                                  }}>
                                                  <Link href="/">
-                                                        <Image
-                                                               priority
-                                                               src="/images/logoBlanc.png"
-                                                               className
-                                                               fill
-                                                               alt=""
-                                                        />
+                                                        <Image priority src="/images/logoBlanc.png" fill alt="" />
                                                  </Link>
                                           </Box>
                                           <Typography
@@ -46,8 +42,20 @@ export default function Header({data}) {
 
                                           <Box sx={{display: {xs: "none", sm: "block"}}}>
                                                  {Object.keys(data["Class Overall"]).map((x, i) => {
+                                                        const button_path =
+                                                               "/" +
+                                                               x.substring(x.indexOf(" ") + 1) +
+                                                               "/" +
+                                                               x.substring(0, x.indexOf(" "));
                                                         return (
-                                                               <Button color="error" key={i}>
+                                                               <Button
+                                                                      variant={
+                                                                             router.asPath === button_path
+                                                                                    ? "outlined"
+                                                                                    : "text"
+                                                                      }
+                                                                      color="error"
+                                                                      key={i}>
                                                                       <Link
                                                                              href={`/${x.substring(
                                                                                     x.indexOf(" ") + 1
@@ -58,6 +66,8 @@ export default function Header({data}) {
                                                         );
                                                  })}
 
+                                                 {/* ADD In version version 0.8
+                                                 
                                                  {Object.keys(data)
                                                         .filter((x) => {
                                                                return !x.includes("Class");
@@ -68,11 +78,11 @@ export default function Header({data}) {
                                                                              {x}
                                                                       </Button>
                                                                );
-                                                        })}
+                                                        })} */}
                                           </Box>
                                           <IconButton
                                                  size="large"
-                                                 edge="End"
+                                                 edge="start"
                                                  color="inherit"
                                                  aria-label="menu"
                                                  sx={{mr: 2, display: {sm: "none"}}}>

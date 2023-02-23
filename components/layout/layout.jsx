@@ -7,15 +7,18 @@ import {Container} from "@mui/material";
 import {clsx} from "clsx";
 
 import Header from "../header/header";
+import Construction from "../underConstruction/construction";
 
 export const siteTitle = "F1 Simulation";
 
-export default function Layout({children, data, type}) {
-       return (
+export default function Layout({children, data, notReady}) {
+       return !notReady ? (
               <>
                      <Header data={data} />
-                     <Container>{children}</Container>
+                     <Container style={{marginTop: "75px"}}>{children}</Container>
               </>
+       ) : (
+              <Construction />
        );
 }
 /* <div className={styles.container}>

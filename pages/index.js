@@ -12,7 +12,7 @@ export default function Home({championship}) {
                             <Head>
                                    <title>{siteTitle}</title>
                             </Head>
-                            <Layout data={championship} notReady />
+                            <Layout data={championship} />
                      </div>
               </>
        );
@@ -40,27 +40,3 @@ export async function getServerSideProps({
               console.log("request failed: ", err);
        }
 }
-
-/* <section className={utilStyles.headingMd}>
-        {
-          <ul>
-            {driveData}
-          </ul>
-        }
-        {Object.values(data["Driver Stats"]).filter(x => { return x.bestf <= 3 && x.bestf > 0  } ).map((x,i) => { 
-         return <h1 key={i}>{x.name}</h1>
-        })}
-      <p>{data.bio}</p>
-      </section>
-      <section className={utilStyles.headingMd}>
-        server side
-        {
-          <ul>
-            {driveData}
-          </ul>
-        }
-        {Object.values(users["Driver Stats"]).filter(x => { return x.bestf <= 3 && x.bestf > 0  } ).map((x,i) => { 
-         return <h1 key={i}>{x.name}</h1>
-        })}
-      <p>{data.bio}</p>
-      </section> */

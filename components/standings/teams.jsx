@@ -9,9 +9,9 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import * as tools from "../../utils/common.js";
 
-export default function Drivers({data}) {
-       const DRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["drivers"]);
-       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
+export default function Teams({data}) {
+       const TEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["teams"]);
+       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["races"]);
 
        const StyledTableCell = styled(TableCell)(({theme}) => ({
               [`&.${tableCellClasses.head}`]: {
@@ -73,9 +73,9 @@ export default function Drivers({data}) {
                                                  </StyledTableRow>
                                           </TableHead>
                                           <TableBody>
-                                                 {DRIVERS.map((driver, i) => {
+                                                 {TEAMS.map((team, i) => {
                                                         return (
-                                                               <StyledTableRow key={driver.name}>
+                                                               <StyledTableRow key={team.team_name}>
                                                                       <StyledTableCell
                                                                              size="checkbox"
                                                                              component="th"
@@ -84,9 +84,11 @@ export default function Drivers({data}) {
                                                                              {i + 1}
                                                                       </StyledTableCell>
                                                                       <StyledTableCell component="th" scope="row">
-                                                                             {driver.name}
+                                                                             <b>{team.team_name}</b>
+                                                                             <br />
+                                                                             <span>{team.team_drivers}</span>
                                                                       </StyledTableCell>
-                                                                      {driver.points.map((point, i) => {
+                                                                      {team.points.map((point, i) => {
                                                                              return (
                                                                                     <StyledTableCell
                                                                                            key={i + "_point"}
@@ -98,18 +100,6 @@ export default function Drivers({data}) {
                                                                                            }}
                                                                                            component="th"
                                                                                            scope="row">
-                                                                                           <span
-                                                                                                  style={{
-                                                                                                         position: "absolute",
-                                                                                                         top: 5,
-                                                                                                         left: "32%",
-                                                                                                         fontSize: "11px",
-                                                                                                         lineHeight:
-                                                                                                                "16px",
-                                                                                                         color: "#999",
-                                                                                                  }}>
-                                                                                                  {driver.positions[i]}
-                                                                                           </span>
                                                                                            {point}
                                                                                     </StyledTableCell>
                                                                              );
@@ -122,7 +112,7 @@ export default function Drivers({data}) {
                                                                                     fontSize: "22px",
                                                                                     fontWeight: "bold",
                                                                              }}>
-                                                                             {driver.points_sum}
+                                                                             {team.points_sum}
                                                                       </StyledTableCell>
                                                                </StyledTableRow>
                                                         );
