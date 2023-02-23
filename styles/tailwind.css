@@ -3806,8 +3806,8 @@ select {
   .xs\:logo-pos{
       
     }
-    .xs\:-mt-13 {
-    margin-top: -13rem;
+    .xs\:-mt-19 {
+    margin-top: -19rem;
   }
 }
 
@@ -4027,6 +4027,12 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+@media (min-width: 1006px) {
+ .md\:-mt-11 {
+    margin-top: -11rem;
+  }
+
+}
 
 @media (min-width: 1024px) {
   .lg\:bg-opacity-0 {
@@ -4100,7 +4106,7 @@ select {
     margin-left: auto;
   }
    .lg\:-mt-11 {
-    margin-top: -11rem;
+    margin-top: -13rem;
   }
 
   .lg\:-ml-16 {
@@ -4202,7 +4208,7 @@ select {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1322px) {
   .xl\:mb-0 {
     margin-bottom: 0px;
   }

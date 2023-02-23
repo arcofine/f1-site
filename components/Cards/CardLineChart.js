@@ -32,7 +32,7 @@ export default function CardLineChart() {
                                                  width="100%"
                                                  height="100%"
                                                  id=""
-                                                 className="xl:-mt-11 lg:-mt-11 md:-mt-13 sm:-mt-13 xs:-mt-13"
+                                                 className="xl:-mt-11  md\:-mt-11 md:-mt-13 sm:-mt-13 xs:-mt-19"
                                                  display="block"
                                                  position="relative"
                                                  overflow="visible"
