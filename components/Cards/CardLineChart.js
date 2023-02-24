@@ -6,14 +6,28 @@ import Chart from "chart.js";
 export default function CardLineChart() {
        const [data, setData] = useState();
 
+       // const fetchData = async () => {
+       //        try {
+       //               const testURL = await await fetch("https://some-url-that-might-fail.com");
+       //               console.log("TADA");
+       //               return testURL;
+       //        } catch (error) {
+       //               console.error("Boooo"); // You might send an exception to your error tracker like AppSignal
+       //               return error;
+       //        }
+       // };
        useEffect(() => {
               const fetchData = async () => {
-                     // try {
-                     const testURL = await fetch("/championships/championship?cid=2").then((res) => {
-                            return res.status === 500 ? setData(false) : setData(true);
-                     });
+                     try {
+                            const testURL = await fetch("/championships/championship?cid=2");
+                            setData(testURL.status);
+                            console.log(testURL.status);
+                            return testURL;
+                     } catch (error) {
+                            console.error("Boooo");
+                            return error;
+                     }
               };
-
               fetchData();
        }, []);
 
@@ -32,7 +46,7 @@ export default function CardLineChart() {
                             </div>
                             <div className="p-4 flex-auto">
                                    {/* Chart */}
-                                   {data ? (
+                                   {data === 200 ? (
                                           <div
                                                  className="relative"
                                                  style={{
@@ -66,21 +80,18 @@ export default function CardLineChart() {
                                                                       </div>
                                                                </div>
                                                         </div>
-                                                        <div className="p-1 flex-auto">
-                                                               {/* Chart */}
-
-                                                               <div
-                                                                      className="relative"
-                                                                      style={{
-                                                                             display: "block",
-                                                                             overflow: "hidden",
-                                                                             width: "100%",
-                                                                             height: "50px",
-                                                                      }}>
-                                                                      <h4 className="mt-0 text-3xl leading-relaxed text-center text-blueGray-100">
-                                                                             Nous serons de retour dans quelques minutes
-                                                                      </h4>
-                                                               </div>
+                                                        <div className="p-1 flex-auto">{/* Chart */}</div>
+                                                        <div
+                                                               className="relative"
+                                                               style={{
+                                                                      display: "block",
+                                                                      overflow: "hidden",
+                                                                      width: "100%",
+                                                                      height: "50px",
+                                                               }}>
+                                                               <h4 className="mt-0 text-3xl leading-relaxed text-center text-blueGray-100">
+                                                                      Nous serons de retour dans quelques minutes
+                                                               </h4>
                                                         </div>
                                                  </div>
                                           </>
