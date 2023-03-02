@@ -72,6 +72,18 @@ export default function Navbar(props) {
                                                                </span>
                                                         </a>
                                                  </li>
+                                                 <li className="flex items-center">
+                                                        <a
+                                                               href="https://www.simracinghub.com"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                                                               <img
+                                                                      alt=""
+                                                                      width="100"
+                                                                      src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
+                                                               />
+                                                        </a>
+                                                 </li>
                                                  <li>
                                                         <p className="flex-auto ml-0">
                                                                <span
