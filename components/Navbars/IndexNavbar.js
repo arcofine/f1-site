@@ -11,10 +11,13 @@ export default function Navbar(props) {
                      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black shadow">
                             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                                          <Link
-                                                 href="/"
-                                                 className="text-blueGray-300 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
-                                                 F1 Simulation
+                                          <Link href="/" className=" inline-block mr-4">
+                                                 <img
+                                                        className="absolute top-0"
+                                                        src="/img/logoNoir.png"
+                                                        alt="..."
+                                                        width="90"
+                                                 />
                                           </Link>
 
                                           <button
@@ -38,7 +41,7 @@ export default function Navbar(props) {
                                                  (navbarOpen ? " block" : " hidden")
                                           }
                                           id="example-navbar-warning">
-                                          <ul className="flex flex-col lg:flex-row list-none mr-auto">
+                                          <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
                                                  <li className="flex items-center">
                                                         <p className="text-blueGray-400 text-sm "> Saison 2023</p>
                                                  </li>
@@ -73,7 +76,7 @@ export default function Navbar(props) {
                                                                </span>
                                                         </a>
                                                  </li>
-                                                 <li className="flex items-center">
+                                                 {/* <li className="flex items-center">
                                                         <a
                                                                href="https://www.simracinghub.com"
                                                                title=""
@@ -84,7 +87,7 @@ export default function Navbar(props) {
                                                                       src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
                                                                />
                                                         </a>
-                                                 </li>
+                                                 </li> */}
                                                  <li>
                                                         <p className="flex-auto ml-0">
                                                                <span

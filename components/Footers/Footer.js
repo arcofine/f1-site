@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
        return (
               <>
-                     <footer className="relative bg-blueGray-200 pt-8 pb-6">
+                     <footer className=" footer relative bg-blueGray-200 pt-8 pb-6">
                             <div
                                    className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                                    style={{transform: "translateZ(0)"}}>
@@ -21,8 +21,18 @@ export default function Footer() {
                                    </svg>
                             </div>
                             <div className="container mx-auto px-4">
-                                   <div className="flex flex-wrap text-center lg:text-left">
-                                          <div className="w-full lg:w-6/12 px-4">
+                                   <div className="flex flex-wrap items-center justify-center">
+                                          <a
+                                                 href="https://www.simracinghub.com"
+                                                 title=""
+                                                 className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                                                 <img
+                                                        alt=""
+                                                        width="100"
+                                                        src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
+                                                 />
+                                          </a>
+                                          <div className="w-full lg:hidden lg:w-6/12 px-4 flex flex-wrap items-center justify-center">
                                                  <div className="mt-6 lg:mb-0 mb-6">
                                                         <button
                                                                className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -33,9 +43,6 @@ export default function Footer() {
                                                                       target="_blank"
                                                                       rel="noreferrer">
                                                                       <i className="fab fa-facebook-square text-lg leading-lg " />
-                                                                      <span className="lg:hidden inline-block ml-2">
-                                                                             Share
-                                                                      </span>
                                                                </a>
                                                         </button>
                                                         <button
@@ -46,9 +53,6 @@ export default function Footer() {
                                                                       target="_blank"
                                                                       rel="noreferrer">
                                                                       <i className="fab fa-discord text-lg leading-lg"></i>
-                                                                      <span className="lg:hidden inline-block ml-2">
-                                                                             Discord
-                                                                      </span>
                                                                </a>
                                                         </button>
                                                  </div>
