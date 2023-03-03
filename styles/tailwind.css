@@ -2432,6 +2432,9 @@ select {
   margin-left: -1rem;
 }
 
+.-mt-12 {
+  margin-top: -2rem;
+}
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -2476,7 +2479,9 @@ select {
 .max-h-860-px {
   max-height: 860px;
 }
-
+.max-h-600-px {
+  max-height: 600px;
+}
 .max-w-sm {
   max-width: 24rem;
 }
@@ -2860,6 +2865,9 @@ select {
   padding-left: 2.5rem;
 }
 
+.pl-12 {
+  padding-left: 5rem;
+}
 .pt-12 {
   padding-top: 3rem;
 }
@@ -3599,6 +3607,13 @@ select {
   width: 200px;
 }
 
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 1;
+}
+
 .z-2 {
   z-index: 2;
 }
@@ -3716,6 +3731,16 @@ select {
 
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red;
+  color: white;
+  text-align: center; */
 }
 
 @-webkit-keyframes spin {
