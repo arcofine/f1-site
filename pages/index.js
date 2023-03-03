@@ -65,10 +65,11 @@ export default function Index() {
                                    className="z-2"
                                    ref={videoRef}
                                    autoPlay
-                                   // controls="false"
+                                   controls={false}
                                    width="100%"
                                    height="100%"
                                    loop
+                                   playsInline
                                    muted>
                                    <source src="/video/f1sim23.mp4" type="video/mp4" />
                             </video>
