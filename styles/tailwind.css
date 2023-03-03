@@ -2148,6 +2148,10 @@ select {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-2xs {
+  font-size: 0.55rem;
+  line-height: 0.81rem;
+}
 
 .text-sm {
   font-size: 0.875rem;

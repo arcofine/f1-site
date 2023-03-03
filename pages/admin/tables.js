@@ -45,11 +45,11 @@ export default function Tables({championship, error}) {
                             )}
                             {!error && (
                                    <>
-                                          <div className="w-full mb-12 px-4">
+                                          <div className="lg:w-6/12 w-full mb-12 px-4">
                                                  <CardTable drivers data={championship} color="dark" />
                                           </div>
-                                          <div className="w-full mb-12 px-4">
-                                                 <CardTable teams data={championship} color="dark" />
+                                          <div className="lg:w-6/12 w-full mb-12 px-4">
+                                                 <CardTable teams data={championship} color="light" />
                                           </div>
                                    </>
                             )}

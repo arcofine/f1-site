@@ -1,12 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, {useEffect, useRef} from "react";
 import Link from "next/link";
-import ReactPlayer from "react-player";
-import VideoPlayer from "components/VideoPlayer/VideoPlayer";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import {optionalIndexedAccessType} from "@babel/types";
 
 export default function Index() {
        const videoRef = useRef();
