@@ -16,6 +16,7 @@ export default function Navbar(props) {
                                                  className="text-blueGray-300 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
                                                  F1 Simulation
                                           </Link>
+
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
                                                  type="button"

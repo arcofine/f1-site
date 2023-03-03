@@ -17,8 +17,19 @@ export default function Index() {
                             }}
                             className="relative pt-16 items-center flex h-screen max-h-860-px bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
+
                             <div className=" container mx-auto items-center flex flex-wrap z-2">
                                    <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+                                          <a
+                                                 href="https://www.simracinghub.com"
+                                                 title=""
+                                                 className="z-2 absolute top-95-px lg:hidden b-auto mb-10">
+                                                 <img
+                                                        alt=""
+                                                        width="100"
+                                                        src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
+                                                 />
+                                          </a>
                                           <div className="pt-32 sm:pt-0">
                                                  <h2 className="font-semibold text-6xl text-blueGray-200">
                                                         Ligue de Simulation F1
@@ -41,6 +52,7 @@ export default function Index() {
                                           </div>
                                    </div>
                             </div>
+
                             <img
                                    className="absolute top-0 b-auto right-0 pt-16 xs:w-5/12 -mt-48 sm:mt-0 w-8/12 xs:logo-pos max-h-860-px"
                                    src="/img/logoNoir.png"
