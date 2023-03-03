@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
        return (
               <>
-                     <footer className=" footer relative bg-blueGray-200 pt-8 pb-6">
+                     <footer className="relative bg-blueGray-200 pt-8 pb-6">
                             <div
                                    className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                                    style={{transform: "translateZ(0)"}}>
@@ -25,10 +25,9 @@ export default function Footer() {
                                           <a
                                                  href="https://www.simracinghub.com"
                                                  title=""
-                                                 className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                                                 className="hover:text-blueGray-500 text-blueGray-700 px-3 py-35 flex items-center text-xs uppercase font-bold">
                                                  <img
                                                         alt=""
-                                                        width="100"
                                                         src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
                                                  />
                                           </a>

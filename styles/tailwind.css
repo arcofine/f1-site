@@ -2872,6 +2872,11 @@ select {
 .pl-12 {
   padding-left: 5rem;
 }
+.py-35{
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -3610,7 +3615,9 @@ select {
 .w-200 {
   width: 200px;
 }
-
+.w-100 {
+  width: 100px;
+}
 .z-0 {
   z-index: 0;
 }
@@ -3837,6 +3844,12 @@ select {
     }
     .xs\:-mt-19 {
     margin-top: -19rem;
+  }
+     .xs\:h-600-px {
+    height: 73vh;
+  }
+  .xs\:py-0 {
+    padding: 0;
   }
 }
 

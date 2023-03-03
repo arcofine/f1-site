@@ -20,11 +20,31 @@ export default function Index() {
                             style={{
                                    backgroundImage: "url('/img/backgrounds/bg-02.jpg')",
                             }}
-                            className="relative pt-16 items-center flex h-screen max-h-600-px bg-slate-900 bg-no-repeat bg-left bg-cover">
+                            className="relative pt-32 items-center flex xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
-                            {/* <div className=" container mx-auto items-center flex flex-wrap z-2">
-                                   <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+
+                            <div className=" container mx-auto items-center flex flex-wrap z-2">
+                                   <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
+                                   <div className="w-full relative px-0">
                                           <a
+                                                 href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
+                                                 target="_blank"
+                                                 className="z-3 get-started text-center absolute w-full text-white font-bold px-2
+                                                  py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
+                                                 Inscris-toi!
+                                          </a>
+                                          <video
+                                                 className="z-2"
+                                                 ref={videoRef}
+                                                 autoPlay
+                                                 controls={true}
+                                                 width="100%"
+                                                 loop
+                                                 playsInline
+                                                 muted>
+                                                 <source src="/video/f1sim23_final.mp4" type="video/mp4" />
+                                          </video>
+                                          {/* <a
                                                  href="https://www.simracinghub.com"
                                                  title=""
                                                  className="z-2 absolute top-95-px lg:hidden b-auto mb-10">
@@ -53,27 +73,16 @@ export default function Index() {
                                                                Inscris-toi!
                                                         </a>
                                                  </div>
-                                          </div>
+                                          </div> */}
                                    </div>
-                            </div> */}
+                            </div>
                             {/* <img
                                    className="absolute top-0 b-auto right-0 pt-16 xs:w-5/12 -mt-48 sm:mt-0 w-8/12 xs:logo-pos max-h-860-px"
                                    src="/img/logoNoir.png"
                                    alt="..."
                             /> */}
-                            <video
-                                   className="z-2"
-                                   ref={videoRef}
-                                   autoPlay
-                                   controls={false}
-                                   width="100%"
-                                   height="100%"
-                                   loop
-                                   playsInline
-                                   muted>
-                                   <source src="/video/f1sim23.mp4" type="video/mp4" />
-                            </video>
-                            <section className="mt-28 md:mt-20 pb-16 z-3 relative bg-blueGray-400">
+
+                            {/* <section className="mt-28 md:mt-20 pb-16 z-3 relative bg-blueGray-400">
                                    <div
                                           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
                                           style={{transform: "translateZ(0)"}}>
@@ -90,7 +99,7 @@ export default function Index() {
                                                         points="2560 0 2560 100 0 100"></polygon>
                                           </svg>
                                    </div>
-                            </section>
+                            </section> */}
                      </section>
 
                      <Footer />
