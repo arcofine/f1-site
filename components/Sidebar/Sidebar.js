@@ -20,7 +20,7 @@ export default function Sidebar() {
                                                  <i class="fas fa-arrow-circle-left"></i> retour
                                           </Link>
                                    </div>
-                                   <div className="lg:hidden">
+                                   <div className="lg:hidden md:hidden">
                                           <Link
                                                  href="/admin/tables"
                                                  className={
