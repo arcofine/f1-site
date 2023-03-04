@@ -19,7 +19,7 @@ export default function CardLineChart() {
        useEffect(() => {
               const fetchData = async () => {
                      try {
-                            const testURL = await fetch("/championships/championship?cid=2");
+                            const testURL = await fetch("/championships/championship?cid=1");
                             setData(testURL.status);
                             console.log(testURL.status);
                             return testURL;
@@ -40,7 +40,7 @@ export default function CardLineChart() {
                                                  <h6 className="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
                                                         Derniers Résultats
                                                  </h6>
-                                                 <h2 className="text-white text-xl font-semibold">Hors-Saison</h2>
+                                                 {/* <h2 className="text-white text-xl font-semibold">Hors-Saison</h2> */}
                                           </div>
                                    </div>
                             </div>
@@ -56,7 +56,7 @@ export default function CardLineChart() {
                                                         height: "900px",
                                                  }}>
                                                  <Iframe
-                                                        url="/championships/championship?cid=2"
+                                                        url="/championships/championship?cid=1"
                                                         width="100%"
                                                         height="100%"
                                                         id=""
