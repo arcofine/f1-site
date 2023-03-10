@@ -55,6 +55,12 @@ export default function Sidebar() {
                                                         }></i>{" "}
                                                  Derniers Résultats
                                           </Link>
+                                          <a
+                                                 href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
+                                                 target="_blank"
+                                                 className={"text-xs uppercase py-3 font-bold block "}>
+                                                 <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing (Alpha)
+                                          </a>
                                    </div>
                                    {/* Collapse */}
                                    <div
@@ -93,32 +99,6 @@ export default function Sidebar() {
                                                         </Link>
                                                  </li>
 
-                                                 {/* <li className="items-center">
-                                                        <Link href="/admin/settings">
-                                                               <a
-                                                                      href="#pablo"
-                                                                      className={
-                                                                             "text-xs uppercase py-3 font-bold block " +
-                                                                             (router.pathname.indexOf(
-                                                                                    "/admin/settings"
-                                                                             ) !== -1
-                                                                                    ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                                    : "text-blueGray-700 hover:text-blueGray-500")
-                                                                      }>
-                                                                      <i
-                                                                             className={
-                                                                                    "fas fa-tools mr-2 text-sm " +
-                                                                                    (router.pathname.indexOf(
-                                                                                           "/admin/settings"
-                                                                                    ) !== -1
-                                                                                           ? "opacity-75"
-                                                                                           : "text-blueGray-300")
-                                                                             }></i>{" "}
-                                                                      Statistiques de Pilotes
-                                                               </a>
-                                                        </Link>
-                                                 </li> */}
-
                                                  <li className="items-center">
                                                         <Link
                                                                href="/admin/dashboard"
@@ -140,6 +120,15 @@ export default function Sidebar() {
                                                                       }></i>{" "}
                                                                Derniers Résultats
                                                         </Link>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
+                                                               target="_blank"
+                                                               className={"text-xs uppercase py-3 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                               Timing (Alpha)
+                                                        </a>
                                                  </li>
                                           </ul>
                                    </div>
