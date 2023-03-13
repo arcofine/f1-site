@@ -42,7 +42,7 @@ export default function Navbar(props) {
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
                                                   <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm "><a href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw" TARGET="_blank>INSCRIPTION</a></p>
+                                                        <p className="text-blueGray-400 text-sm "><a href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw" target="_blank">INSCRIPTION</a></p>
                                                  </li>
                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
                                                         <p className="text-blueGray-400 text-sm "><a href="#">CALENDRIER</a></p>
