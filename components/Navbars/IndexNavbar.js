@@ -19,7 +19,42 @@ export default function Navbar(props) {
                                                         width="90"
                                                  />
                                           </Link>
-
+                                          <button
+                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
+                                                 type="button">
+                                                 <Link
+                                                        href="#"
+                                                        className={
+                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
+                                                        }>
+                                                        INSCRIPTION
+                                                 </Link>
+                                                 {/* <i className="fas fa-bars"></i> */}
+                                          </button>
+                                          <button
+                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
+                                                 type="button">
+                                                 <Link
+                                                        href="#"
+                                                        className={
+                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
+                                                        }>
+                                                        RÈGLEMETNS
+                                                 </Link>
+                                                 {/* <i className="fas fa-bars"></i> */}
+                                          </button>
+                                          <button
+                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
+                                                 type="button">
+                                                 <Link
+                                                        href="#"
+                                                        className={
+                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
+                                                        }>
+                                                        CALENDRIER
+                                                 </Link>
+                                                 {/* <i className="fas fa-bars"></i> */}
+                                          </button>
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
                                                  type="button"
@@ -43,7 +78,7 @@ export default function Navbar(props) {
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
                                                  <li className="flex items-center">
-                                                        <p className="text-blueGray-400 text-sm "> Saison 2023</p>
+                                                        <p className="text-blueGray-400 text-sm "> La ligue de simulation F1</p>
                                                  </li>
                                           </ul>
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
