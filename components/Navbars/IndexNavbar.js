@@ -21,42 +21,6 @@ export default function Navbar(props) {
                                           </Link>
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
-                                                 type="button">
-                                                 <Link
-                                                        href="#"
-                                                        className={
-                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                        }>
-                                                        INSCRIPTION
-                                                 </Link>
-                                                 {/* <i className="fas fa-bars"></i> */}
-                                          </button>
-                                          <button
-                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
-                                                 type="button">
-                                                 <Link
-                                                        href="#"
-                                                        className={
-                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                        }>
-                                                        RÈGLEMETNS
-                                                 </Link>
-                                                 {/* <i className="fas fa-bars"></i> */}
-                                          </button>
-                                          <button
-                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
-                                                 type="button">
-                                                 <Link
-                                                        href="#"
-                                                        className={
-                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                        }>
-                                                        CALENDRIER
-                                                 </Link>
-                                                 {/* <i className="fas fa-bars"></i> */}
-                                          </button>
-                                          <button
-                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
                                                  type="button"
                                                  //  onClick={() => setNavbarOpen(!navbarOpen)}
                                           >
@@ -79,6 +43,9 @@ export default function Navbar(props) {
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
                                                  <li className="flex items-center">
                                                         <p className="text-blueGray-400 text-sm "> La ligue de simulation F1</p>
+                                                 </li>
+                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                        <p className="text-blueGray-400 text-sm "><a href="#">Inscription</a></p>
                                                  </li>
                                           </ul>
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
