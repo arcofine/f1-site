@@ -29,12 +29,12 @@ export default function Index() {
                             }}
                             className="relative pt-32 items-center flex flex-col xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
-                            <div
+                            {/* <div
                                    className={
                                           "container items-right justify-items-end justify-end relative z-3 flex -mt-12 mb-6  "
                                    }>
                                    <div id="lr-servers" orientation="horizontal"></div>
-                            </div>
+                            </div> */}
                             <div className=" container w-11/12 mx-auto items-center flex flex-wrap z-2">
                                    <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
                                    <div className="w-full relative px-0">
