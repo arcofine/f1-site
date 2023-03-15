@@ -31,7 +31,7 @@ export default function Index() {
                                                  target="_blank"
                                                  className="z-3 get-started text-center absolute w-full text-white font-bold px-2
                                                   py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
-                                                 Inscris-toi!
+                                                 CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a>
                                           <video
                                                  className="z-2"

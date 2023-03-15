@@ -19,7 +19,6 @@ export default function Navbar(props) {
                                                         width="90"
                                                  />
                                           </Link>
-
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
                                                  type="button"
@@ -42,8 +41,14 @@ export default function Navbar(props) {
                                           }
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
-                                                 <li className="flex items-center">
-                                                        <p className="text-blueGray-400 text-sm "> Saison 2023</p>
+                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                        <p className="text-blueGray-400 text-sm "><a href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw" target="_blank">INSCRIPTION</a></p>
+                                                 </li>
+                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                        <p className="text-blueGray-400 text-sm "><a href="#">CALENDRIER</a></p>
+                                                 </li>
+                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                        <p className="text-blueGray-400 text-sm "><a href="#">RÈGLEMENTS</a></p>
                                                  </li>
                                           </ul>
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
@@ -67,7 +72,7 @@ export default function Navbar(props) {
                                                  <li className="flex items-center">
                                                         <a
                                                                className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                                               href="https://discord.gg/mQdNshB9"
+                                                               href="https://discord.gg/FHuMrCcTCS"
                                                                target="_blank"
                                                                rel="noreferrer">
                                                                <i className="text-blueGray-400 fab fa-discord text-lg leading-lg " />
