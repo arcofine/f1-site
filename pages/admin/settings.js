@@ -23,6 +23,7 @@ export default function Settings() {
                             <div className="w-full lg:w-4/12 px-4 ">
                                    <div
                                           id="lr-servers"
+                                          orientation="horizontal"
                                           className={
                                                  "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded "
                                           }></div>
