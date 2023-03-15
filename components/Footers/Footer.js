@@ -22,15 +22,20 @@ export default function Footer() {
                             </div>
                             <div className="container mx-auto px-4">
                                    <div className="flex flex-wrap items-center justify-center">
-                                          <a
-                                                 href="https://www.simracinghub.com"
-                                                 title=""
-                                                 className="hover:text-blueGray-500 text-blueGray-700 px-3 py-35 flex items-center text-xs uppercase font-bold">
-                                                 <img
-                                                        alt=""
-                                                        src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
-                                                 />
-                                          </a>
+                                          <div className="flex flex-col mx-auto items-center justify-center">
+                                                 <h2 className="text-md text-blueGray-500 font-semibold mb-2">
+                                                        Partenaires
+                                                 </h2>
+                                                 <a
+                                                        href="https://www.simracinghub.com"
+                                                        title=""
+                                                        className="hover:text-blueGray-500 text-blueGray-700 px-3 py-35 flex items-center text-xs uppercase font-bold">
+                                                        <img
+                                                               alt=""
+                                                               src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
+                                                        />
+                                                 </a>
+                                          </div>
                                           <div className="w-full lg:hidden lg:w-6/12 px-4 flex flex-wrap items-center justify-center">
                                                  <div className="mt-6 lg:mb-0 mb-6">
                                                         <button
