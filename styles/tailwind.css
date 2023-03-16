@@ -1229,6 +1229,10 @@ select {
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 
+.bg-gray-f1{
+  background-color: #313030
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -2985,6 +2989,10 @@ select {
   bottom: 0px;
 }
 
+.-bottom-10 {
+  bottom: -20px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -3048,6 +3056,9 @@ select {
 
 .top-95-px {
   top: 95px;
+}
+.top-68-px {
+  top: 68px;
 }
 
 .left-145-px {

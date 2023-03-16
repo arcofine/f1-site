@@ -46,7 +46,7 @@
       #lr-servers.light .gameInfo:first-child {
         border-top: 1px solid #E2E5EC; }
       #lr-servers.light .gameInfo.Practice {
-        background: #A1C5D3;
+        background: #3d3b3b;
         border-top: 1px solid #bdd6e0;
         border-bottom: 1px solid #85b4c6; }
       #lr-servers.light .gameInfo.TimeAttack {
@@ -94,9 +94,9 @@
     #lr-servers.dark .lr-loading {
       background: url("images/lr-loading-dark_24.gif") no-repeat; }
     #lr-servers.dark a {
-      color: white; }
+      color: rgb(223, 223, 223); }
       #lr-servers.dark a:hover {
-        color: #ff7700; }
+        color: #d93d16; }
     #lr-servers.dark .lr-servers-header {
       background: inherit; }
     #lr-servers.dark .gameInfo {
@@ -108,7 +108,7 @@
         border-top: 1px solid #24292f;
         border-top-color: rgba(0, 0, 0, 0.4); }
       #lr-servers.dark .gameInfo.Practice {
-        background: #4C6D77;
+        background: #313030;
         border-top: 1px solid #5c8490;
         border-bottom: 1px solid #3c565e; }
       #lr-servers.dark .gameInfo.TimeAttack {
@@ -136,9 +136,9 @@
         border-top: 1px solid #59457a;
         border-bottom: 1px solid #332746; }
       #lr-servers.dark .gameInfo .details {
-        background: #798699; }
+        background: #311a1a; }
       #lr-servers.dark .gameInfo:hover {
-        background: #798699; }
+        background: #311a1a; }
       #lr-servers.dark .gameInfo .g-info .g-app {
         background: white;
         color: black;
@@ -152,7 +152,7 @@
     font-weight: 500;
     text-align: left;
     width: 200px;
-    height: 85px;
+    height: 73px;
     float: left; }
     #lr-servers .gameInfo a {
       text-decoration: none; }
@@ -175,7 +175,7 @@
     #lr-servers .gameInfo .details {
       clear: both;
       position: absolute;
-      margin-top: 83px;
+      margin-top: 73px;
       display: none;
       width: 200px;
       z-index: 11; }
@@ -211,7 +211,7 @@
         margin-right: 50px;
         font-size: 8pt;
         padding: 2px 0px 0px 3px;
-        height: 85px;
+        height: 72px;
         overflow: hidden; }
         #lr-servers .gameInfo .g-info-wrapper .g-info div {
           overflow: hidden;
@@ -260,7 +260,7 @@
       #lr-servers .gameInfo .g-side-wrapper .g-side {
         margin: 0;
         padding: 0;
-        height: 85px; }
+        height: 72px; }
         #lr-servers .gameInfo .g-side-wrapper .g-side .drivers {
           float: right;
           margin: 2px 4px 0px 0px;
@@ -276,15 +276,15 @@
           font-weight: 500;
           text-align: right;
           position: absolute;
-          bottom: 3px;
+          bottom: 1px;
           right: 5px; }
         #lr-servers .gameInfo .g-side-wrapper .g-side .bestLap {
           font-size: 8pt;
-          margin: 5px 3px 0px 0px;
+          margin: -2px 3px 0px 0px;
           float: right; }
         #lr-servers .gameInfo .g-side-wrapper .g-side .weather {
           font-size: 8pt;
-          margin: 5px 3px 0px 0px;
+          margin: -2px 3px 0px 0px;
           float: right; }
   #lr-servers.horizontal {
     width: auto; }

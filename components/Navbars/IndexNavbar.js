@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Script from "next/script";
 // components
 
 import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
@@ -8,6 +9,7 @@ export default function Navbar(props) {
        const [navbarOpen, setNavbarOpen] = React.useState(false);
        return (
               <>
+                     <Script src="/liveracers.js" />
                      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black shadow">
                             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -41,14 +43,24 @@ export default function Navbar(props) {
                                           }
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
-                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm "><a href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw" target="_blank">INSCRIPTION</a></p>
+                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                        <p className="text-blueGray-400 text-sm ">
+                                                               <a
+                                                                      href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
+                                                                      target="_blank">
+                                                                      INSCRIPTION
+                                                               </a>
+                                                        </p>
                                                  </li>
                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm "><a href="#">CALENDRIER</a></p>
+                                                        <p className="text-blueGray-400 text-sm ">
+                                                               <a href="#">CALENDRIER</a>
+                                                        </p>
                                                  </li>
                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm "><a href="#">RÈGLEMENTS</a></p>
+                                                        <p className="text-blueGray-400 text-sm ">
+                                                               <a href="#">RÈGLEMENTS</a>
+                                                        </p>
                                                  </li>
                                           </ul>
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
@@ -128,6 +140,15 @@ export default function Navbar(props) {
                                           </ul>
                                    </div>
                             </div>
+                     </nav>
+                     <nav className="top-68-px fixed z-40 w-full flex flex-wrap items-end justify-end px-12  navbar-expand-lg bg-gray-f1 shadow">
+                            <div
+                                   id="lr-servers"
+                                   orientation="horizontal"
+                                   theme="dark"
+                                   className={
+                                          "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded "
+                                   }></div>
                      </nav>
               </>
        );

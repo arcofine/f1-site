@@ -383,7 +383,7 @@
                      api.updateTimeLeft();
               },
               updateList = function () {
-                     api.setLogoClass("icon-med lr-loading");
+                     // api.setLogoClass("icon-med lr-loading");
                      var queryString = null;
                      if (window._lr.domains) {
                             queryString = "domains=" + window._lr.domains;
@@ -397,7 +397,7 @@
                                           api.populateServers(tools.jsonDecode(data));
                                    },
                                    complete: function () {
-                                          api.setLogoClass("icon-med lr-logo-color-dark");
+                                          // api.setLogoClass("icon-med lr-logo-color-dark");
                                    },
                                    headers: {"Content-type": "application/json", "Accept": "application/json"},
                             });
@@ -549,26 +549,19 @@
                                           ? "/Home/RedirectToDomain?domains=" + (window._lr.domains || "")
                                           : "";
 
-                                   rootHtml.push(
-                                          "<a class='lr-servers-header with-icon-med' target='_blank' title='LiveRacers' href='",
-                                          window._lr.url,
-                                          redirectAddress,
-                                          "'><div class='lr-servers-logo icon-med lr-logo-color-dark'></div><span>",
-                                          tools.rs("ActiveServers"),
-                                          "</span></a><div class='lr-servers-content'></div>"
-                                   );
+                                   rootHtml.push("<div class='lr-servers-content'></div>");
 
                                    el.innerHTML = rootHtml.join("");
-                                   el.logo = tools.getChildByClass(el, "lr-servers-logo");
+                                   // el.logo = tools.getChildByClass(el, "lr-servers-logo");
                                    el.content = tools.getChildByClass(el, "lr-servers-content");
                             }
                      },
                      // set class name on all servers logos element
-                     setLogoClass: function (className) {
-                            for (var i = 0, l = this.servers.length; i < l; i++) {
-                                   this.servers[i].logo.className = className;
-                            }
-                     },
+                     // setLogoClass: function (className) {
+                     //        for (var i = 0, l = this.servers.length; i < l; i++) {
+                     //               this.servers[i].logo.className = className;
+                     //        }
+                     // },
                      // update time left on each game
                      updateTimeLeft: function () {
                             for (var i = 0, il = this.servers.length; i < il; i++) {
