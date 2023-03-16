@@ -3860,17 +3860,27 @@ select {
     .xs\:-mt-19 {
     margin-top: -19rem;
   }
+  .xs\:px-6{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
      .xs\:h-600-px {
     height: 73vh;
   }
   .xs\:py-0 {
     padding: 0;
   }
+  .xs\:top-60-px{
+    top:60px;
+  }
 }
 
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
+  }
+  .sm\:top-60-px{
+    top:60px;
   }
 
   .sm\:mt-0 {
@@ -3906,6 +3916,9 @@ select {
     display: block;
   }
 
+  .md\:top-60-px{
+    top:60px;
+  }
   .md\:flex {
     display: -webkit-flex;
     display: flex;

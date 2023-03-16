@@ -141,7 +141,7 @@ export default function Navbar(props) {
                                    </div>
                             </div>
                      </nav>
-                     <nav className="top-68-px fixed z-40 w-full flex flex-wrap items-end justify-end px-12  navbar-expand-lg bg-gray-f1 shadow">
+                     <nav className="top-68-px xs:top-60-px fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
                             <div
                                    id="lr-servers"
                                    orientation="horizontal"
