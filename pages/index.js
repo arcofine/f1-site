@@ -54,7 +54,7 @@ export default function Index() {
                                                  loop
                                                  playsInline
                                                  muted>
-                                                 <source src="/video/f1sim23_final.mp4" type="video/mp4" />
+                                                 <source src="/video/f1sim.mp4" type="video/mp4" />
                                           </video>
                                           {/* <a
                                                  href="https://www.simracinghub.com"
