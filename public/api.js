@@ -704,7 +704,7 @@
                                           } else if (game.Version) {
                                                  sessionTypeText += " " + game.Version;
                                           }
-                                          sessionTypeText = '<div class="session">' + sessionTypeText + ",&nbsp;</div>";
+                                          sessionTypeText = '<div class="session">' + sessionTypeText + "</div>";
                                    }
 
                                    var trackText = game.TrackName;
@@ -725,21 +725,17 @@
                                           ">",
                                           '<div class="g-info-wrapper">',
                                           '<div class="g-info">',
-                                          '<div class="g-app">',
+                                          '<div class="g-app ' + game.SessionType + '">',
                                           sessionTypeText,
-                                          '<div class="app">',
-                                          tools.rs("app." + game.App),
-                                          "</div></div>",
-                                          '<div class="g-header"><a href="',
-                                          game.Link,
-                                          '">',
+                                          "</div>",
+                                          '<div class="g-header"><a target="_blank" href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation">',
                                           game.GameName,
                                           "</a></div>",
-                                          '<div title="',
-                                          game.Mod,
-                                          '">',
-                                          game.Mod,
-                                          "</div>",
+                                          // '<div title="',
+                                          // game.Mod,
+                                          // '">',
+                                          // game.Mod,
+                                          // "</div>",
                                           '<div title="',
                                           game.TrackName,
                                           '">',
@@ -793,28 +789,28 @@
                                           newContent.push("</div>");
                                    }
 
-                                   if (game.DriversCount > 0) {
-                                          newContent.push('<div class="remaining">');
+                                   // if (game.DriversCount > 0) {
+                                   //        newContent.push('<div class="remaining">');
 
-                                          if (game.CurrentET > 0 && game.EndET > 0) {
-                                                 game.TimeRemaining = Math.max(0, game.EndET - game.CurrentET);
-                                                 var tr = new TimeSpan()
-                                                        .fromSec(game.TimeRemaining)
-                                                        .setFormat(timeFormat);
-                                                 newContent.push('<div class="timeLeft">', tr.getString(), "</div>");
-                                                 game.hasTr = true;
-                                          }
-                                          if (game.MaxLaps > 0) {
-                                                 newContent.push(
-                                                        '<div class="lapsLeft">',
-                                                        game.LapsCompleted || 0,
-                                                        "/",
-                                                        game.MaxLaps,
-                                                        "</div>"
-                                                 );
-                                          }
-                                          newContent.push("</div>");
-                                   }
+                                   //        if (game.CurrentET > 0 && game.EndET > 0) {
+                                   //               game.TimeRemaining = Math.max(0, game.EndET - game.CurrentET);
+                                   //               var tr = new TimeSpan()
+                                   //                      .fromSec(game.TimeRemaining)
+                                   //                      .setFormat(timeFormat);
+                                   //               newContent.push('<div class="timeLeft">', tr.getString(), "</div>");
+                                   //               game.hasTr = true;
+                                   //        }
+                                   //        if (game.MaxLaps > 0) {
+                                   //               newContent.push(
+                                   //                      '<div class="lapsLeft">',
+                                   //                      game.LapsCompleted || 0,
+                                   //                      "/",
+                                   //                      game.MaxLaps,
+                                   //                      "</div>"
+                                   //               );
+                                   //        }
+                                   //        newContent.push("</div>");
+                                   // }
                                    newContent.push("</div></div></div></div>");
                             }
 
