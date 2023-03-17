@@ -27,7 +27,7 @@ export default function Index() {
                             style={{
                                    backgroundImage: "url('/img/backgrounds/bg-02.jpg')",
                             }}
-                            className="relative pt-36 items-center flex flex-col xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
+                            className="relative pt-34 items-center flex flex-col xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
                             {/* <div
                                    className={
