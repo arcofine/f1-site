@@ -344,6 +344,7 @@
         margin-right: 50px;
         font-size: 8pt;
         padding: 2px 0px 0px 3px;
+        text-align: center;
         height: 72px;
         overflow: hidden; }
         #lr-servers .gameInfo .g-info-wrapper .g-info div {
@@ -414,11 +415,11 @@
           right: 5px; }
         #lr-servers .gameInfo .g-side-wrapper .g-side .bestLap {
           font-size: 8pt;
-          margin: 0px 3px 0px 0px;
+          margin: -3px 3px 0px 0px;
           float: right; }
         #lr-servers .gameInfo .g-side-wrapper .g-side .weather {
           font-size: 8pt;
-          margin: 1px 3px 0px 0px;
+          margin: 3px 3px 0px 0px;
           float: right; }
   #lr-servers.horizontal {
     width: auto; }

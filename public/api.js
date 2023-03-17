@@ -720,9 +720,7 @@
 
                                    newContent.push(
                                           "</div>",
-                                          '<div class="body" title=',
-                                          game.Link,
-                                          ">",
+                                          '<div class="body" title="">',
                                           '<div class="g-info-wrapper">',
                                           '<div class="g-info">',
                                           '<div class="g-app ' + game.SessionType + '">',
