@@ -90,6 +90,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                         {dataType.map((item, i) => {
                                                                return (
                                                                       <tr
+                                                                             key={i + "_item"}
                                                                              className={
                                                                                     color === "light"
                                                                                            ? i % 2
@@ -116,7 +117,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                     </p>
                                                                              </th>
                                                                              <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
-                                                                                    <b lassName="mb-0">
+                                                                                    <b className="mb-0">
                                                                                            {drivers
                                                                                                   ? item.name
                                                                                                   : item.team_name}{" "}
@@ -130,7 +131,9 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              </td>
                                                                              {item.points.map((point, i) => {
                                                                                     return (
-                                                                                           <td className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
+                                                                                           <td
+                                                                                                  key={i + "_point"}
+                                                                                                  className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
                                                                                                   {drivers && (
                                                                                                          <span

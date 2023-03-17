@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
+import Script from "next/script";
 
 import PageChange from "components/PageChange/PageChange.js";
 

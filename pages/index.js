@@ -8,15 +8,10 @@ import Footer from "components/Footers/Footer.js";
 
 export default function Index() {
        const videoRef = useRef();
-
-       useEffect(() => {
-              setTimeout(() => {
-                     videoRef.current.play();
-              }, 5000);
-       }, []);
+       const unique_id = new Date().getTime();
        return (
               <>
-                     <Script src="/liveracers.js" />
+                     <Script src={`/liveracers.js?v=${unique_id}`} />
                      <IndexNavbar fixed />
                      {/* <section>
                             <div className="w-full lg:w-4/12 px-4 ">
@@ -27,7 +22,7 @@ export default function Index() {
                             style={{
                                    backgroundImage: "url('/img/backgrounds/bg-02.jpg')",
                             }}
-                            className="relative pt-34 items-center flex flex-col xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
+                            className="relative pt-36 items-center flex flex-col xs:h-600-px h-800-px  bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
                             {/* <div
                                    className={
