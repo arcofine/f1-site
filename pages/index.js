@@ -2,21 +2,13 @@
 import React, {useEffect, useRef} from "react";
 import Link from "next/link";
 import Script from "next/script";
-import YouTube from "react-youtube";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Index() {
-       const videoRef = useRef();
        const unique_id = new Date().getTime();
-       const opts = {
-              height: "500",
-              width: "100%",
-              playerVars: {
-                     autoplay: 1,
-              },
-       };
+
        return (
               <>
                      <Script src={`/liveracers.js?v=${unique_id}`} />
@@ -49,7 +41,14 @@ export default function Index() {
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a>
 
-                                          <YouTube videoId="CpxSGGozb6A" opts={opts} />
+                                          <iframe
+                                                 width="100%"
+                                                 height="500"
+                                                 src="https://www.youtube.com/embed/CpxSGGozb6A?loop=1&autoplay=1&playlist=CpxSGGozb6A"
+                                                 // title="YouTube video player"
+                                                 frameborder="0"
+                                                 allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                 allowfullscreen></iframe>
 
                                           {/* <a
                                                  href="https://www.simracinghub.com"
