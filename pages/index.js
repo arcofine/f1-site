@@ -2,6 +2,7 @@
 import React, {useEffect, useRef} from "react";
 import Link from "next/link";
 import Script from "next/script";
+import YouTube from "react-youtube";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
@@ -9,6 +10,13 @@ import Footer from "components/Footers/Footer.js";
 export default function Index() {
        const videoRef = useRef();
        const unique_id = new Date().getTime();
+       const opts = {
+              height: "500",
+              width: "100%",
+              playerVars: {
+                     autoplay: 1,
+              },
+       };
        return (
               <>
                      <Script src={`/liveracers.js?v=${unique_id}`} />
@@ -40,17 +48,9 @@ export default function Index() {
                                                   py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a>
-                                          <video
-                                                 className="z-2"
-                                                 ref={videoRef}
-                                                 autoPlay
-                                                 controls={true}
-                                                 width="100%"
-                                                 loop
-                                                 playsInline
-                                                 muted>
-                                                 <source src="/video/f1sim.mp4" type="video/mp4" />
-                                          </video>
+
+                                          <YouTube videoId="CpxSGGozb6A" opts={opts} />
+
                                           {/* <a
                                                  href="https://www.simracinghub.com"
                                                  title=""
