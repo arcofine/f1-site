@@ -20,7 +20,7 @@ export default function Footer() {
                                                  points="2560 0 2560 100 0 100"></polygon>
                                    </svg>
                             </div>
-                            <div className="container mx-auto px-4">
+                            <div className="container mx-auto px-4" style={{padding: "50px"}}>
                                    <div className="flex flex-wrap items-center justify-center">
                                           <div className="flex flex-col mx-auto items-center justify-center">
                                                  <h2 className="text-md text-blueGray-500 font-semibold mb-2">
