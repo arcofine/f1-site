@@ -44,7 +44,7 @@ export default function Index() {
                                           <iframe
                                                  width="100%"
                                                  height="500"
-                                                 src="https://www.youtube.com/embed/CpxSGGozb6A?loop=1&autoplay=1&playlist=CpxSGGozb6A"
+                                                 src="https://www.youtube.com/embed/obnuOHQoo78?loop=1&autoplay=1&playlist=obnuOHQoo78"
                                                  // title="YouTube video player"
                                                  frameborder="0"
                                                  allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
