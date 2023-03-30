@@ -21,17 +21,18 @@ export default function Navbar(props) {
                                                  />
                                           </Link>
                                           <button
-                                                 className="cursor-pointer text-xl leading-none px-3 py-1 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-800 focus:outline-none"
+                                                 className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
                                                  type="button"
                                                  //  onClick={() => setNavbarOpen(!navbarOpen)}
                                           >
-                                                 <Link
+                                                 {/* <Link
                                                         href="/admin/dashboard"
                                                         className={
                                                                "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
                                                         }>
                                                         Tableau de Bord
-                                                 </Link>
+                                                 </Link> */}
+                                                 <IndexDropdown />
                                                  {/* <i className="fas fa-bars"></i> */}
                                           </button>
                                    </div>
@@ -58,7 +59,13 @@ export default function Navbar(props) {
                                                  </li>
                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
                                                         <p className="text-blueGray-400 text-sm ">
-                                                               <a href="#">RÈGLEMENTS</a>
+                                                               <Link
+                                                                      href="/admin/rules"
+                                                                      className={
+                                                                             "hover:text-blueGray-500 text-sm  block w-full whitespace-nowrap bg-transparent"
+                                                                      }>
+                                                                      RÈGLEMENTS
+                                                               </Link>
                                                         </p>
                                                  </li>
                                           </ul>

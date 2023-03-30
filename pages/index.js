@@ -2,12 +2,26 @@
 import React, {useEffect, useRef} from "react";
 import Link from "next/link";
 import Script from "next/script";
+import YouTube from "react-youtube";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Index() {
+       const _onReady = (e) => {
+              // access to player in all event handlers via event.target
+              e.target.playVideo();
+       };
        const unique_id = new Date().getTime();
+       const opts = {
+              height: "500",
+              width: "100%",
+              playerVars: {
+                     autoplay: 1,
+                     loop: 1,
+                     mute: 1,
+              },
+       };
 
        return (
               <>
@@ -40,15 +54,12 @@ export default function Index() {
                                                   py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a>
-
-                                          <iframe
-                                                 width="100%"
-                                                 height="500"
-                                                 src="https://www.youtube.com/embed/obnuOHQoo78?loop=1&autoplay=1&playlist=obnuOHQoo78"
-                                                 // title="YouTube video player"
-                                                 frameborder="0"
-                                                 allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                 allowfullscreen></iframe>
+                                          <YouTube
+                                                 videoId="obnuOHQoo78"
+                                                 opts={opts}
+                                                 onReady={_onReady}
+                                                 onEnd={_onReady}
+                                          />
 
                                           {/* <a
                                                  href="https://www.simracinghub.com"

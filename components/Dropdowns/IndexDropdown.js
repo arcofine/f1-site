@@ -61,9 +61,17 @@ const IndexDropdown = () => {
                                    target="_blank"
                                    className={
                                           "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  "
-                                   }>
+                                   }
+                                   rel="noreferrer">
                                    Live Timing (Alpha)
                             </a>
+                            <Link
+                                   href="/admin/rules"
+                                   className={
+                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                   }>
+                                   Règlements
+                            </Link>
                      </div>
               </>
        );

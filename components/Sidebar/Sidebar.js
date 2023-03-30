@@ -58,9 +58,28 @@ export default function Sidebar() {
                                           <a
                                                  href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                                  target="_blank"
-                                                 className={"text-xs uppercase py-3 font-bold block "}>
+                                                 className={"text-xs uppercase py-1 font-bold block "}
+                                                 rel="noreferrer">
                                                  <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing (Alpha)
                                           </a>
+
+                                          <Link
+                                                 href="/admin/rules"
+                                                 className={
+                                                        "text-xs uppercase py-1 font-bold block " +
+                                                        (router.pathname.indexOf("/admin/rules") !== -1
+                                                               ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                               : "text-blueGray-700 hover:text-blueGray-500")
+                                                 }>
+                                                 <i
+                                                        className={
+                                                               "fas fa-book mr-2 text-sm " +
+                                                               (router.pathname.indexOf("/admin/rules") !== -1
+                                                                      ? "opacity-75"
+                                                                      : "text-blueGray-300")
+                                                        }></i>{" "}
+                                                 Règlements
+                                          </Link>
                                    </div>
                                    {/* Collapse */}
                                    <div
@@ -129,6 +148,27 @@ export default function Sidebar() {
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
                                                         </a>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/rules"
+                                                               className={
+                                                                      "text-xs uppercase py-3 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/rules") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-book mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/rules"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Règlements
+                                                        </Link>
                                                  </li>
                                           </ul>
                                    </div>
