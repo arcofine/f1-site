@@ -20,6 +20,8 @@ export default function Index() {
                      autoplay: 1,
                      loop: 1,
                      mute: 1,
+                     controls: 0,
+                     modestbranding: 1,
               },
        };
 

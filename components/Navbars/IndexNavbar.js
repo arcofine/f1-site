@@ -43,7 +43,7 @@ export default function Navbar(props) {
                                           }
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
-                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
+                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold  w-full whitespace-nowrap bg-transparent">
                                                         <p className="text-blueGray-400 text-sm ">
                                                                <a
                                                                       href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
@@ -147,7 +147,7 @@ export default function Navbar(props) {
                                    </div>
                             </div>
                      </nav>
-                     <nav className="top-68-px xs:top-56-px fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
+                     <nav className="lg:top-68-px xs:top-56-px sm:top-56-px md:top-56-px  fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
                             <div
                                    id="lr-servers"
                                    orientation="horizontal"
