@@ -10,6 +10,14 @@ const IndexDropdown = () => {
        const openDropdownPopover = () => {
               createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
                      placement: "bottom-start",
+                     modifiers: [
+                            {
+                                   name: "offset",
+                                   options: {
+                                          offset: [-32, -10],
+                                   },
+                            },
+                     ],
               });
               setDropdownPopoverShow(true);
        };
@@ -19,7 +27,7 @@ const IndexDropdown = () => {
        return (
               <>
                      <a
-                            className="hover:text-blueGray-500 text-blueGray-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            className="hover:text-blueGray-500 text-blueGray-300 px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
                             href="#pablo"
                             ref={btnDropdownRef}
                             onClick={(e) => {
