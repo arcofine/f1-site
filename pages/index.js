@@ -62,7 +62,7 @@ export default function Index() {
                                                  onReady={_onReady}
                                                  onEnd={_onReady}
                                           />
-
+                                          <div className=" mx-auto w-full items-center absolute flex h-500-px top-0 flex-wrap z-2"></div>
                                           {/* <a
                                                  href="https://www.simracinghub.com"
                                                  title=""
