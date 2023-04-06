@@ -2461,11 +2461,11 @@ Auto-generated description"
                                                         color: "black",
                                                  }}>
                                                  12.8 - The actual weather forecast for the day of an event will be
-                                                 applied to the server's training, qualifying and race
-                                                 sessions.&nbsp;The probability of rain will be based on the probability
-                                                 of actual location.&nbsp;For example, if the probability of rain for
-                                                 Bahrain is 30% at the time of the race, 30% will be used as the
-                                                 probability of rain for the race session.
+                                                 applied to the server's practice, qualifying and race sessions. Rain
+                                                 will be set to start and stop in one of the race shifts based on the
+                                                 actual Grand Prix. For example, if it rains on lap 28 and stops on lap
+                                                 36 of a 58-lap race. The rain will start at 50% and end 75% of the
+                                                 race.
                                           </span>
                                    </p>
 
@@ -2795,11 +2795,12 @@ Auto-generated description"
                                                         fontFamily: "'Arial',sans-serif",
                                                         color: "black",
                                                  }}>
-                                                 14.8 - Drivers are strictly prohibited from using the Escape button
-                                                 (ESC) outside the pit area at limited speed for the duration of
-                                                 Qualifying (Q).&nbsp;Drivers who are required to press the ESC button
-                                                 outside the limited speed pit area are not allowed to return to the
-                                                 track for the remainder of qualifying session (Q).
+                                                 14.8 - Drivers are strictly forbidden to use the Escape key (ESC)
+                                                 outside the limited speed pit area during the entire Qualifying (Q).
+                                                 Drivers who are forced to press the ESC button outside the limited
+                                                 speed pit area are not allowed to return to the track for the remainder
+                                                 of the qualifying session (Q). At the end of the race event, you may
+                                                 not press ESC until you have reached your pit
                                           </span>
                                    </p>
 
@@ -2956,6 +2957,46 @@ Auto-generated description"
                                                  and eliminate someone else unnecessarily.
                                           </span>
                                    </p>
+                                   <p class="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                                          <span
+                                                 lang="EN"
+                                                 style={{
+                                                        fontSize: "13.5pt",
+                                                        fontFamily: "'Arial',sans-serif",
+                                                        color: "black",
+                                                 }}>
+                                                 14.13 - It is strictly forbidden to overtake under yellow flag
+                                                 involving safety car, it is the same during the catch-up lap. It is
+                                                 allowed to bring back pilots violating this rule. The offending driver
+                                                 could be subject to disqualification.
+                                          </span>
+                                   </p>
+                                   <p class="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                                          <span
+                                                 lang="EN"
+                                                 style={{
+                                                        fontSize: "13.5pt",
+                                                        fontFamily: "'Arial',sans-serif",
+                                                        color: "black",
+                                                 }}>
+                                                 14.14 - It is mandatory to drive at a good speed to reach the safety
+                                                 car before it completes its first lap. It is also important to respect
+                                                 a safe distance between drivers to avoid incidents until you catch up
+                                                 with the safety car. If this article is not respected, you could be
+                                                 subject to a penalty established by the steward.
+                                          </span>
+                                   </p>
+                                   <p class="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                                          <span
+                                                 lang="EN"
+                                                 style={{
+                                                        fontSize: "13.5pt",
+                                                        fontFamily: "'Arial',sans-serif",
+                                                        color: "black",
+                                                 }}>
+                                                 14.15 - It is forbidden to slow down the safety car.
+                                          </span>
+                                   </p>
 
                                    <p
                                           class="MsoNormal"
@@ -3013,6 +3054,20 @@ Auto-generated description"
                                                  15.3 - It is strictly forbidden for Drivers to skip the queue (via the
                                                  "inner lane" described in Article 15.1) that forms during Qualifying
                                                  Practice while the pit exit is closed.
+                                          </span>
+                                   </p>
+                                   <p class="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                                          <span
+                                                 lang="EN"
+                                                 style={{
+                                                        fontSize: "13.5pt",
+                                                        fontFamily: "'Arial',sans-serif",
+                                                        color: "black",
+                                                 }}>
+                                                 15.4 - The pit lane will be closed during the overtaking lap under a
+                                                 yellow flag involving a safety car. Drivers who cross the pit lane
+                                                 during this period will be penalized by their position at the end of
+                                                 the longest line (EOL).
                                           </span>
                                    </p>
 
@@ -3551,7 +3606,7 @@ Auto-generated description"
                                                         fontFamily: "'Arial',sans-serif",
                                                         color: "black",
                                                  }}>
-                                                 21.1 - Before the start of the race, there will be a stopwatch of 1m30
+                                                 21.1 - Before the start of the race, there will be a stopwatch of 2m00
                                                  to allow drivers to make the necessary adjustments to their cars and
                                                  place themselves on the starting grid.&nbsp;The drivers who remain on
                                                  the server at the end of this period, will start the race from the pit
@@ -3567,7 +3622,7 @@ Auto-generated description"
                                                         fontFamily: "'Arial',sans-serif",
                                                         color: "black",
                                                  }}>
-                                                 21.2 - Once the 1m30 clock has elapsed, the game will signal the start
+                                                 21.2 - Once the 2m00 clock has elapsed, the game will signal the start
                                                  of the training lap with the driver in pole position in the lead.
                                           </span>
                                    </p>

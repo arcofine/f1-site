@@ -1822,10 +1822,10 @@ export default function RuleFrench() {
                                    style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
                                    12.8 -&nbsp;Les prévisions météorologiques réelles pour le jour d'un événement seront
                                    appliquées aux sessions d'entraînement, de qualification et de course du
-                                   serveur.&nbsp;La probabilité de pluie sera basée sur la probabilité de localisation
-                                   réelle.&nbsp;Par exemple, si la probabilité de pluie pour Bahrain est de 30&nbsp;% au
-                                   moment de la course, 30&nbsp;% seront utilisés comme probabilité de pluie pour la
-                                   session de course.
+                                   serveur.&nbsp;La pluie sera établie pour se déclencher et cessé dans l’un des quarts
+                                   de la course basée sur LE Grand Prix réel.&nbsp;Par exemple, s’il pleut au tours 28
+                                   et cesse au tour 36 d’une course de 58 tours. La pluie débutera à 50% et se terminera
+                                   75% de la course.
                             </span>
                      </p>
 
@@ -2063,11 +2063,13 @@ export default function RuleFrench() {
                             <span
                                    lang="FR-CA"
                                    style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
-                                   14.8 - Il est strictement interdit aux pilotes d'utiliser la touche Escape (ESC) en
+                                   14.8 - Il est strictement interdit aux pilotes d'utiliser la touche Échappé (ESC) en
                                    dehors de la zone des stands à vitesse limitée pendant toute la durée des
                                    Qualifications (Q).&nbsp;Les pilotes qui sont obligés d'appuyer sur la touche ESC en
                                    dehors de la zone des stands à vitesse limitée ne sont pas autorisés à reprendre la
-                                   piste pour le reste de la séance de qualification (Q).
+                                   piste pour le reste de la séance de qualification (Q). À la fin de l`épreuve de
+                                   course, vous ne pouvez en aucun cas appuyer sur Échappé (ESC) tant que vous n`avez
+                                   pas rejoins votre pit.
                             </span>
                      </p>
 
@@ -2173,7 +2175,35 @@ export default function RuleFrench() {
                                    d'autre inutilement.
                             </span>
                      </p>
+                     <p className="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                            <span
+                                   lang="FR-CA"
+                                   style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
+                                   14.13 - Il est strictement interdit de dépassement sous drapeau jaune impliquant avec
+                                   voiture de sécurité, il en va de même lors du tour de rattrapage. Il est permis de
+                                   rapporter des pilotes contrevenant à cette règle. Le pilote fautif pourrait être
+                                   passible d'une disqualification.
+                            </span>
+                     </p>
 
+                     <p className="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                            <span
+                                   lang="FR-CA"
+                                   style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
+                                   14.14 - Il est obligatoire de rouler à une bonne vitesse pour rejoindre la voiture de
+                                   sécurité avant qu'elle ne complète son premier tour. Il est aussi important de
+                                   respecter une distance sécuritaire entre les pilotes pour éviter des incidents
+                                   jusqu'à vous rattrapiez la voiture de sécurité. Si cet article n`est pas respecté,
+                                   vous pourriez être passible d`une sanction établie par le commissaire.
+                            </span>
+                     </p>
+                     <p className="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                            <span
+                                   lang="FR-CA"
+                                   style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
+                                   14.15 - Il est interdit de ralentir la voiture de sécurité
+                            </span>
+                     </p>
                      <p className="MsoNormal" style={{marginTop: "14.0px", marginBottom: "0in", lineHeight: "normal"}}>
                             <span
                                    lang="FR-CA"
@@ -2211,6 +2241,16 @@ export default function RuleFrench() {
                                    15.3 - Il est strictement interdit aux Pilotes de sauter la file d'attente (via la
                                    "voie intérieure" décrite à l'article 15.1) qui se forme lors des Essais
                                    Qualificatifs alors que la sortie des stands est fermée.
+                            </span>
+                     </p>
+                     <p className="MsoNormal" style={{marginLeft: "30.0pt", lineHeight: "normal"}}>
+                            <span
+                                   lang="FR-CA"
+                                   style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
+                                   15.4 - La voie des stands est fermée lors du tour de rattrapage sous un drapeau jaune
+                                   impliquant une voiture de sécurité. Les pilotes qui franchiront la voie des stands
+                                   lors de cette période écoperont d`une pénalité de se position à la fin de la file la
+                                   plus longue (EOL).
                             </span>
                      </p>
 
@@ -2529,10 +2569,10 @@ export default function RuleFrench() {
                             <span
                                    lang="FR-CA"
                                    style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
-                                   21.1 - Avant le départ de la course, il y aura un chronomètre de&nbsp;1m30 afin de
+                                   21.1 - Avant le départ de la course, il y aura un chronomètre de&nbsp;2m00 afin de
                                    permettre aux pilotes de faire les ajustements nécessaires sur leurs voitures et de
                                    se placer sur la grille de départ.&nbsp;Les pilotes qui restent sur le serveur à la
-                                   fin de ce délais, prendront le départ de la course depuis la voie des stands.
+                                   fin de ce délai, prendront le départ de la course depuis la voie des stands.
                             </span>
                      </p>
 
@@ -2540,7 +2580,7 @@ export default function RuleFrench() {
                             <span
                                    lang="FR-CA"
                                    style={{fontSize: "13.5pt", fontFamily: "'Arial',sans-serif", color: "black"}}>
-                                   21.2 - Une fois le chronomètre de&nbsp;1m30&nbsp;écoulé, le jeu signalera le début du
+                                   21.2 - Une fois le chronomètre de&nbsp;2m00&nbsp;écoulé, le jeu signalera le début du
                                    tour de formation avec le pilote en pole position en tête.
                             </span>
                      </p>
