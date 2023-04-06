@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Script from "next/script";
 
 // components
 
@@ -9,6 +10,8 @@ export default function Navbar(props) {
        const [navbarOpen, setNavbarOpen] = React.useState(false);
        return (
               <>
+                     <Script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></Script>
+                     <Script src="/donate.js"></Script>
                      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black shadow">
                             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -20,6 +23,7 @@ export default function Navbar(props) {
                                                         width="90"
                                                  />
                                           </Link>
+
                                           <button
                                                  className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
                                                  type="button"
@@ -148,12 +152,32 @@ export default function Navbar(props) {
                             </div>
                      </nav>
                      <nav className="lg:top-68-px xs:top-56-px sm:top-56-px md:top-56-px  fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
+                            <div className={" top-0 -mt-4 py-2 mx-4 "}>
+                                   <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                          <input type="hidden" name="hosted_button_id" value="B2DJ9MA4VQMPJ" />
+                                          <input
+                                                 type="image"
+                                                 src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                                 border="0"
+                                                 name="submit"
+                                                 title="PayPal - The safer, easier way to pay online!"
+                                                 alt="Donate with PayPal button"
+                                          />
+                                          <img
+                                                 alt=""
+                                                 border="0"
+                                                 src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
+                                                 width="1"
+                                                 height="1"
+                                          />
+                                   </form>
+                            </div>
                             <div
                                    id="lr-servers"
                                    orientation="horizontal"
                                    theme="dark"
                                    className={
-                                          "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded "
+                                          "relative flex flex-col min-w-0 break-words w-10/12 mb-6 shadow-lg rounded "
                                    }></div>
                      </nav>
               </>
