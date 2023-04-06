@@ -2443,6 +2443,9 @@ select {
 .-mt-12 {
   margin-top: -2rem;
 }
+.-mt-13 {
+  margin-top: -2.5rem;
+}
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -3005,6 +3008,10 @@ select {
 .left-0 {
   left: 0px;
 }
+
+.left-38 {
+  left: 38%;
+} 
 .left-1 {
   left:5px;
 }
@@ -3888,6 +3895,9 @@ select {
   .xs\:top-56-px {
   top: 56px;
 }
+.xs\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3929,6 +3939,9 @@ select {
   }
   .sm\:top-68-px{
     top:68px;
+  }
+  .sm\:hidden {
+    display: none;
   }
 }
 

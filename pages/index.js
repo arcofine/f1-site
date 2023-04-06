@@ -49,6 +49,33 @@ export default function Index() {
                             <div className=" container w-11/12 mx-auto items-center flex flex-wrap z-2">
                                    <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
                                    <div className="w-full relative px-0">
+                                          <div className={"absolute mx-auto top-0 -mt-13 left-38 lg:hidden md:hidden "}>
+                                                 <form
+                                                        action="https://www.paypal.com/donate"
+                                                        method="post"
+                                                        target="_top">
+                                                        <input
+                                                               type="hidden"
+                                                               name="hosted_button_id"
+                                                               value="B2DJ9MA4VQMPJ"
+                                                        />
+                                                        <input
+                                                               type="image"
+                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                                               border="0"
+                                                               name="submit"
+                                                               title="PayPal - The safer, easier way to pay online!"
+                                                               alt="Donate with PayPal button"
+                                                        />
+                                                        <img
+                                                               alt=""
+                                                               border="0"
+                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
+                                                               width="1"
+                                                               height="1"
+                                                        />
+                                                 </form>
+                                          </div>
                                           <a
                                                  href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
                                                  target="_blank"
