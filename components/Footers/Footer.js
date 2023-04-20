@@ -26,12 +26,25 @@ export default function Footer() {
                                                  <h2 className="text-md text-blueGray-500 font-semibold mb-2">
                                                         Partenaires
                                                  </h2>
-
+                                                 <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
+                                                        <a
+                                                               href="https://xelaconseil.ca/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-full xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/xelalogo.png" />
+                                                        </a>
+                                                 </div>
                                                  <div className="flex flex-wrap mx-auto items-center justify-center">
+                                                        <a
+                                                               href="https://www.solotech.com/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/solotech.png" />
+                                                        </a>
                                                         <a
                                                                href="https://www.simracinghub.com"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/5 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
                                                                <img
                                                                       alt=""
                                                                       src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
