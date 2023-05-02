@@ -24,14 +24,26 @@ export default function Footer() {
                                    <div className="flex flex-wrap items-center justify-center">
                                           <div className="flex flex-col mx-auto items-center justify-center">
                                                  <h2 className="text-md text-blueGray-500 font-semibold mb-2">
-                                                        Partenaires
+                                                        Merci à tous nos commanditaires
                                                  </h2>
                                                  <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
                                                         <a
                                                                href="https://xelaconseil.ca/"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-full xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
                                                                <img alt="" src="/img/xelalogo.png" />
+                                                        </a>
+                                                        <a
+                                                               href="https://xelaconseil.ca/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/logo_jimexs.png" />
+                                                        </a>
+                                                        <a
+                                                               href="https://xelaconseil.ca/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-14 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/logo_maxi_bw.png" />
                                                         </a>
                                                  </div>
                                                  <div className="flex flex-wrap mx-auto items-center justify-center">

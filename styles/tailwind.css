@@ -2796,7 +2796,10 @@ select {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-
+.px-14 {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -3895,11 +3898,19 @@ select {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+   .xs\:px-3{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
      .xs\:h-600-px {
     height: 73vh;
   }
   .xs\:py-0 {
     padding: 0;
+  }
+  .xs\:py-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .xs\:top-60-px{
     top:60px;
