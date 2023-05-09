@@ -24,22 +24,30 @@ export default function Navbar(props) {
                                                         width="90"
                                                  />
                                           </Link>
-
-                                          <button
-                                                 className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
-                                                 type="button"
-                                                 //  onClick={() => setNavbarOpen(!navbarOpen)}
-                                          >
-                                                 {/* <Link
+                                          <div className="flex ">
+                                                 <button
+                                                        className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-red-400 focus:outline-none"
+                                                        type="button"
+                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
+                                                 >
+                                                        <SubscribeDropdown />
+                                                 </button>
+                                                 <button
+                                                        className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
+                                                        type="button"
+                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
+                                                 >
+                                                        {/* <Link
                                                         href="/admin/dashboard"
                                                         className={
                                                                "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
                                                         }>
                                                         Tableau de Bord
                                                  </Link> */}
-                                                 <IndexDropdown />
-                                                 {/* <i className="fas fa-bars"></i> */}
-                                          </button>
+                                                        <IndexDropdown />
+                                                        {/* <i className="fas fa-bars"></i> */}
+                                                 </button>
+                                          </div>
                                    </div>
                                    <div
                                           className={
@@ -48,16 +56,6 @@ export default function Navbar(props) {
                                           }
                                           id="example-navbar-warning">
                                           <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
-                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold  w-full whitespace-nowrap bg-transparent">
-                                                        <SubscribeDropdown />
-                                                        {/* <p className="text-blueGray-400 text-sm ">
-                                                               <a
-                                                                      href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
-                                                                      target="_blank">
-                                                                      INSCRIPTION
-                                                               </a>
-                                                        </p> */}
-                                                 </li>
                                                  <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
                                                         <p className="text-blueGray-400 text-sm ">
                                                                <a href="#">CALENDRIER</a>

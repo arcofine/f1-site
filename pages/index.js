@@ -67,13 +67,13 @@ export default function Index() {
                                                         />
                                                  </form>
                                           </div>
-                                          <a
+                                          {/* <a
                                                  href="https://docs.google.com/forms/d/e/1FAIpQLScI0ZmnPd8oMjOKmcLS4_aB_PdhfywaxBL4APgXhPQvAS_F0g/viewform?fbclid=IwAR14mMCbXUsS913ePFINQ4AQvltepyqW3c-MRkrJBIANSRag2bnx8LMZdrw"
                                                  target="_blank"
                                                  className="z-3 get-started text-center absolute w-full text-white font-bold px-2
                                                   py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
-                                          </a>
+                                          </a> */}
                                           <YouTube
                                                  videoId="obnuOHQoo78"
                                                  opts={opts}
