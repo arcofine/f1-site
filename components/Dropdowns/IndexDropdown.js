@@ -68,7 +68,7 @@ const IndexDropdown = () => {
                                    href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                    target="_blank"
                                    className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  "
+                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
                                    }
                                    rel="noreferrer">
                                    Live Timing (Alpha)
