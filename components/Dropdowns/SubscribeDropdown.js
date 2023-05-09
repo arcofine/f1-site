@@ -27,7 +27,7 @@ const SubscribeDropdown = () => {
        return (
               <>
                      <a
-                            className="hover:text-blueGray-500 text-blueGray-300 px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            className="hover:text-blueGray-500  px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
                             href="#pablo"
                             ref={btnDropdownRef}
                             onClick={(e) => {
@@ -56,7 +56,7 @@ const SubscribeDropdown = () => {
                             <p className="text-blueGray-800 text-sm ">
                                    <a
                                           className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
+                                                 "hover:text-orange-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
                                           target="_blank"

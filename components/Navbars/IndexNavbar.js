@@ -26,7 +26,7 @@ export default function Navbar(props) {
                                           </Link>
                                           <div className="flex ">
                                                  <button
-                                                        className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-red-400 focus:outline-none"
+                                                        className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-red-400 text-blueGray-100 focus:outline-none"
                                                         type="button"
                                                         //  onClick={() => setNavbarOpen(!navbarOpen)}
                                                  >
@@ -74,6 +74,9 @@ export default function Navbar(props) {
                                                  </li>
                                           </ul>
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+                                                 <li className="flex items-center text-red-500">
+                                                        <SubscribeDropdown />
+                                                 </li>
                                                  <li className="flex items-center">
                                                         <IndexDropdown />
                                                  </li>
