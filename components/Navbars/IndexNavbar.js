@@ -16,7 +16,15 @@ export default function Navbar(props) {
                      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black shadow">
                             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                                          <Link href="/" className=" inline-block mr-4">
+                                          <Link href="/" className=" inline-block mr-4 lg:hidden sm:hidden">
+                                                 <img
+                                                        className="absolute top-0"
+                                                        src="/img/logoNoir.png"
+                                                        alt="..."
+                                                        width="50"
+                                                 />
+                                          </Link>
+                                          <Link href="/" className="xs:hidden  inline-block mr-4">
                                                  <img
                                                         className="absolute top-0"
                                                         src="/img/logoNoir.png"
@@ -155,7 +163,7 @@ export default function Navbar(props) {
                             </div>
                      </nav>
                      <nav className="lg:top-68-px xs:top-56-px sm:top-56-px md:top-56-px  fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
-                            <div className={" top-0 -mt-4 py-2 mx-4 xs:hidden  "}>
+                            <div className={" top-0 -mt-4 py-2 mx-4 xs:hidden sm:hidden "}>
                                    <form action="https://www.paypal.com/donate" method="post" target="_top">
                                           <input type="hidden" name="hosted_button_id" value="B2DJ9MA4VQMPJ" />
                                           <input

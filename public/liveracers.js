@@ -1,6 +1,6 @@
 window._lr = {
        url: "",
-       domains: ["f1sim"], //or multiple domains: ['domain1', 'domain2']
+       domains: ["f1sim", "f1simcanada-gt3"], //or multiple domains: ['domain1', 'domain2']
 };
 (function () {
        var lr = document.createElement("script");
