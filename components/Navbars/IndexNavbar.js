@@ -163,7 +163,7 @@ export default function Navbar(props) {
                             </div>
                      </nav>
                      <nav className="lg:top-68-px xs:top-56-px sm:top-56-px md:top-56-px  fixed z-40 w-full flex flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
-                            <div className={" top-0 -mt-4 py-2 mx-4 xs:hidden sm:hidden "}>
+                            <div className={" top-0 -mt-4 py-2 mx-4 xs:hidden "}>
                                    <form action="https://www.paypal.com/donate" method="post" target="_top">
                                           <input type="hidden" name="hosted_button_id" value="B2DJ9MA4VQMPJ" />
                                           <input

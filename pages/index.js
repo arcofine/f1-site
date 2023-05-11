@@ -40,7 +40,10 @@ export default function Index() {
                             <div className=" container w-11/12 mx-auto items-center flex flex-wrap z-2">
                                    <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
                                    <div className="w-full relative px-0">
-                                          <div className={"absolute mx-auto top-0 -mt-13 left-38 lg:hidden md:hidden "}>
+                                          <div
+                                                 className={
+                                                        "absolute mx-auto top-0 -mt-13 left-38 lg:hidden md:hidden sm:hidden "
+                                                 }>
                                                  <form
                                                         action="https://www.paypal.com/donate"
                                                         method="post"
