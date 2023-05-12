@@ -10,6 +10,17 @@ const IndexDropdown = () => {
        const openDropdownPopover = () => {
               createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
                      placement: "bottom-start",
+<<<<<<< Updated upstream
+=======
+                     modifiers: [
+                            {
+                                   name: "offset",
+                                   options: {
+                                          offset: [-228, -10],
+                                   },
+                            },
+                     ],
+>>>>>>> Stashed changes
               });
               setDropdownPopoverShow(true);
        };
@@ -32,8 +43,9 @@ const IndexDropdown = () => {
                             ref={popoverDropdownRef}
                             className={
                                    (dropdownPopoverShow ? "block " : "hidden ") +
-                                   "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                                   "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left flex flex-row rounded shadow-lg min-w-48"
                             }>
+<<<<<<< Updated upstream
                             <span
                                    className={
                                           "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
@@ -64,6 +76,88 @@ const IndexDropdown = () => {
                                    }>
                                    Derniers résultats
                             </Link>
+=======
+                            <div className="index-dropdown-separator">
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                          F1 - Saison 2023
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <Link
+                                          href="/admin/tables"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                          }>
+                                          Classements
+                                   </Link>
+
+                                   <Link
+                                          href="/admin/dashboard"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Derniers résultats
+                                   </Link>
+                                   <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Live Timing (Alpha)
+                                   </a>
+                                   <Link
+                                          href="/admin/rules"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Règlements
+                                   </Link>
+                            </div>
+                            <div>
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                          GT3 - Saison 2023
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <Link
+                                          href="/admin/tablesGt"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                          }>
+                                          Classements
+                                   </Link>
+
+                                   <Link
+                                          href="/admin/dashboard"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Derniers résultats
+                                   </Link>
+                                   <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Live Timing (Alpha)
+                                   </a>
+                                   <Link
+                                          href="/admin/rules"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Règlements
+                                   </Link>
+                            </div>
+>>>>>>> Stashed changes
                      </div>
               </>
        );

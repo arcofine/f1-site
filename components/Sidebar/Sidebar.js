@@ -43,14 +43,16 @@ export default function Sidebar() {
                                                  Tableau de bord
                                           </h6>
                                           {/* Navigation */}
-
-                                          <ul className="md:flex-col md:min-w-full flex flex-col list-none">
+                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-red-500 no-underline">
+                                                 F1
+                                          </h5>
+                                          <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
                                                  <li className="items-center">
                                                         <Link
-                                                               href="/admin/tables"
+                                                               href="/admin/tablesF1"
                                                                className={
-                                                                      "text-xs uppercase py-3 font-bold block " +
-                                                                      (router.pathname.indexOf("/admin/table") !== -1
+                                                                      "text-xs uppercase pt-2 pb-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/tablesF1") !== -1
                                                                              ? "text-lightBlue-500 hover:text-lightBlue-600"
                                                                              : "text-blueGray-700 hover:text-blueGray-500")
                                                                }>
@@ -58,7 +60,7 @@ export default function Sidebar() {
                                                                       className={
                                                                              "fas fa-flag-checkered mr-2 text-sm " +
                                                                              (router.pathname.indexOf(
-                                                                                    "/admin/table"
+                                                                                    "/admin/tablesF1"
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
@@ -95,10 +97,10 @@ export default function Sidebar() {
 
                                                  <li className="items-center">
                                                         <Link
-                                                               href="/admin/dashboard"
+                                                               href="/admin/dashboardF1"
                                                                className={
-                                                                      "text-xs uppercase py-3 font-bold block " +
-                                                                      (router.pathname.indexOf("/admin/dashboard") !==
+                                                                      "text-xs uppercase py-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/dashboardF1") !==
                                                                       -1
                                                                              ? "text-lightBlue-500 hover:text-lightBlue-600"
                                                                              : "text-blueGray-700 hover:text-blueGray-500")
@@ -107,7 +109,7 @@ export default function Sidebar() {
                                                                       className={
                                                                              "fas fa-poll mr-2 text-sm " +
                                                                              (router.pathname.indexOf(
-                                                                                    "/admin/dashboard"
+                                                                                    "/admin/dashboardF1"
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
@@ -115,6 +117,119 @@ export default function Sidebar() {
                                                                Derniers Résultats
                                                         </Link>
                                                  </li>
+<<<<<<< Updated upstream
+=======
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
+                                                               target="_blank"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                               Timing (Alpha)
+                                                        </a>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/rules"
+                                                               className={
+                                                                      "text-xs uppercase py-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/rules") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-book mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/rules"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Règlements
+                                                        </Link>
+                                                 </li>
+                                          </ul>
+                                          <hr className="mt-3 mb-36" />
+                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
+                                                 GT-3
+                                          </h5>
+                                          <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/tablesGt"
+                                                               className={
+                                                                      "text-xs uppercase pt-2 pb-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/tablesGt") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-flag-checkered mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/tablesGt"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Classements
+                                                        </Link>
+                                                 </li>
+
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/dashboardGt"
+                                                               className={
+                                                                      "text-xs uppercase py-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/dashboardGt") !==
+                                                                      -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-poll mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/dashboardGt"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Derniers Résultats
+                                                        </Link>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation-gt3"
+                                                               target="_blank"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                               Timing (Alpha)
+                                                        </a>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/rules"
+                                                               className={
+                                                                      "text-xs uppercase py-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/rules") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-book mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/rules"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>{" "}
+                                                               Règlements
+                                                        </Link>
+                                                 </li>
+>>>>>>> Stashed changes
                                           </ul>
                                    </div>
                             </div>

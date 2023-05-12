@@ -2541,7 +2541,11 @@ select {
 .min-w-140-px {
   min-width: 140px;
 }
+.index-dropdown-separator{
 
+    border-right: 3px solid #bd5e5e;
+
+}
 .object-contain {
   object-fit: contain;
 }

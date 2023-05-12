@@ -3,6 +3,38 @@ import Iframe from "react-iframe";
 import Chart from "chart.js";
 
 export default function CardLineChart() {
+<<<<<<< Updated upstream
+=======
+       const [data, setData] = useState();
+
+       // const fetchData = async () => {
+       //        try {
+       //               const testURL = await await fetch("https://some-url-that-might-fail.com");
+       //               console.log("TADA");
+       //               return testURL;
+       //        } catch (error) {
+       //               console.error("Boooo"); // You might send an exception to your error tracker like AppSignal
+       //               return error;
+       //        }
+       // };
+       useEffect(() => {
+              const fetchData = async () => {
+                     try {
+                            const testURL = await fetch(
+                                   "http://thirtheen-home.myddns.me:880/championships/championship?cid=1"
+                            );
+                            setData(testURL.status);
+                            console.log(testURL.status);
+                            return testURL;
+                     } catch (error) {
+                            console.error("Boooo");
+                            return error;
+                     }
+              };
+              fetchData();
+       }, []);
+
+>>>>>>> Stashed changes
        return (
               <>
                      <div className="relative flex flex-col min-w-0 break-words w-full mb-0 shadow-lg rounded bg-blueGray-700">
