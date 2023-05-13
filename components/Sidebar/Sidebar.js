@@ -117,8 +117,6 @@ export default function Sidebar() {
                                                                Derniers Résultats
                                                         </Link>
                                                  </li>
-<<<<<<< Updated upstream
-=======
                                                  <li className="items-center">
                                                         <a
                                                                href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
@@ -229,7 +227,6 @@ export default function Sidebar() {
                                                                Règlements
                                                         </Link>
                                                  </li>
->>>>>>> Stashed changes
                                           </ul>
                                    </div>
                             </div>

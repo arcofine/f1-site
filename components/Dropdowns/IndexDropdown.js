@@ -10,8 +10,6 @@ const IndexDropdown = () => {
        const openDropdownPopover = () => {
               createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
                      placement: "bottom-start",
-<<<<<<< Updated upstream
-=======
                      modifiers: [
                             {
                                    name: "offset",
@@ -20,7 +18,6 @@ const IndexDropdown = () => {
                                    },
                             },
                      ],
->>>>>>> Stashed changes
               });
               setDropdownPopoverShow(true);
        };
@@ -45,38 +42,6 @@ const IndexDropdown = () => {
                                    (dropdownPopoverShow ? "block " : "hidden ") +
                                    "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left flex flex-row rounded shadow-lg min-w-48"
                             }>
-<<<<<<< Updated upstream
-                            <span
-                                   className={
-                                          "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
-                                   }>
-                                   Saison 2023
-                            </span>
-                            <hr className="my-2 border-blueGray-300" />
-                            <Link
-                                   href="/admin/tables"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
-                                   }>
-                                   Classements
-                            </Link>
-                            {/* <Link href="/admin/settings">
-                                   <a
-                                          href="#pablo"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-                                          }>
-                                          Statistiques des pilotes
-                                   </a>
-                            </Link> */}
-                            <Link
-                                   href="/admin/dashboard"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-                                   }>
-                                   Derniers résultats
-                            </Link>
-=======
                             <div className="index-dropdown-separator">
                                    <span
                                           className={
@@ -157,7 +122,6 @@ const IndexDropdown = () => {
                                           Règlements
                                    </Link>
                             </div>
->>>>>>> Stashed changes
                      </div>
               </>
        );

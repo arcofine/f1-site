@@ -38,11 +38,7 @@ export async function getServerSideProps({
 }) {
        try {
               const data = await fetch(
-<<<<<<< Updated upstream:pages/admin/tables.js
-                     "http://thirtheen-home.myddns.me:8000/championships/export_standings_json.json?cid=2"
-=======
                      "http://thirtheen-home.myddns.me:8803/championships/export_standings_json.json?cid=1"
->>>>>>> Stashed changes:pages/admin/tablesGt.js
               );
               const championship = await data.json();
               return {props: {championship}};

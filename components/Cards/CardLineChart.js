@@ -1,10 +1,8 @@
-import React from "react";
+import {useEffect, useState, React} from "react";
 import Iframe from "react-iframe";
 import Chart from "chart.js";
 
 export default function CardLineChart() {
-<<<<<<< Updated upstream
-=======
        const [data, setData] = useState();
 
        // const fetchData = async () => {
@@ -21,7 +19,7 @@ export default function CardLineChart() {
               const fetchData = async () => {
                      try {
                             const testURL = await fetch(
-                                   "http://thirtheen-home.myddns.me:880/championships/championship?cid=1"
+                                   "http://thirtheen-home.myddns.me:8803/championships/championship?cid=1"
                             );
                             setData(testURL.status);
                             console.log(testURL.status);
@@ -34,7 +32,6 @@ export default function CardLineChart() {
               fetchData();
        }, []);
 
->>>>>>> Stashed changes
        return (
               <>
                      <div className="relative flex flex-col min-w-0 break-words w-full mb-0 shadow-lg rounded bg-blueGray-700">
@@ -60,7 +57,7 @@ export default function CardLineChart() {
                                                  height: "900px",
                                           }}>
                                           <Iframe
-                                                 url="/championships/championship?cid=2"
+                                                 url="http://thirtheen-home.myddns.me:8803/championships/championship?cid=1"
                                                  width="100%"
                                                  height="100%"
                                                  id=""
