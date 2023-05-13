@@ -20,9 +20,51 @@ export default function Footer() {
                                                  points="2560 0 2560 100 0 100"></polygon>
                                    </svg>
                             </div>
-                            <div className="container mx-auto px-4">
-                                   <div className="flex flex-wrap text-center lg:text-left">
-                                          <div className="w-full lg:w-6/12 px-4">
+                            <div className="container mx-auto px-4" style={{padding: "50px"}}>
+                                   <div className="flex flex-wrap items-center justify-center">
+                                          <div className="flex flex-col mx-auto items-center justify-center">
+                                                 <h2 className="text-md text-blueGray-500 font-semibold mb-2">
+                                                        Merci à tous nos commanditaires
+                                                 </h2>
+                                                 <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
+                                                        <a
+                                                               href="https://xelaconseil.ca/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/xelalogo.png" />
+                                                        </a>
+                                                        <a
+                                                               href="https://jimexs.com/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/logo_jimexs.png" />
+                                                        </a>
+                                                        <a
+                                                               href="https://www.maxiroule.ca/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-14 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/logo_maxi_bw.png" />
+                                                        </a>
+                                                 </div>
+                                                 <div className="flex flex-wrap mx-auto items-center justify-center">
+                                                        <a
+                                                               href="https://www.solotech.com/"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img alt="" src="/img/solotech.png" />
+                                                        </a>
+                                                        <a
+                                                               href="https://www.simracinghub.com"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/5 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               <img
+                                                                      alt=""
+                                                                      src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
+                                                               />
+                                                        </a>
+                                                 </div>
+                                          </div>
+                                          <div className="w-full lg:hidden lg:w-6/12 px-4 flex flex-wrap items-center justify-center">
                                                  <div className="mt-6 lg:mb-0 mb-6">
                                                         <button
                                                                className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -33,9 +75,6 @@ export default function Footer() {
                                                                       target="_blank"
                                                                       rel="noreferrer">
                                                                       <i className="fab fa-facebook-square text-lg leading-lg " />
-                                                                      <span className="lg:hidden inline-block ml-2">
-                                                                             Share
-                                                                      </span>
                                                                </a>
                                                         </button>
                                                         <button
@@ -46,9 +85,6 @@ export default function Footer() {
                                                                       target="_blank"
                                                                       rel="noreferrer">
                                                                       <i className="fab fa-discord text-lg leading-lg"></i>
-                                                                      <span className="lg:hidden inline-block ml-2">
-                                                                             Discord
-                                                                      </span>
                                                                </a>
                                                         </button>
                                                  </div>

@@ -2,13 +2,19 @@ import React from "react";
 
 // components
 
-import CardTable from "components/Cards/CardTable.js";
+import CardRules from "components/Cards/CardRules";
 
 // layout for page
 
 import Admin from "layouts/Admin.js";
 
-export default function Tables({championship, error}) {
+export default function Rules({championship, error}) {
+       const [langue, setLangue] = React.useState("fr");
+
+       const changeLangue = (lang) => {
+              setLangue(lang);
+              console.log(langue);
+       };
        return (
               <>
                      <div className="flex flex-wrap mt-5">
@@ -45,11 +51,26 @@ export default function Tables({championship, error}) {
                             )}
                             {!error && (
                                    <>
-                                          <div className="lg:w-6/12 w-full mb-12 px-4">
-                                                 <CardTable drivers data={championship} color="dark" />
-                                          </div>
-                                          <div className="lg:w-6/12 w-full mb-12 px-4">
-                                                 <CardTable teams data={championship} color="light" />
+                                          <div className="lg:w-12/12 w-full mb-12 px-4">
+                                                 <div
+                                                        style={{zIndex: 100}}
+                                                        className="relative w-full flex flex-wrap items-end justify-end pr-4">
+                                                        {langue === "en" && (
+                                                               <button
+                                                                      onClick={() => changeLangue("fr")}
+                                                                      className="absolute top-5">
+                                                                      <img src="/img/flag-fr.png" width="30" alt="" />
+                                                               </button>
+                                                        )}
+                                                        {langue === "fr" && (
+                                                               <button
+                                                                      onClick={() => changeLangue("en")}
+                                                                      className="absolute top-5">
+                                                                      <img src="/img/flag-en.png" width="30" alt="" />
+                                                               </button>
+                                                        )}
+                                                 </div>
+                                                 <CardRules color="dark" langue={langue} />
                                           </div>
                                    </>
                             )}
@@ -58,36 +79,4 @@ export default function Tables({championship, error}) {
        );
 }
 
-Tables.layout = Admin;
-export async function getServerSideProps({
-       params,
-       req,
-       res,
-       query,
-       preview,
-       previewData,
-       resolvedUrl,
-       locale,
-       locales,
-       defaultLocale,
-}) {
-       try {
-              const data = await fetch(
-<<<<<<< HEAD:pages/admin/tablesGt.js
-<<<<<<< Updated upstream:pages/admin/tables.js
-                     "http://thirtheen-home.myddns.me:8000/championships/export_standings_json.json?cid=2"
-=======
-                     "http://thirtheen-home.myddns.me:8803/championships/export_standings_json.json?cid=1"
->>>>>>> Stashed changes:pages/admin/tablesGt.js
-=======
-                     "http://thirtheen-home.myddns.me:8802/championships/export_standings_json.json?cid=1"
->>>>>>> main:pages/admin/tables.js
-              );
-              const championship = await data.json();
-              return {props: {championship}};
-       } catch (err) {
-              console.log("request failed: ", err);
-              const error = {error: "Serveur en manutention"};
-              return {props: {error}};
-       }
-}
+Rules.layout = Admin;
