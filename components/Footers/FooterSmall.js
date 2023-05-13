@@ -32,7 +32,6 @@ export default function FooterSmall(props) {
                                           </ul>
                                    </div>
                             </div>
-                            {/* </div> */}
                      </footer>
               </>
        );
