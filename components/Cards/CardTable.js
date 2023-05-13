@@ -90,13 +90,8 @@ export default function CardTable({color, data, drivers, teams}) {
                                                         {dataType.map((item, i) => {
                                                                return (
                                                                       <tr
-                                                                             key={i + "_item"}
                                                                              className={
-                                                                                    color === "light"
-                                                                                           ? i % 2
-                                                                                                  ? "bg-blueGray-50  text-blueGray-500"
-                                                                                                  : "bg-blueGray-200  text-blueGray-500"
-                                                                                           : i % 2
+                                                                                    i % 2
                                                                                            ? "bg-blueGray-700"
                                                                                            : "bg-blueGray-800"
                                                                              }>
@@ -105,35 +100,39 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                     className=" table-row border-t-0 px-2 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0 text-left items-center">
                                                                                     <p className="flex-auto ml-0">
                                                                                            <span
-                                                                                                  className={
-                                                                                                         "text-center inline-flex items-center justify-center w-8 h-8 mb-0 rounded-full text-xs font-bold" +
-                                                                                                         (color ===
-                                                                                                         "light"
-                                                                                                                ? "text-blueGray-500"
-                                                                                                                : "text-blueGray-200")
-                                                                                                  }>
+                                                                                                  className="text-blueGray-200
+                                                                                                  text-center
+                                                                                                  inline-flex
+                                                                                                  items-center
+                                                                                                  justify-center
+                                                                                                  w-8
+                                                                                                  h-8
+                                                                                                  mb-0
+                                                                                                  shadow-lg
+                                                                                                  rounded-full
+                                                                                                  text-sm
+                                                                                                  font-bold
+                                                                                                 ">
                                                                                                   {i + 1}
                                                                                            </span>
                                                                                     </p>
                                                                              </th>
-                                                                             <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
-                                                                                    <b className="mb-0">
+                                                                             <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xl whitespace-nowrap p-0">
+                                                                                    <b lassName="mb-0">
                                                                                            {drivers
                                                                                                   ? item.name
                                                                                                   : item.team_name}{" "}
                                                                                     </b>
 
                                                                                     {teams && (
-                                                                                           <p className="text-2xs">
+                                                                                           <p className="text-xs">
                                                                                                   {item.team_drivers}
                                                                                            </p>
                                                                                     )}
                                                                              </td>
                                                                              {item.points.map((point, i) => {
                                                                                     return (
-                                                                                           <td
-                                                                                                  key={i + "_point"}
-                                                                                                  className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
+                                                                                           <td className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xl whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
                                                                                                   {drivers && (
                                                                                                          <span
@@ -142,7 +141,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                                                           absolute
                                                                                                                           top-5-px
                                                                                                                           p-1
-                                                                                                                          text-2xs
+                                                                                                                          text-xs
                                                                                                                           text-center
                                                                                                                           inline-flex
                                                                                                                           items-center
@@ -165,7 +164,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                     );
                                                                              })}
 
-                                                                             <td className="border-t-0 px-3 align-middle text-center border-l border-r-0 text-sm font-bold whitespace-nowrap p-0">
+                                                                             <td className="border-t-0 px-3 align-middle text-center border-l border-r-0 text-2xl font-bold whitespace-nowrap p-0">
                                                                                     <div className="items-center">
                                                                                            <p className="mr-2">
                                                                                                   {item.points_sum}

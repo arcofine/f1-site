@@ -11,7 +11,7 @@ export async function getServerSideProps({
        defaultLocale,
 }) {
        console.log("Logging : " + res);
-       const data = await fetch("http://thirtheen-home.myddns.me:8802/championships/export_standings_json.json?cid=1");
+       const data = await fetch("http://thirtheen-home.myddns.me:8000/championships/export_standings_json.json?cid=2");
        const championship = await data.json();
        return {props: {championship}};
 }

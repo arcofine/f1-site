@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import Script from "next/script";
 
 import PageChange from "components/PageChange/PageChange.js";
 
@@ -68,7 +67,7 @@ export default class MyApp extends App {
                                           name="viewport"
                                           content="width=device-width, initial-scale=1, shrink-to-fit=no"
                                    />
-                                   <title>F1 Simulation Canada</title>
+                                   <title>F1 Simulation</title>
                             </Head>
                             <Layout>
                                    <Component {...pageProps} />
