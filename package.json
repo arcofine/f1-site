@@ -1,13 +1,12 @@
 {
        "name": "f1sim-site",
        "homepage": "https://www.f1sim.ca",
-       "version": "0.5.0",
+       "version": "1.5.0",
        "description": "F1 Simulation - Site web championnat en ligne",
        "repository": "https://github.com/arcofine/f1-site.git",
        "license": "MIT",
        "dependencies": {
               "@fortawesome/fontawesome-free": "5.15.3",
-              "@pdftron/webviewer": "^10.1.0",
               "@popperjs/core": "2.9.1",
               "@tailwindcss/forms": "0.2.1",
               "chart.js": "2.9.4",
@@ -20,7 +19,6 @@
               "react-dom": "^18.2.0",
               "react-iframe": "^1.8.5",
               "react-intersection-observer": "^9.4.3",
-              "react-pdf": "^6.2.2",
               "react-player": "^2.12.0",
               "react-scripts": "4.0.3",
               "react-youtube": "^10.1.0",
@@ -31,9 +29,7 @@
               "build": "next build",
               "dev": "next dev",
               "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
-              "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css",
-              "postinstall": "npm run download-webviewer",
-              "download-webviewer": "npx @pdftron/webviewer-downloader"
+              "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
        },
        "eslintConfig": {
               "extends": "react-app"
