@@ -9,11 +9,11 @@ import CardRules from "components/Cards/CardRules";
 import Admin from "layouts/Admin.js";
 
 export default function Rules({championship, error}) {
-       const [langue, setLangue] = React.useState("fr");
+       const [league, setLangue] = React.useState("f1");
 
        const changeLangue = (lang) => {
               setLangue(lang);
-              console.log(langue);
+              console.log(league);
        };
        return (
               <>
@@ -55,14 +55,14 @@ export default function Rules({championship, error}) {
                                                  <div
                                                         style={{zIndex: 100}}
                                                         className="relative w-full flex flex-wrap items-end justify-end pr-4">
-                                                        {langue === "en" && (
+                                                        {league === "en" && (
                                                                <button
                                                                       onClick={() => changeLangue("fr")}
                                                                       className="absolute top-5">
                                                                       <img src="/img/flag-fr.png" width="30" alt="" />
                                                                </button>
                                                         )}
-                                                        {langue === "fr" && (
+                                                        {league === "fr" && (
                                                                <button
                                                                       onClick={() => changeLangue("en")}
                                                                       className="absolute top-5">
@@ -70,7 +70,7 @@ export default function Rules({championship, error}) {
                                                                </button>
                                                         )}
                                                  </div>
-                                                 <CardRules color="dark" langue={langue} />
+                                                 <CardRules color="dark" league={league} />
                                           </div>
                                    </>
                             )}

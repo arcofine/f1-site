@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import RuleFrench from "components/Rules/RuleFrench";
-import RuleEnglish from "components/Rules/RuleEnglish";
+import RuleF1 from "components/Rules/RuleF1";
+import RuleGt from "components/Rules/RuleGt";
 
 // components
 
-export default function CardRules({color, langue}) {
+export default function CardRules({color, league}) {
        return (
               <>
                      <div
@@ -27,7 +27,7 @@ export default function CardRules({color, langue}) {
                                    </div>
                             </div>
                             <div className="block w-full overflow-x-auto px-4 py-4">
-                                   {langue === "fr" || !langue ? <RuleFrench /> : <RuleEnglish />}
+                                   {league === "f1" || !league ? <RuleF1 /> : <RuleGt />}
                             </div>
                      </div>
               </>

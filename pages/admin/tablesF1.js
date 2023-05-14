@@ -8,7 +8,7 @@ import CardTable from "components/Cards/CardTable.js";
 
 import Admin from "layouts/Admin.js";
 
-export default function Tables({championship, error}) {
+export default function TablesF1({championship, error}) {
        return (
               <>
                      <div className="flex flex-wrap mt-5">
@@ -58,7 +58,7 @@ export default function Tables({championship, error}) {
        );
 }
 
-Tables.layout = Admin;
+TablesF1.layout = Admin;
 export async function getServerSideProps({
        params,
        req,

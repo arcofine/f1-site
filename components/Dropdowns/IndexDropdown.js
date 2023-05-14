@@ -14,7 +14,7 @@ const IndexDropdown = () => {
                             {
                                    name: "offset",
                                    options: {
-                                          offset: [-32, -10],
+                                          offset: [-228, -10],
                                    },
                             },
                      ],
@@ -27,7 +27,7 @@ const IndexDropdown = () => {
        return (
               <>
                      <a
-                            className="hover:text-blueGray-500 text-blueGray-300 px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            className="hover:text-blueGray-500 text-blueGray-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                             href="#pablo"
                             ref={btnDropdownRef}
                             onClick={(e) => {
@@ -40,46 +40,99 @@ const IndexDropdown = () => {
                             ref={popoverDropdownRef}
                             className={
                                    (dropdownPopoverShow ? "block " : "hidden ") +
-                                   "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                                   "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left flex flex-row rounded shadow-lg min-w-48"
                             }>
-                            <span
-                                   className={
-                                          "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
-                                   }>
-                                   Saison 2023
-                            </span>
-                            <hr className="my-2 border-blueGray-300" />
-                            <Link
-                                   href="/admin/tables"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
-                                   }>
-                                   Classements
-                            </Link>
+                            <div className="index-dropdown-separator">
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                          F1 - Saison 2023
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <Link
+                                          href="/admin/tablesF1"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                          }>
+                                          Classements
+                                   </Link>
 
-                            <Link
-                                   href="/admin/dashboard"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-                                   }>
-                                   Derniers résultats
-                            </Link>
-                            <a
-                                   href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
-                                   target="_blank"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-bold block w-full whitespace-nowrap bg-transparent  "
-                                   }
-                                   rel="noreferrer">
-                                   Live Timing (Alpha)
-                            </a>
-                            <Link
-                                   href="/admin/rules"
-                                   className={
-                                          "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-                                   }>
-                                   Règlements
-                            </Link>
+                                   {/* <Link
+                                          href="/admin/dashboardF1"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Derniers résultats
+                                   </Link> */}
+                                   <a
+                                          href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Derniers Résultats
+                                   </a>
+                                   <a
+                                          href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Live Timing
+                                   </a>
+                                   <Link
+                                          href="/admin/rulesF1"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Règlements
+                                   </Link>
+                            </div>
+                            <div>
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                          GT3 - Saison 2023
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <Link
+                                          href="/admin/tablesGt"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                          }>
+                                          Classements
+                                   </Link>
+
+                                   <a
+                                          href="http://thirtheen-home.myddns.me:8803/championships/championship?cid=1"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Derniers Résultats
+                                   </a>
+                                   <a
+                                          href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                          Live Timing (Alpha)
+                                   </a>
+                                   <Link
+                                          href="/admin/rulesGt"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Règlements
+                                   </Link>
+                            </div>
                      </div>
               </>
        );

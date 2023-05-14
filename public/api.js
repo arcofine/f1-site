@@ -726,9 +726,7 @@
                                           '<div class="g-app ' + game.SessionType + '">',
                                           sessionTypeText,
                                           "</div>",
-                                          '<div class="g-header"><a target="_blank" href="https://www.race-view.com/server?user_id=arcofine&server_id=' +
-                                                 game.GameName.split("-")[0] +
-                                                 '">',
+                                          '<div class="g-header"><a target="_blank" href=' + game.Link + ">",
                                           game.GameName,
                                           "</a></div>",
                                           // '<div title="',
