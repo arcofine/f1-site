@@ -9,7 +9,7 @@ import TableDropdown from "components/Dropdowns/TableDropdown.js";
 export default function CardTable({color, data, drivers, teams}) {
        const DRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["drivers"]);
        const TEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["teams"]);
-       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["races"]);
+       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
        const dataType = drivers ? DRIVERS : TEAMS;
 
        return (
