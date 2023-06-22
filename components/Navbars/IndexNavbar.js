@@ -63,24 +63,7 @@ export default function Navbar(props) {
                                                  (navbarOpen ? " block" : " hidden")
                                           }
                                           id="example-navbar-warning">
-                                          <ul className="flex pl-12 flex-col lg:flex-row list-none mr-auto">
-                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm ">
-                                                               <a href="#">CALENDRIER</a>
-                                                        </p>
-                                                 </li>
-                                                 <li className="flex items-center text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent">
-                                                        <p className="text-blueGray-400 text-sm ">
-                                                               <Link
-                                                                      href="/admin/rules"
-                                                                      className={
-                                                                             "hover:text-blueGray-500 text-sm  block w-full whitespace-nowrap bg-transparent"
-                                                                      }>
-                                                                      RÈGLEMENTS
-                                                               </Link>
-                                                        </p>
-                                                 </li>
-                                          </ul>
+                                          
                                           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                                                  <li className="flex items-center text-red-500">
                                                         <SubscribeDropdown />
