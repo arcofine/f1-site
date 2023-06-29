@@ -14,7 +14,7 @@ export default function Index() {
        };
        const unique_id = new Date().getTime();
        const opts = {
-              height: "500",
+              height: "540",
               width: "100%",
               playerVars: {
                      autoplay: 1,
@@ -39,7 +39,7 @@ export default function Index() {
 
                             <div className=" container w-11/12 mx-auto items-center flex flex-wrap z-2">
                                    <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
-                                   <div className="w-full relative px-0">
+                                   <div className="w-full relative px-0 flex">
                                           <div
                                                  className={
                                                         "absolute mx-auto top-0 -mt-13 left-38 lg:hidden md:hidden sm:hidden "
@@ -77,12 +77,14 @@ export default function Index() {
                                                   py-2 xs:py-0 outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150">
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a> */}
-                                          <YouTube
-                                                 videoId="WAJRdQipdZE"
-                                                 opts={opts}
-                                                 onReady={_onReady}
-                                                 onEnd={_onReady}
-                                          />
+                                          <div className="container mx-auto max-w-950-px ws:max-w-580-px ">
+                                                 <YouTube
+                                                        videoId="WAJRdQipdZE"
+                                                        opts={opts}
+                                                        onReady={_onReady}
+                                                        onEnd={_onReady}
+                                                 />
+                                          </div>
                                           <div className=" mx-auto w-full items-center absolute flex h-500-px top-0 flex-wrap z-2"></div>
                                    </div>
                             </div>
