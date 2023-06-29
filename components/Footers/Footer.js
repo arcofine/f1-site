@@ -29,40 +29,52 @@ export default function Footer() {
                                                  <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
                                                         <a
                                                                href="https://xelaconseil.ca/"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-2 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-2 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img alt="" src="/img/xelalogo.png" />
                                                         </a>
                                                         <a
                                                                href="https://jimexs.com/"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img alt="" src="/img/logo_jimexs.png" />
                                                         </a>
                                                         <a
                                                                href="https://www.maxiroule.ca/"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-12 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-12 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img alt="" src="/img/logo_maxi_bw.png" />
                                                         </a>
                                                         <a
                                                                href="https://www.emballagesbnc.ca"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 xs:px-2 xs:py-6 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 xs:px-2 xs:py-6 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img alt="" src="/img/logo_bnc.png" />
                                                         </a>
                                                  </div>
                                                  <div className="flex flex-wrap mx-auto items-center justify-center">
                                                         <a
                                                                href="https://www.solotech.com/"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img alt="" src="/img/solotech.png" />
                                                         </a>
                                                         <a
                                                                href="https://www.simracinghub.com"
+                                                               target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/5 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold">
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/5 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
                                                                <img
                                                                       alt=""
                                                                       src="https://www.simracinghub.com/images/SimRacingHub_2018_banner.png"
