@@ -78,7 +78,7 @@ export default function Index() {
                                                  CLIQUE ICI POUR T'INSCRIRE MAINTENANT!
                                           </a> */}
                                           <YouTube
-                                                 videoId="obnuOHQoo78"
+                                                 videoId="WAJRdQipdZE"
                                                  opts={opts}
                                                  onReady={_onReady}
                                                  onEnd={_onReady}
