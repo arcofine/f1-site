@@ -118,7 +118,7 @@ export default function Sidebar() {
                                                  </Link>
 
                                                  <a
-                                                        href="http://thirtheen-home.myddns.me:8803/championships/championship?cid=1"
+                                                        href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
@@ -318,7 +318,7 @@ export default function Sidebar() {
 
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8803/championships/championship?cid=1"
+                                                               href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
                                                                target="_blank"
                                                                className={"text-xs uppercase py-1 font-bold block "}
                                                                rel="noreferrer">
