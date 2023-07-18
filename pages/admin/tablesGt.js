@@ -73,7 +73,7 @@ export async function getServerSideProps({
 }) {
        try {
               const data = await fetch(
-                     "http://thirtheen-home.myddns.me:8803/championships/export_standings_json.json?cid=1"
+                     "http://thirtheen-home.myddns.me:8804/championships/export_standings_json.json?cid=1"
               );
               const championship = await data.json();
               return {props: {championship}};
