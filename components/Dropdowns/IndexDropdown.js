@@ -58,14 +58,14 @@ const IndexDropdown = () => {
                                           Classements
                                    </Link>
 
-                                   {/* <Link
+                                   <Link
                                           href="/admin/dashboardF1"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                                           }>
                                           Derniers résultats
-                                   </Link> */}
-                                   <a
+                                   </Link>
+                                   {/* <a
                                           href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
                                           target="_blank"
                                           className={
@@ -73,7 +73,7 @@ const IndexDropdown = () => {
                                           }
                                           rel="noreferrer">
                                           Derniers Résultats
-                                   </a>
+                                   </a> */}
                                    <a
                                           href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
                                           target="_blank"
@@ -108,12 +108,11 @@ const IndexDropdown = () => {
                                    </Link>
 
                                    <a
-                                          href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
-                                          target="_blank"
+                                          href="https://www.gt3sim.com/admin/dashboardGt"
+                                          target="_self"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
+                                          }>
                                           Derniers Résultats
                                    </a>
                                    <a

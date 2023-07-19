@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 // components
 
 import CardRules from "components/Cards/CardRules";
