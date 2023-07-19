@@ -39,7 +39,7 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/tablesF1") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Classements
                                                  </Link>
                                                  {/* <Link
@@ -61,8 +61,8 @@ export default function Sidebar() {
                                                         Derniers Résultats
                                                  </Link> */}
                                                  <a
-                                                        href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
-                                                        target="_blank"
+                                                        href="https://www.f1sim.ca/admin/dashboardF1"
+                                                        target="_self"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
@@ -91,7 +91,7 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/rulesF1") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Règlements
                                                  </Link>
                                           </div>
@@ -113,18 +113,36 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/tablesGt") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Classements
                                                  </Link>
 
-                                                 <a
+                                                 {/* <a
                                                         href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
-                                                 </a>
+                                                 </a> */}
+                                                 <Link
+                                                        href="/admin/dashboardGt"
+                                                        className={
+                                                               "text-xs uppercase py-1 font-bold block " +
+                                                               (router.pathname.indexOf("/admin/dashboardGt") !== -1
+                                                                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                      : "text-blueGray-700 hover:text-blueGray-500")
+                                                        }>
+                                                        <i
+                                                               className={
+                                                                      "fas fa-poll mr-2 text-sm " +
+                                                                      (router.pathname.indexOf("/admin/dashboardGt") !==
+                                                                      -1
+                                                                             ? "opacity-75"
+                                                                             : "text-blueGray-300")
+                                                               }></i>
+                                                        Derniers Résultats
+                                                 </Link>
                                                  <a
                                                         href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
                                                         target="_blank"
@@ -147,7 +165,7 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/rulesGt") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Règlements
                                                  </Link>
                                           </div>
@@ -197,7 +215,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Classements
                                                         </Link>
                                                  </li>
@@ -230,8 +248,8 @@ export default function Sidebar() {
 
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
-                                                               target="_blank"
+                                                               href="https://www.f1sim.ca/admin/dashboardF1"
+                                                               target="_self"
                                                                className={"text-xs uppercase py-1 font-bold block "}
                                                                rel="noreferrer">
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
@@ -262,6 +280,7 @@ export default function Sidebar() {
                                                         <a
                                                                href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
                                                                target="_blank"
+                                                               rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
@@ -284,7 +303,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Règlements
                                                         </Link>
                                                  </li>
@@ -342,7 +361,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Derniers Résultats
                                                         </Link>
                                                  </li>
@@ -350,6 +369,7 @@ export default function Sidebar() {
                                                         <a
                                                                href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
                                                                target="_blank"
+                                                               rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
@@ -372,7 +392,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Règlements
                                                         </Link>
                                                  </li>

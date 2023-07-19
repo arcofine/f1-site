@@ -9,7 +9,7 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import La2 from "layouts/La2.js";
 
 export default function DashboardF1() {
        return (
@@ -23,4 +23,4 @@ export default function DashboardF1() {
        );
 }
 
-DashboardF1.layout = Admin;
+DashboardF1.layout = La2;

@@ -66,12 +66,11 @@ const IndexDropdown = () => {
                                           Derniers résultats
                                    </Link> */}
                                    <a
-                                          href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
-                                          target="_blank"
+                                          href="https://www.f1sim.ca/admin/dashboardF1"
+                                          target="_self"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
+                                          }>
                                           Derniers Résultats
                                    </a>
                                    <a
@@ -106,8 +105,15 @@ const IndexDropdown = () => {
                                           }>
                                           Classements
                                    </Link>
+                                   <Link
+                                          href="/admin/dashboardGt"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                                          }>
+                                          Derniers Résultats
+                                   </Link>
 
-                                   <a
+                                   {/* <a
                                           href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
                                           target="_blank"
                                           className={
@@ -115,7 +121,7 @@ const IndexDropdown = () => {
                                           }
                                           rel="noreferrer">
                                           Derniers Résultats
-                                   </a>
+                                   </a> */}
                                    <a
                                           href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
                                           target="_blank"

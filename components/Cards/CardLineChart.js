@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import Iframe from "react-iframe";
-import Chart from "chart.js";
+import Link from "next/link";
 // import console from "console";
 
 export default function CardLineChart() {
@@ -37,9 +37,11 @@ export default function CardLineChart() {
                             <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
                                    <div className="flex flex-wrap items-center">
                                           <div className="relative w-full max-w-full flex-grow flex-1">
-                                                 <h6 className="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
-                                                        Derniers Résultats
-                                                 </h6>
+                                                 <Link
+                                                        href={`/admin/tables${mode}`}
+                                                        className="md:block text-left md:pb-2 text-blueGray-100 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
+                                                        <i className="fas fa-arrow-circle-left"></i> retour
+                                                 </Link>
                                                  {/* <h2 className="text-white text-xl font-semibold">Hors-Saison</h2> */}
                                           </div>
                                    </div>
@@ -53,14 +55,14 @@ export default function CardLineChart() {
                                                         display: "block",
                                                         overflow: "hidden",
                                                         width: "100%",
-                                                        height: "900px",
+                                                        height: "100vw",
                                                  }}>
                                                  <Iframe
                                                         url="/championships/championship?cid=1"
                                                         width="100%"
                                                         height="100%"
                                                         id=""
-                                                        className="xl:-mt-11  md\:-mt-11 md:-mt-13 sm:-mt-13 xs:-mt-19"
+                                                        className=""
                                                         display="block"
                                                         position="relative"
                                                         overflow="visible"
