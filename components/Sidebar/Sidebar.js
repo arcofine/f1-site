@@ -2,11 +2,8 @@ import React from "react";
 import Link from "next/link";
 import {useRouter} from "next/router";
 
-import NotificationDropdown from "components/Dropdowns/NotificationDropdown.js";
-import UserDropdown from "components/Dropdowns/UserDropdown.js";
-
 export default function Sidebar() {
-       const [collapseShow, setCollapseShow] = React.useState("hidden");
+       const [collapseShow] = React.useState("hidden");
        const router = useRouter();
        return (
               <>
@@ -39,10 +36,10 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/tablesF1") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Classements
                                                  </Link>
-                                                 {/* <Link
+                                                 <Link
                                                         href="/admin/dashboardF1"
                                                         className={
                                                                "text-xs uppercase py-1 font-bold block " +
@@ -57,17 +54,17 @@ export default function Sidebar() {
                                                                       -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Derniers Résultats
-                                                 </Link> */}
-                                                 <a
+                                                 </Link>
+                                                 {/* <a
                                                         href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
-                                                 </a>
+                                                 </a> */}
                                                  <a
                                                         href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
                                                         target="_blank"
@@ -90,7 +87,7 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/rulesF1") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Règlements
                                                  </Link>
                                           </div>
@@ -112,15 +109,14 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/tablesGt") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Classements
                                                  </Link>
 
                                                  <a
-                                                        href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
-                                                        target="_blank"
-                                                        className={"text-xs uppercase py-1 font-bold block "}
-                                                        rel="noreferrer">
+                                                        href="https://www.gt3sim.com/admin/dashboardGt"
+                                                        target="_self"
+                                                        className={"text-xs uppercase py-1 font-bold block "}>
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
                                                  </a>
@@ -146,7 +142,7 @@ export default function Sidebar() {
                                                                       (router.pathname.indexOf("/admin/rulesGt") !== -1
                                                                              ? "opacity-75"
                                                                              : "text-blueGray-300")
-                                                               }></i>{" "}
+                                                               }></i>
                                                         Règlements
                                                  </Link>
                                           </div>
@@ -196,7 +192,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Classements
                                                         </Link>
                                                  </li>
@@ -253,7 +249,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Derniers Résultats
                                                         </Link>
                                                  </li>
@@ -261,6 +257,7 @@ export default function Sidebar() {
                                                         <a
                                                                href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
                                                                target="_blank"
+                                                               rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
@@ -283,7 +280,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Règlements
                                                         </Link>
                                                  </li>
@@ -310,7 +307,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Classements
                                                         </Link>
                                                  </li>
@@ -318,14 +315,13 @@ export default function Sidebar() {
                                                  <li className="items-center">
                                                         <a
                                                                href="https://www.gt3sim.com/admin/dashboardGt"
-                                                               target="_blank"
-                                                               className={"text-xs uppercase py-1 font-bold block "}
-                                                               rel="noreferrer">
+                                                               target="_self"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
-                                                        </a>{" "}
-                                                        */}
-                                                        <Link
+                                                        </a>
+
+                                                        {/* <Link
                                                                href="/admin/dashboardGt"
                                                                className={
                                                                       "text-xs uppercase py-1 font-bold block " +
@@ -344,12 +340,13 @@ export default function Sidebar() {
                                                                                     : "text-blueGray-300")
                                                                       }></i>{" "}
                                                                Derniers Résultats
-                                                        </Link>
+                                                        </Link> */}
                                                  </li>
                                                  <li className="items-center">
                                                         <a
                                                                href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
                                                                target="_blank"
+                                                               rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
@@ -372,7 +369,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Règlements
                                                         </Link>
                                                  </li>
