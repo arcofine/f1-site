@@ -37,11 +37,11 @@ export default function CardLineChart({mode}) {
                             <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
                                    <div className="flex flex-wrap items-center">
                                           <div className="relative w-full max-w-full flex-grow flex-1">
-                                                 <Link
-                                                        href={`/admin/tables${mode}`}
+                                                 <a
+                                                        href={`https://www.f1sim.ca/admin/tables${mode}`}
                                                         className="md:block text-left md:pb-2 text-blueGray-100 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
                                                         <i className="fas fa-arrow-circle-left"></i> retour
-                                                 </Link>
+                                                 </a>
                                                  {/* <h2 className="text-white text-xl font-semibold">Hors-Saison</h2> */}
                                           </div>
                                    </div>
