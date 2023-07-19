@@ -318,14 +318,14 @@ export default function Sidebar() {
 
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
+                                                               // href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
                                                                target="_blank"
                                                                className={"text-xs uppercase py-1 font-bold block "}
                                                                rel="noreferrer">
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
                                                         </a>
-                                                        {/* <Link
+                                                        <Link
                                                                href="/admin/dashboardGt"
                                                                className={
                                                                       "text-xs uppercase py-1 font-bold block " +
@@ -344,7 +344,7 @@ export default function Sidebar() {
                                                                                     : "text-blueGray-300")
                                                                       }></i>{" "}
                                                                Derniers Résultats
-                                                        </Link> */}
+                                                        </Link>
                                                  </li>
                                                  <li className="items-center">
                                                         <a
