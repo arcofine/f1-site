@@ -9,18 +9,18 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import La2 from "layouts/La2.js";
 
 export default function DashboardF1() {
        return (
               <>
                      <div className="flex flex-wrap">
                             <div className="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
-                                   <CardLineChart />
+                                   <CardLineChart mode="F1" />
                             </div>
                      </div>
               </>
        );
 }
 
-DashboardF1.layout = Admin;
+DashboardF1.layout = La2;

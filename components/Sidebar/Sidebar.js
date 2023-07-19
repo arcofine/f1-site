@@ -74,7 +74,6 @@ export default function Sidebar() {
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                        (Alpha)
                                                  </a>
 
                                                  <Link
@@ -229,15 +228,15 @@ export default function Sidebar() {
                                                  </li> */}
 
                                                  <li className="items-center">
-                                                        <a
+                                                        {/* <a
                                                                href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
                                                                target="_blank"
                                                                className={"text-xs uppercase py-1 font-bold block "}
                                                                rel="noreferrer">
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
-                                                        </a>
-                                                        {/* <Link
+                                                        </a> */}
+                                                        <Link
                                                                href="/admin/dashboardF1"
                                                                className={
                                                                       "text-xs uppercase py-1 font-bold block " +
@@ -256,7 +255,7 @@ export default function Sidebar() {
                                                                                     : "text-blueGray-300")
                                                                       }></i>{" "}
                                                                Derniers Résultats
-                                                        </Link> */}
+                                                        </Link>
                                                  </li>
                                                  <li className="items-center">
                                                         <a
@@ -318,7 +317,7 @@ export default function Sidebar() {
 
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8804/championships/championship?cid=1"
+                                                               href="https://www.gt3sim.com/admin/dashboardGt"
                                                                target="_blank"
                                                                className={"text-xs uppercase py-1 font-bold block "}
                                                                rel="noreferrer">
