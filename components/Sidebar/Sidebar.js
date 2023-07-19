@@ -14,11 +14,12 @@ export default function Sidebar() {
                             <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
                                    {/* Brand */}
                                    <div>
-                                          <Link
-                                                 href="/"
+                                          <a
+                                                 href="https://www.f1sim.ca/"
+                                                 target="_self"
                                                  className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
                                                  <i className="fas fa-arrow-circle-left"></i> retour
-                                          </Link>
+                                          </a>
                                    </div>
                                    <div className="lg:hidden md:hidden flex flex-row">
                                           <div className="mr-4">
