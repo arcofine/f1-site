@@ -311,7 +311,7 @@ export default function Sidebar() {
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
-                                                                      }></i>{" "}
+                                                                      }></i>
                                                                Classements
                                                         </Link>
                                                  </li>
