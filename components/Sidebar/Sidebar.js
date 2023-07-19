@@ -323,8 +323,9 @@ export default function Sidebar() {
                                                                rel="noreferrer">
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
-                                                        </a>
-                                                        {/* <Link
+                                                        </a>{" "}
+                                                        */}
+                                                        <Link
                                                                href="/admin/dashboardGt"
                                                                className={
                                                                       "text-xs uppercase py-1 font-bold block " +
@@ -343,7 +344,7 @@ export default function Sidebar() {
                                                                                     : "text-blueGray-300")
                                                                       }></i>{" "}
                                                                Derniers Résultats
-                                                        </Link> */}
+                                                        </Link>
                                                  </li>
                                                  <li className="items-center">
                                                         <a
