@@ -3,7 +3,7 @@ import Iframe from "react-iframe";
 import Link from "next/link";
 // import console from "console";
 
-export default function CardLineChart() {
+export default function CardLineChart({mode}) {
        const [data, setData] = useState();
 
        // const fetchData = async () => {

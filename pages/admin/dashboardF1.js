@@ -3,9 +3,6 @@ import React from "react";
 // components
 
 import CardLineChart from "components/Cards/CardLineChart.js";
-import CardBarChart from "components/Cards/CardBarChart.js";
-import CardPageVisits from "components/Cards/CardPageVisits.js";
-import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
@@ -16,7 +13,7 @@ export default function DashboardF1() {
               <>
                      <div className="flex flex-wrap">
                             <div className="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
-                                   <CardLineChart />
+                                   <CardLineChart mode="F1" />
                             </div>
                      </div>
               </>
