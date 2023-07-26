@@ -75,7 +75,7 @@ const IndexDropdown = () => {
                                           Derniers Résultats
                                    </a> */}
                                    <a
-                                          href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
@@ -116,7 +116,7 @@ const IndexDropdown = () => {
                                           Derniers Résultats
                                    </a>
                                    <a
-                                          href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
