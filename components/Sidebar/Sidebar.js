@@ -255,7 +255,7 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
@@ -344,7 +344,7 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
