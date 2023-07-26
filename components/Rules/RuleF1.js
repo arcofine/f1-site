@@ -15,14 +15,14 @@ class RuleEnglish extends Component {
                             />
                             <div className="flex justify-around" style={{marginTop: "-9vw", marginBottom: "70px"}}>
                                    <a
-                                          href="https://drive.google.com/file/d/10Jr5yaxhj87_y9lpz5TeCbn2LkpWK8T_/view?usp=share_link"
+                                          href="https://drive.google.com/file/d/10Jr5yaxhj87_y9lpz5TeCbn2LkpWK8T_/view?usp=drive_link"
                                           target="_blank"
                                           rel="noreferrer"
                                           className="button-54">
                                           Français
                                    </a>
                                    <a
-                                          href="https://drive.google.com/file/d/10Jr5yaxhj87_y9lpz5TeCbn2LkpWK8T_/view?usp=share_link"
+                                          href="https://drive.google.com/file/d/1tatM4JUtE_DxyBAF_4Eq8kbcGFIO46ZB/view?usp=drive_link"
                                           target="_blank"
                                           rel="noreferrer"
                                           className="button-54">
