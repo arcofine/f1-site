@@ -66,7 +66,7 @@ export default function Sidebar() {
                                                         Résultats
                                                  </a> */}
                                                  <a
-                                                        href="https://f1sim.liveracers.com/Live?server=F1%20Simulation%20-%202023"
+                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
@@ -121,7 +121,7 @@ export default function Sidebar() {
                                                         Résultats
                                                  </a>
                                                  <a
-                                                        href="https://f1simcanada-gt3.liveracers.com/Live/?server=F1%20Simulation%20GT3%20-%202023"
+                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
