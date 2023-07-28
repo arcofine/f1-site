@@ -4,39 +4,36 @@ import {createPopper} from "@popperjs/core";
 
 const SubscribeDropdown = () => {
        // dropdown props
-       const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-       const btnDropdownRef = React.createRef();
-       const popoverDropdownRef = React.createRef();
-       const openDropdownPopover = () => {
-              createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
-                     placement: "bottom-start",
-                     modifiers: [
-                            {
-                                   name: "offset",
-                                   options: {
-                                          offset: [-32, -10],
-                                   },
-                            },
-                     ],
-              });
-              setDropdownPopoverShow(true);
-       };
-       const closeDropdownPopover = () => {
-              setDropdownPopoverShow(false);
-       };
+       // const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
+       // const btnDropdownRef = React.createRef();
+       // const popoverDropdownRef = React.createRef();
+       // const openDropdownPopover = () => {
+       //        createPopper(btnDropdownRef.current, popoverDropdownRef.current, {
+       //               placement: "bottom-start",
+       //               modifiers: [
+       //                      {
+       //                             name: "offset",
+       //                             options: {
+       //                                    offset: [-32, -10],
+       //                             },
+       //                      },
+       //               ],
+       //        });
+       //        setDropdownPopoverShow(true);
+       // };
+       // const closeDropdownPopover = () => {
+       //        setDropdownPopoverShow(false);
+       // };
        return (
               <>
                      <a
                             className="hover:text-blueGray-500  px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="#pablo"
-                            ref={btnDropdownRef}
-                            onClick={(e) => {
-                                   e.preventDefault();
-                                   dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
-                            }}>
+                            href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             INSCRIPTION
                      </a>
-                     <div
+                     {/* <div
                             ref={popoverDropdownRef}
                             className={
                                    (dropdownPopoverShow ? "block " : "hidden ") +
@@ -64,7 +61,7 @@ const SubscribeDropdown = () => {
                                           Championnat - GT3
                                    </a>
                             </p>
-                     </div>
+                     </div> */}
               </>
        );
 };

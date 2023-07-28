@@ -3,7 +3,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://thirtheen-home.myddns.me:8804/:path*",
+                            destination: "http://f1simgt3.ddns.net:8804/:path*",
                      },
               ];
        },
