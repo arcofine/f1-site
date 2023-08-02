@@ -72,9 +72,7 @@ export async function getServerSideProps({
        defaultLocale,
 }) {
        try {
-              const data = await fetch(
-                     "http://thirtheen-home.myddns.me:8804/championships/export_standings_json.json?cid=1"
-              );
+              const data = await fetch("http://f1simgt3.ddns.net:8804/championships/export_standings_json.json?cid=1");
               const championship = await data.json();
               return {props: {championship}};
        } catch (err) {
