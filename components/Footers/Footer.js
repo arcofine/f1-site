@@ -33,7 +33,7 @@ export default function Footer() {
                                                                title=""
                                                                className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-2 flex items-center text-xs uppercase font-bold"
                                                                rel="noreferrer">
-                                                               <img alt="" src="/img/xelalogo.png" />
+                                                               <img alt="" src="/img/xelalogo-white.png" />
                                                         </a>
                                                         <a
                                                                href="https://jimexs.com/"
