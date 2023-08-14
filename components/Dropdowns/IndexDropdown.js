@@ -40,7 +40,7 @@ const IndexDropdown = () => {
                             ref={popoverDropdownRef}
                             className={
                                    (dropdownPopoverShow ? "block " : "hidden ") +
-                                   "bg-blueGray-200 text-base z-50 float-left py-2 list-none text-left flex flex-row rounded shadow-lg min-w-48"
+                                   "bg-blueGray-200drop text-base z-50 float-left py-2 list-none text-left flex flex-row rounded shadow-lg min-w-48"
                             }>
                             <div className="index-dropdown-separator">
                                    <span
