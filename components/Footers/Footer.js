@@ -41,7 +41,7 @@ export default function Footer() {
                                                                title=""
                                                                className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 flex items-center text-xs uppercase font-bold"
                                                                rel="noreferrer">
-                                                               <img alt="" src="/img/logo_jimexs.png" />
+                                                               <img alt="" src="/img/logo_jimexs-white.png" />
                                                         </a>
                                                         <a
                                                                href="https://www.maxiroule.ca/"
