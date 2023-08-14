@@ -51,6 +51,8 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/logo_maxi_bw-white.png" />
                                                         </a>
+                                                 </div>
+                                                 <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
                                                          <a
                                                                href="https://www.canevaschambly.com/"
                                                                target="_blank"
