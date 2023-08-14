@@ -109,7 +109,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                                          "text-center inline-flex items-center justify-center w-8 h-8 mb-0 rounded-full text-xs font-bold" +
                                                                                                          (color ===
                                                                                                          "light"
-                                                                                                                ? "text-blueGray-500"
+                                                                                                                ? "text-blueGray-500b"
                                                                                                                 : "text-blueGray-200")
                                                                                                   }>
                                                                                                   {i + 1}
