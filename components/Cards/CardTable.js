@@ -47,7 +47,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "px-2 align-middle table-cell border border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
                                                                       Pos
@@ -56,7 +56,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "px-1 align-middle border table-cell border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
                                                                       {drivers ? "Pilote" : "Écurie"}
@@ -68,7 +68,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                     className={
                                                                                            "px-1 align-middle text-center border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                                            (color === "light"
-                                                                                                  ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                                  ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
                                                                                                   : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                                     }>
                                                                                     {race.substring(0, 3)}
@@ -79,7 +79,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "pr-4 align-middle border border-solid py-2 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
                                                                       PTS
@@ -94,7 +94,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              className={
                                                                                     color === "light"
                                                                                            ? i % 2
-                                                                                                  ? "bg-blueGray-50  text-blueGray-500"
+                                                                                                  ? "bg-blueGray-50  text-blueGray-500b"
                                                                                                   : "bg-blueGray-200  text-blueGray-500"
                                                                                            : i % 2
                                                                                            ? "bg-blueGray-700"
@@ -109,7 +109,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                                          "text-center inline-flex items-center justify-center w-8 h-8 mb-0 rounded-full text-xs font-bold" +
                                                                                                          (color ===
                                                                                                          "light"
-                                                                                                                ? "text-blueGray-500b"
+                                                                                                                ? "text-blueGray-500"
                                                                                                                 : "text-blueGray-200")
                                                                                                   }>
                                                                                                   {i + 1}
