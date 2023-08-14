@@ -3359,7 +3359,7 @@ select {
 
 .text-blueGray-500 {
   --tw-text-opacity: 1;
-  color: rgba(239, 68, 68, var(--tw-text-opacity));
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-blueGray-600 {
@@ -3394,7 +3394,7 @@ select {
 
 .hover\:text-blueGray-500:hover {
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(239,68,68, var(--tw-text-opacity));
 }
 
 .hover\:text-blueGray-700:hover {
