@@ -48,7 +48,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              "px-2 align-middle table-cell border border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
                                                                                     ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
+                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
                                                                       }>
                                                                       Pos
                                                                </th>
@@ -57,7 +57,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              "px-1 align-middle border table-cell border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
                                                                                     ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
+                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
                                                                       }>
                                                                       {drivers ? "Pilote" : "Écurie"}
                                                                </th>
@@ -69,7 +69,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                            "px-1 align-middle text-center border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                                            (color === "light"
                                                                                                   ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                                  : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
+                                                                                                  : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
                                                                                     }>
                                                                                     {race.substring(0, 3)}
                                                                              </th>
@@ -80,7 +80,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              "pr-4 align-middle border border-solid py-2 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center " +
                                                                              (color === "light"
                                                                                     ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
+                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
                                                                       }>
                                                                       PTS
                                                                </th>
