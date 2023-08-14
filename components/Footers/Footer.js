@@ -69,8 +69,6 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/logo_bnc.png" />
                                                         </a>
-                                                 </div>
-                                                 <div className="flex flex-wrap mx-auto items-center justify-center">
                                                         <a
                                                                href="https://www.solotech.com/"
                                                                target="_blank"
@@ -79,6 +77,8 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/solotech-white.png" />
                                                         </a>
+                                                 </div>
+                                                 <div className="flex flex-wrap mx-auto items-center justify-center">
                                                         <a
                                                                href="https://www.simracinghub.com"
                                                                target="_blank"
