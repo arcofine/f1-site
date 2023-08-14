@@ -1365,7 +1365,7 @@ select {
 
 .bg-blueGray-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+  background-color: rgba(40, 40, 40, var(--tw-bg-opacity));
 }
 
 .bg-blueGray-400 {
@@ -1497,7 +1497,7 @@ select {
 
 .border-blueGray-200 {
   --tw-border-opacity: 1;
-  border-color: rgba(226, 232, 240, var(--tw-border-opacity));
+  border-color: rgba(40, 40, 40, var(--tw-border-opacity));
 }
 
 .border-blueGray-300 {
@@ -3344,7 +3344,7 @@ select {
 
 .text-blueGray-200 {
   --tw-text-opacity: 1;
-  color: rgba(226, 232, 240, var(--tw-text-opacity));
+  color: rgba(40, 40, 40, var(--tw-text-opacity));
 }
 
 .text-blueGray-300 {
@@ -4327,12 +4327,12 @@ select {
 
   .lg\:text-blueGray-200 {
     --tw-text-opacity: 1;
-    color: rgba(226, 232, 240, var(--tw-text-opacity));
+    color: rgba(40, 40, 40, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-blueGray-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(226, 232, 240, var(--tw-text-opacity));
+    color: rgba(40, 40, 40, var(--tw-text-opacity));
   }
 
   .lg\:w-auto {
