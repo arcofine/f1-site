@@ -49,7 +49,7 @@ export default function Footer() {
                                                                title=""
                                                                className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-12 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold"
                                                                rel="noreferrer">
-                                                               <img alt="" src="/img/logo_maxi_bw.png" />
+                                                               <img alt="" src="/img/logo_maxi_bw-white.png" />
                                                         </a>
                                                         <a
                                                                href="https://www.emballagesbnc.ca"
