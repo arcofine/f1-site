@@ -1,4 +1,5 @@
-		var timer=3;
+		//nmb de seconde
+		var timer=60;
 		
 		
 		timer=timer*1000;
