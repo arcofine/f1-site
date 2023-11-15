@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Script from "next/script";
 import SubscribeDropdown from "../Dropdowns/SubscribeDropdown";
+import LivetimeDropdown from "../Dropdowns/LivetimeDropdown"
 
 // components
 
@@ -70,6 +71,9 @@ export default function Navbar(props) {
                                                  </li>
                                                  <li className="flex items-center">
                                                         <IndexDropdown />
+                                                 </li>
+                                                 <li className="flex items-center">
+                                                        <LivetimeDropdown />
                                                  </li>
                                                  <li className="flex items-center lg:block"></li>
                                                  <li className="flex items-center">
