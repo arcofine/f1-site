@@ -146,61 +146,6 @@ export default function Sidebar() {
                                                         Règlements
                                                  </Link>
                                           </div>
-                                   <div>
-                                                 <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
-                                                        GT-3
-                                                 </h5>
-                                                 <Link
-                                                        href="/admin/tablesGt"
-                                                        className={
-                                                               "text-xs uppercase py-1 font-bold block  " +
-                                                               (router.pathname.indexOf("/admin/tablesGt") !== -1
-                                                                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                      : "text-blueGray-700 hover:text-blueGray-500")
-                                                        }>
-                                                        <i
-                                                               className={
-                                                                      "fas fa-flag-checkered mr-2 text-sm " +
-                                                                      (router.pathname.indexOf("/admin/tablesGt") !== -1
-                                                                             ? "opacity-75"
-                                                                             : "text-blueGray-300")
-                                                               }></i>
-                                                        Classements
-                                                 </Link>
-
-                                                 <a
-                                                        href="https://www.gt3sim.com/admin/dashboardGt"
-                                                        target="_self"
-                                                        className={"text-xs uppercase py-1 font-bold block "}>
-                                                        <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
-                                                        Résultats
-                                                 </a>
-                                                 <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
-                                                        target="_blank"
-                                                        className={"text-xs uppercase py-1 font-bold block "}
-                                                        rel="noreferrer">
-                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                 </a>
-
-                                                 <Link
-                                                        href="/admin/rulesGt"
-                                                        className={
-                                                               "text-xs uppercase py-1 font-bold block " +
-                                                               (router.pathname.indexOf("/admin/rulesGt") !== -1
-                                                                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                      : "text-blueGray-700 hover:text-blueGray-500")
-                                                        }>
-                                                        <i
-                                                               className={
-                                                                      "fas fa-book mr-2 text-sm " +
-                                                                      (router.pathname.indexOf("/admin/rulesGt") !== -1
-                                                                             ? "opacity-75"
-                                                                             : "text-blueGray-300")
-                                                               }></i>
-                                                        Règlements
-                                                 </Link>
-                                          </div>
                                           <div>
                                                  <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline" style="background-color:black; color:white;">
                                                         LIVE TIMING
