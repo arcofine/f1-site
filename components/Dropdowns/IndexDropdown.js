@@ -169,7 +169,6 @@ const IndexDropdown = () => {
                                          Serveur P2
                                    </a>
                             </div>
-                     </div>
               </>
        );
 };
