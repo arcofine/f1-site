@@ -133,6 +133,43 @@ const IndexDropdown = () => {
                                    </Link>
                             </div>
                      </div>
+                     <div>
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                         Live Timing
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN1"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                         Serveur Main 1
+                                   </a>
+                                   <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                         Serveur P1
+                                   </a>
+                                    <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P2"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                         Serveur P2
+                                   </a>
+                            </div>
+                     </div>
               </>
        );
 };
