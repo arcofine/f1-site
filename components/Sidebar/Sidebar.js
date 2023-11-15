@@ -457,6 +457,43 @@ export default function Sidebar() {
                                                         </Link>
                                                  </li>
                                           </ul>
+
+                                           <hr className="mt-3 mb-36" />
+                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
+                                                 LIVE TIMING
+                                          </h5>
+                                          <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN1"
+                                                               target="_blank"
+                                                               rel="noreferrer"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                              Serveur MAIN 1
+                                                        </a>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
+                                                               target="_blank"
+                                                               rel="noreferrer"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                              Serveur P1
+                                                        </a>
+                                                 </li>
+                                                  <li className="items-center">
+                                                        <a
+                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P2"
+                                                               target="_blank"
+                                                               rel="noreferrer"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                              Serveur P2
+                                                        </a>
+                                                 </li>
+                                          </ul>                            
                                    </div>
                             </div>
                      </nav>
