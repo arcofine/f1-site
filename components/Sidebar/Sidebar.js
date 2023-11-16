@@ -147,7 +147,7 @@ export default function Sidebar() {
                                                  </Link>
                                           </div>
                                           <div>
-                                                 <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline" style="background-color:black; color:white;">
+                                                 <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline" style={{backgroundColor:"black", color:"white"}}>
                                                         LIVE TIMING
                                                  </h5>
                                                  <a
