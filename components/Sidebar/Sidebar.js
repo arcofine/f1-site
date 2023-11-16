@@ -65,13 +65,13 @@ export default function Sidebar() {
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
                                                  </a> */}
-                                                 <a
+                                                 {/* <a
                                                         href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                 </a>
+                                                 </a> */}
 
                                                  <Link
                                                         href="/admin/rulesF1"
@@ -91,7 +91,7 @@ export default function Sidebar() {
                                                         Règlements
                                                  </Link>
                                           </div>
-                                          <div>
+                                          <div className="mr-4">
                                                  <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
                                                         GT-3
                                                  </h5>
@@ -120,13 +120,13 @@ export default function Sidebar() {
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
                                                  </a>
-                                                 <a
+                                                 {/* <a
                                                         href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
                                                         <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                 </a>
+                                                 </a> */}
 
                                                  <Link
                                                         href="/admin/rulesGt"
@@ -281,7 +281,7 @@ export default function Sidebar() {
                                                                Derniers Résultats
                                                         </Link>
                                                  </li>
-                                                 <li className="items-center">
+                                                 {/* <li className="items-center">
                                                         <a
                                                                href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
                                                                target="_blank"
@@ -290,7 +290,7 @@ export default function Sidebar() {
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
                                                         </a>
-                                                 </li>
+                                                 </li> */}
                                                  <li className="items-center">
                                                         <Link
                                                                href="/admin/rulesF1"
@@ -370,7 +370,7 @@ export default function Sidebar() {
                                                                Derniers Résultats
                                                         </Link> */}
                                                  </li>
-                                                 <li className="items-center">
+                                                 {/* <li className="items-center">
                                                         <a
                                                                href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
                                                                target="_blank"
@@ -379,7 +379,7 @@ export default function Sidebar() {
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
                                                                Timing (Alpha)
                                                         </a>
-                                                 </li>
+                                                 </li> */}
                                                  <li className="items-center">
                                                         <Link
                                                                href="/admin/rulesGt"
