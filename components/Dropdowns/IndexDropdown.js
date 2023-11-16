@@ -65,24 +65,7 @@ const IndexDropdown = () => {
                                           }>
                                           Derniers résultats
                                    </Link>
-                                   {/* <a
-                                          href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
-                                          target="_blank"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
-                                          Derniers Résultats
-                                   </a> */}
-                                   <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
-                                          target="_blank"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
-                                          Live Timing
-                                   </a>
+                                   
                                    <Link
                                           href="/admin/rulesF1"
                                           className={
@@ -115,15 +98,7 @@ const IndexDropdown = () => {
                                           }>
                                           Derniers Résultats
                                    </a>
-                                   <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
-                                          target="_blank"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
-                                          Live Timing (Alpha)
-                                   </a>
+                                   
                                    <Link
                                           href="/admin/rulesGt"
                                           className={
