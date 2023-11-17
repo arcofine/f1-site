@@ -27,7 +27,7 @@ const SubscribeDropdown = () => {
        return (
               <>
                      <a
-                            className="hover:text-blueGray-500  px-2 py-2 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            className="hover:text-blueGray-500  px-3 py-4 lg:py-2 flex items-center text-xs xs:text-sm uppercase font-bold"
                             href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
                             target="_blank"
                             rel="noreferrer">

@@ -42,7 +42,7 @@ export default function Navbar(props) {
                                                         <SubscribeDropdown />
                                                  </button>
                                                  <button
-                                                        className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
+                                                        className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
                                                         type="button"
                                                         //  onClick={() => setNavbarOpen(!navbarOpen)}
                                                  >
@@ -54,6 +54,21 @@ export default function Navbar(props) {
                                                         Tableau de Bord
                                                  </Link> */}
                                                         <IndexDropdown />
+                                                        {/* <i className="fas fa-bars"></i> */}
+                                                 </button>
+                                                 <button
+                                                        className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
+                                                        type="button"
+                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
+                                                 >
+                                                        {/* <Link
+                                                        href="/admin/dashboard"
+                                                        className={
+                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
+                                                        }>
+                                                        Tableau de Bord
+                                                 </Link> */}
+                                                        <LivetimeDropdown />
                                                         {/* <i className="fas fa-bars"></i> */}
                                                  </button>
                                           </div>

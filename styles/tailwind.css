@@ -3942,6 +3942,11 @@ select {
 .xs\:hidden {
     display: none;
   }
+  .xs\:text-sm {
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    padding:5px 2px
+  }
 }
 
 @media (min-width: 640px) {
@@ -3990,6 +3995,10 @@ select {
   }
   .sm\:hidden {
     display: none;
+  }
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
