@@ -84,8 +84,36 @@ export default function Index() {
                                                         onReady={_onReady}
                                                         onEnd={_onReady}
                                                  />
+                                                 
                                           </div>
-                                          <div className=" mx-auto w-full items-center absolute flex h-500-px top-0 flex-wrap z-2"></div>
+                                          <div className=" mx-auto w-full items-center absolute flex h-500-px top-0 flex-wrap z-2">
+                                                 
+                                          </div>
+                                          
+                                   </div>
+                                   <div className="flex flex-col mx-auto items-center justify-center mt-5">
+                                          <a
+                            className="text-blueGray-300
+                                          text-center
+                                          inline-flex
+                                          items-center
+                                          justify-center
+                                          w-full
+                                          px-14
+                                          h-16
+                                          mb-0
+                                          shadow-lg
+                                          text-xl
+                                          font-bold
+                                          border-2
+                                          hover:text-blueGray-500
+                                          roboto
+                                          "
+                            href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
+                            target="_blank"
+                            rel="noreferrer">
+                            INSCRIS TOI MAINTENANT!
+                     </a>
                                    </div>
                             </div>
                      </section>

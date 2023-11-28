@@ -51,6 +51,15 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/logo_maxi_bw-white.png" />
                                                         </a>
+                                                        <a
+                                                               href="https://www.roquemont.com/"
+                                                               target="_blank"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/5 xs:w-1/2 px-12 xs:px-3 xs:py-6 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
+                                                               <img alt="" height="300" src="/img/logo_roquemont.png" />
+                                                        </a>
+                                                 </div>
                                                  </div>
                                                  <div className="flex flex-wrap mx-auto items-center justify-center mb-5">
                                                          <a
@@ -69,6 +78,7 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/logo_bnc.png" />
                                                         </a>
+                                                         
                                                         <a
                                                                href="https://www.solotech.com/"
                                                                target="_blank"
@@ -77,7 +87,7 @@ export default function Footer() {
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/solotech-white.png" />
                                                         </a>
-                                                 </div>
+                                                        
                                                  <div className="flex flex-wrap mx-auto items-center justify-center">
                                                         <a
                                                                href="https://www.simracinghub.com"

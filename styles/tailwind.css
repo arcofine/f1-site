@@ -53,6 +53,9 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap');
+
+
 body {
   font-family:
 		system-ui,
@@ -64,6 +67,13 @@ body {
 		sans-serif,
 		'Apple Color Emoji',
 		'Segoe UI Emoji';
+}
+.roboto{
+  font-family:
+      'Genos',
+        sans-serif !important;
+     ;
+     font-size: 3rem !important;
 }
 
 /*

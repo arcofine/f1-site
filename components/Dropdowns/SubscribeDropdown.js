@@ -26,8 +26,27 @@ const SubscribeDropdown = () => {
        // };
        return (
               <>
-                     <a
+                     {/* <a
                             className="hover:text-blueGray-500  px-3 py-4 lg:py-2 flex items-center text-xs xs:text-sm uppercase font-bold"
+                            href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
+                            target="_blank"
+                            rel="noreferrer">
+                            INSCRIPTION
+                     </a> */}
+                     <a
+                            className="text-blueGray-300
+                                          text-center
+                                          inline-flex
+                                          items-center
+                                          justify-center
+                                          w-2
+                                          px-12
+                                          h-4
+                                          mb-0
+                                          shadow-lg
+                                          text-sm
+                                          font-bold
+                                          bg-red-500"
                             href="https://forms.gle/D6Nq9RG8wcsh6ruv6"
                             target="_blank"
                             rel="noreferrer">
