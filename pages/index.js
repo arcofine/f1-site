@@ -79,7 +79,7 @@ export default function Index() {
                                           </a> */}
                                           <div className="container mx-auto max-w-950-px ws:max-w-580-px ">
                                                  <YouTube
-                                                        videoId="KZBkVrFRCjI"
+                                                        videoId="A7rFAimTgZk"
                                                         opts={opts}
                                                         onReady={_onReady}
                                                         onEnd={_onReady}
