@@ -56,6 +56,15 @@ const LivetimeDropdown = () => {
                                           rel="noreferrer">
                                          Serveur Main 1
                                    </a>
+                                    <a
+                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN2"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                         Serveur Main 2
+                                   </a>
                                    <a
                                           href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
                                           target="_blank"
@@ -64,15 +73,6 @@ const LivetimeDropdown = () => {
                                           }
                                           rel="noreferrer">
                                          Serveur P1
-                                   </a>
-                                    <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P2"
-                                          target="_blank"
-                                          className={
-                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
-                                          }
-                                          rel="noreferrer">
-                                         Serveur P2
                                    </a>
                             </div>
                      </div>
