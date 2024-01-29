@@ -19,7 +19,7 @@ export default function CardLineChart({mode}) {
        useEffect(() => {
               const fetchData = async () => {
                      try {
-                            const testURL = await fetch("/championships/championship?cid=1");
+                            const testURL = await fetch("/championships/championship?cid=2");
                             setData(testURL.status);
                             console.log(testURL.status);
                             return testURL;
