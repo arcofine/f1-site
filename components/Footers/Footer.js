@@ -109,7 +109,7 @@ export default function Footer() {
                                                                type="button">
                                                                <a
                                                                       className=""
-                                                                      href="https://www.facebook.com/groups/f1sim/"
+                                                                      href="https://www.facebook.com/groups/f1simulation"
                                                                       target="_blank"
                                                                       rel="noreferrer">
                                                                       <i className="fab fa-facebook-square text-lg leading-lg " />

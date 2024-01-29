@@ -13,7 +13,7 @@ export default function Navbar() {
                                           className="text-white text-sm uppercase hidden lg:inline-block font-semibold"
                                           href="#pablo"
                                           onClick={(e) => e.preventDefault()}>
-                                          F1 Simulation - Saison 2 2023
+                                          F1 Simulation - Saison 1 2024
                                    </a>
                             </div>
                             <p className="flex-auto ml-0">
