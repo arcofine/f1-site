@@ -10,8 +10,8 @@ module.exports = {
                      },
                      {
                          
-                                          source: '/html',
-                                          destination:'/html/index.htm',
+                            source: '/draws',
+                            destination:'/draws/index.htm',
                                    
                             
                      }
