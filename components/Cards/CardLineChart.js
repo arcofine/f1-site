@@ -58,7 +58,7 @@ export default function CardLineChart({mode}) {
                                                         height: "100vw",
                                                  }}>
                                                  <Iframe
-                                                        url="/championships/championship?cid=1"
+                                                        url="/championships/championship?cid=2"
                                                         width="100%"
                                                         height="100%"
                                                         id=""
