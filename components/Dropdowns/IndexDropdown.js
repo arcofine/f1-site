@@ -79,7 +79,7 @@ const IndexDropdown = () => {
                                           className={
                                                  "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
                                           }>
-                                          GT3 - Saison 1 2024
+                                          MultiClass - Saison 1 2024
                                    </span>
                                    <hr className="my-2 border-blueGray-300" />
                                    <Link
