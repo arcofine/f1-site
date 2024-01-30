@@ -93,7 +93,7 @@ export default function Sidebar() {
                                           </div>
                                           <div className="mr-4">
                                                  <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
-                                                        GT-3
+                                                        MultiClass
                                                  </h5>
                                                  <Link
                                                         href="/admin/tablesGt"
@@ -315,7 +315,7 @@ export default function Sidebar() {
                                           </ul>
                                           <hr className="mt-3 mb-36" />
                                           <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
-                                                 GT-3
+                                                 MultiClass
                                           </h5>
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
                                                  <li className="items-center">

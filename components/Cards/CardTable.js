@@ -6,11 +6,11 @@ import * as tools from "../../utils/common.js";
 
 import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-export default function CardTable({color, data, drivers, teams}) {
-       const DRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["drivers"]);
-       const TEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["teams"]);
+export default function CardTable({color, data, driversGT, driversLMP}) {
+       const DRIVERSGT = tools.GET_TABLE_CONTENT(data["Class GT3"]["Driver Standings"]["drivers"]);
+       const DRIVERSLMP= tools.GET_TABLE_CONTENT(data["Class LMP2"]["Driver Standings"]["drivers"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
-       const dataType = drivers ? DRIVERS : TEAMS;
+       const dataType = driversGT ? DRIVERSGT : DRIVERSLMP;
 
        return (
               <>
@@ -30,9 +30,9 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              ? "text-blueGray-700"
                                                                              : "text-white")
                                                                }>
-                                                               {drivers
-                                                                      ? "Classement de Pilotes"
-                                                                      : "Classement d'équipes"}
+                                                               {driversGT
+                                                                      ? "Classement de Pilotes GT3"
+                                                                      : "Classement de Pilotes LMP2"}
                                                         </h3>
                                                  </div>
                                           </div>
@@ -47,8 +47,8 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "px-2 align-middle table-cell border border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
+                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
                                                                       Pos
                                                                </th>
@@ -56,10 +56,10 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "px-1 align-middle border table-cell border-solid py-1 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
+                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
-                                                                      {drivers ? "Pilote" : "Écurie"}
+                                                                      {driversGT ? "Pilote" : "Pilote"}
                                                                </th>
                                                                {query_RACES.map((race, i) => {
                                                                       return (
@@ -68,8 +68,8 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                     className={
                                                                                            "px-1 align-middle text-center border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                                                                                            (color === "light"
-                                                                                                  ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                                  : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
+                                                                                                  ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                                  : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                                     }>
                                                                                     {race.substring(0, 3)}
                                                                              </th>
@@ -79,8 +79,8 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                       className={
                                                                              "pr-4 align-middle border border-solid py-2 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center " +
                                                                              (color === "light"
-                                                                                    ? "bg-blueGray-50 text-blueGray-500b border-blueGray-100"
-                                                                                    : "bg-blueGray-600 text-blueGray-200w border-blueGray-500")
+                                                                                    ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
+                                                                                    : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
                                                                       PTS
                                                                </th>
@@ -94,7 +94,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              className={
                                                                                     color === "light"
                                                                                            ? i % 2
-                                                                                                  ? "bg-blueGray-50  text-blueGray-500b"
+                                                                                                  ? "bg-blueGray-50  text-blueGray-500"
                                                                                                   : "bg-blueGray-200  text-blueGray-500"
                                                                                            : i % 2
                                                                                            ? "bg-blueGray-700"
@@ -118,15 +118,17 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                              </th>
                                                                              <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                     <b className="mb-0">
-                                                                                           {drivers
+                                                                                           {driversGT
                                                                                                   ? item.name
-                                                                                                  : item.team_name}{" "}
+                                                                                                  : item.team_name}
                                                                                     </b>
 
-                                                                                    {teams && (
-                                                                                           <p className="text-2xs">
-                                                                                                  {item.team_drivers}
-                                                                                           </p>
+                                                                                    {driversLMP && (
+                                                                                          <b className="mb-0">
+                                                                                           {driversLMP
+                                                                                                  ? item.name
+                                                                                                  : item.team_name}
+                                                                                    </b>
                                                                                     )}
                                                                              </td>
                                                                              {item.points.map((point, i) => {
@@ -135,7 +137,7 @@ export default function CardTable({color, data, drivers, teams}) {
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
-                                                                                                  {drivers && (
+                                                                                                  {driversGT ? driversGT: driversLMP && (
                                                                                                          <span
                                                                                                                 className="text-orange-500
                                                                                                                           left-1
