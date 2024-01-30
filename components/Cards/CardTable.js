@@ -137,7 +137,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
-                                                                                                  {driversGT ? driversGT: driversLMP && (
+                                                                                                  {/* {driversGT ? driversGT : driversLMP && ( */}
                                                                                                          <span
                                                                                                                 className="text-orange-500
                                                                                                                           left-1
@@ -161,7 +161,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                                                        ]
                                                                                                                 }
                                                                                                          </span>
-                                                                                                  )}
+                                                                                                  {/* )} */}
                                                                                                   {point}
                                                                                            </td>
                                                                                     );
