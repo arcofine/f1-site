@@ -348,38 +348,7 @@ export default function Sidebar() {
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
                                                         </a>
-
-                                                        {/* <Link
-                                                               href="/admin/dashboardGt"
-                                                               className={
-                                                                      "text-xs uppercase py-1 font-bold block " +
-                                                                      (router.pathname.indexOf("/admin/dashboardGt") !==
-                                                                      -1
-                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                             : "text-blueGray-700 hover:text-blueGray-500")
-                                                               }>
-                                                               <i
-                                                                      className={
-                                                                             "fas fa-poll mr-2 text-sm " +
-                                                                             (router.pathname.indexOf(
-                                                                                    "/admin/dashboardGt"
-                                                                             ) !== -1
-                                                                                    ? "opacity-75"
-                                                                                    : "text-blueGray-300")
-                                                                      }></i>{" "}
-                                                               Derniers Résultats
-                                                        </Link> */}
                                                  </li>
-                                                 {/* <li className="items-center">
-                                                        <a
-                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
-                                                               target="_blank"
-                                                               rel="noreferrer"
-                                                               className={"text-xs uppercase py-1 font-bold block "}>
-                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                               Timing (Alpha)
-                                                        </a>
-                                                 </li> */}
                                                  <li className="items-center">
                                                         <Link
                                                                href="/admin/rulesGt"
@@ -402,7 +371,56 @@ export default function Sidebar() {
                                                         </Link>
                                                  </li>
                                           </ul>
+<hr className="mt-3 mb-36" />
+                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-teal-500 no-underline">
+                                                 Rally
+                                          </h5>
+                                          <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
+                                                 <li className="items-center">
+                                                        <Link
+                                                               href="/admin/tablesRally"
+                                                               className={
+                                                                      "text-xs uppercase pt-2 pb-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/tablesRally") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-flag-checkered mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/tablesRally"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>
+                                                               Classements
+                                                        </Link>
+                                                 </li>
 
+                                                 
+                                                 {/* <li className="items-center">
+                                                        <Link
+                                                               href="/admin/rulesGt"
+                                                               className={
+                                                                      "text-xs uppercase py-1 font-bold block " +
+                                                                      (router.pathname.indexOf("/admin/rulesGt") !== -1
+                                                                             ? "text-lightBlue-500 hover:text-lightBlue-600"
+                                                                             : "text-blueGray-700 hover:text-blueGray-500")
+                                                               }>
+                                                               <i
+                                                                      className={
+                                                                             "fas fa-book mr-2 text-sm " +
+                                                                             (router.pathname.indexOf(
+                                                                                    "/admin/rulesGt"
+                                                                             ) !== -1
+                                                                                    ? "opacity-75"
+                                                                                    : "text-blueGray-300")
+                                                                      }></i>
+                                                               Règlements
+                                                        </Link>
+                                                 </li> */}
+                                          </ul>
                                            <hr className="mt-3 mb-36" />
                                           <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
                                                  LIVE TIMING

@@ -1,0 +1,133 @@
+{"Class Overall":
+   { "Teams Standings":{
+        "teams":{
+            "1": {
+                "pos.": 6,
+                "Constructeur": "TEAM Skoda Fabia RS",
+                "Points": 171,
+                "PTS boni": 51,
+                "Powersage": 17,
+                "stage_points":[
+                    "103",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              },
+              "2": {
+                "pos.": 4,
+                "Constructeur": "TEAM Skoda Fabia EVO",
+                "Points": 133,
+                "PTS boni": 52,
+                "Powersage": 14,
+                "stage_points":[
+                    "67",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              },
+              "3": {
+                "pos.": 1,
+                "Constructeur": "TEAM Citroen C3",
+                "Points": 119,
+                "PTS boni": 34,
+                "Powersage": 11,
+                "stage_points":[
+                    "74",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              },
+              "4": {
+                "pos.": 3,
+                "Constructeur": "TEAM Hyundai i20 N",
+                "Points": 102,
+                "PTS boni": 47,
+                "Powersage": 2,
+                "stage_points":[
+                    "53",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              },
+              "5": {
+                "pos.": 5,
+                "Constructeur": "TEAM Volkswagen Polo GTI ",
+                "Points": 89,
+                "PTS boni": 39,
+                "Powersage": 4,
+                "stage_points":[
+                    "46",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              },
+              "6": {
+                "pos.": 2,
+                "Constructeur": "TEAM Ford Fiesta",
+                "Points": 76,
+                "PTS boni": 45,
+                "Powersage": 7,
+                "stage_points":[
+                    "24",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+              }
+        },
+        "Races":[
+                    "PORTUGAL",
+                    "CHILI",
+                    "KENIA",
+                    "C. EUROPE",
+                    "JAPON",
+                    "SCANDINAVIE",
+                    "ESTONIE",
+                    "PACIFIQUE",
+                    "IBERIA",
+                    "OCEANIE"
+                ]
+      }
+  } 
+}

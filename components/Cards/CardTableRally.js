@@ -6,11 +6,10 @@ import * as tools from "../../utils/common.js";
 
 // import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-export default function CardTable({color, data, driversGT, driversLMP}) {
-       const DRIVERSGT = tools.GET_TABLE_CONTENT(data["Class GT3"]["Driver Standings"]["drivers"]);
-       const DRIVERSLMP= tools.GET_TABLE_CONTENT(data["Class LMP2"]["Driver Standings"]["drivers"]);
-       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
-       const dataType = driversGT ? DRIVERSGT : DRIVERSLMP;
+export default function CardTable({color, data, teams}) {
+       const RALLYTEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["teams"]);
+       const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["Races"]);
+       const dataType = teams ? RALLYTEAMS : "";
 
        return (
               <>
@@ -30,9 +29,9 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                              ? "text-blueGray-700"
                                                                              : "text-white")
                                                                }>
-                                                               {driversGT
-                                                                      ? "Classement de Pilotes GT3"
-                                                                      : "Classement de Pilotes LMP2"}
+                                                               {teams
+                                                                      ? "Classement d'équipes"
+                                                                      : ""}
                                                         </h3>
                                                  </div>
                                           </div>
@@ -59,7 +58,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                     ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
-                                                                      {driversGT ? "Pilote" : "Pilote"}
+                                                                      {teams ? "Team" : ""}
                                                                </th>
                                                                {query_RACES.map((race, i) => {
                                                                       return (
@@ -118,50 +117,23 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                              </th>
                                                                              <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                     <b className="mb-0">
-                                                                                           {driversGT
-                                                                                                  ? item.name
-                                                                                                  : item.team_name}
+                                                                                           {teams
+                                                                                                  ? item.Constructeur
+                                                                                                  : item.name}
                                                                                     </b>
 
-                                                                                    {driversLMP && (
-                                                                                          <b className="mb-0">
-                                                                                           {driversLMP
-                                                                                                  ? item.name
-                                                                                                  : item.team_name}
-                                                                                    </b>
+                                                                                    {teams && (
+                                                                                           <p className="text-2xs">
+                                                                                                  {item.team_drivers}
+                                                                                           </p>
                                                                                     )}
                                                                              </td>
-                                                                             {item.points.map((point, i) => {
+                                                                             {item.stage_points.map((point, i) => {
                                                                                     return (
                                                                                            <td
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
-                                                                                                  {/* {driversGT ? driversGT : driversLMP && ( */}
-                                                                                                         <span
-                                                                                                                className="text-orange-500
-                                                                                                                          left-1
-                                                                                                                          absolute
-                                                                                                                          top-5-px
-                                                                                                                          p-1
-                                                                                                                          text-2xs
-                                                                                                                          text-center
-                                                                                                                          inline-flex
-                                                                                                                          items-center
-                                                                                                                          justify-center
-                                                                                                                          w-2
-                                                                                                                          h-2
-                                                                                                                          mb-5
-                                                                                                                          rounded-full
-                                                                                                                         ">
-                                                                                                                {
-                                                                                                                       item
-                                                                                                                              .positions[
-                                                                                                                              i
-                                                                                                                       ]
-                                                                                                                }
-                                                                                                         </span>
-                                                                                                  {/* )} */}
                                                                                                   {point}
                                                                                            </td>
                                                                                     );
@@ -170,7 +142,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                              <td className="border-t-0 px-3 align-middle text-center border-l border-r-0 text-sm font-bold whitespace-nowrap p-0">
                                                                                     <div className="items-center">
                                                                                            <p className="mr-2">
-                                                                                                  {item.points_sum}
+                                                                                                  {item.Points}
                                                                                            </p>
                                                                                     </div>
                                                                              </td>

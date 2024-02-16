@@ -2,7 +2,7 @@ import React from "react";
 
 // components
 
-import CardTable from "components/Cards/CardTable.js";
+import CardTableF1 from "../../components/Cards/CardTableF1.js";
 
 // layout for page
 
@@ -46,10 +46,10 @@ export default function TablesF1({championship, error}) {
                             {!error && (
                                    <>
                                           <div className="w-full mb-12 px-4">
-                                                 <CardTable drivers data={championship} color="dark" />
+                                                 <CardTableF1 drivers data={championship} color="dark" />
                                           </div>
                                           <div className="w-full mb-12 px-4">
-                                                 <CardTable teams data={championship} color="light" />
+                                                 <CardTableF1 teams data={championship} color="light" />
                                           </div>
                                    </>
                             )}

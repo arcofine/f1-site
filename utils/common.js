@@ -9,3 +9,4 @@ export const GET_TABLE_CONTENT = (data) => {
               return null;
        }
 };
+

@@ -6,11 +6,11 @@ import * as tools from "../../utils/common.js";
 
 // import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-export default function CardTable({color, data, driversGT, driversLMP}) {
-       const DRIVERSGT = tools.GET_TABLE_CONTENT(data["Class GT3"]["Driver Standings"]["drivers"]);
-       const DRIVERSLMP= tools.GET_TABLE_CONTENT(data["Class LMP2"]["Driver Standings"]["drivers"]);
+export default function CardTable({color, data, drivers, teams}) {
+       const DRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["drivers"]);
+       const TEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Team Standings"]["teams"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
-       const dataType = driversGT ? DRIVERSGT : DRIVERSLMP;
+       const dataType = drivers ? DRIVERS : TEAMS;
 
        return (
               <>
@@ -30,9 +30,9 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                              ? "text-blueGray-700"
                                                                              : "text-white")
                                                                }>
-                                                               {driversGT
-                                                                      ? "Classement de Pilotes GT3"
-                                                                      : "Classement de Pilotes LMP2"}
+                                                               {drivers
+                                                                      ? "Classement de Pilotes"
+                                                                      : "Classement d'équipes"}
                                                         </h3>
                                                  </div>
                                           </div>
@@ -59,7 +59,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                     ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
-                                                                      {driversGT ? "Pilote" : "Pilote"}
+                                                                      {drivers ? "Pilote" : "Écurie"}
                                                                </th>
                                                                {query_RACES.map((race, i) => {
                                                                       return (
@@ -118,17 +118,15 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                              </th>
                                                                              <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                     <b className="mb-0">
-                                                                                           {driversGT
+                                                                                           {drivers
                                                                                                   ? item.name
-                                                                                                  : item.team_name}
+                                                                                                  : item.team_name}{" "}
                                                                                     </b>
 
-                                                                                    {driversLMP && (
-                                                                                          <b className="mb-0">
-                                                                                           {driversLMP
-                                                                                                  ? item.name
-                                                                                                  : item.team_name}
-                                                                                    </b>
+                                                                                    {teams && (
+                                                                                           <p className="text-2xs">
+                                                                                                  {item.team_drivers}
+                                                                                           </p>
                                                                                     )}
                                                                              </td>
                                                                              {item.points.map((point, i) => {
@@ -137,7 +135,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
-                                                                                                  {/* {driversGT ? driversGT : driversLMP && ( */}
+                                                                                                  {drivers && (
                                                                                                          <span
                                                                                                                 className="text-orange-500
                                                                                                                           left-1
@@ -161,7 +159,7 @@ export default function CardTable({color, data, driversGT, driversLMP}) {
                                                                                                                        ]
                                                                                                                 }
                                                                                                          </span>
-                                                                                                  {/* )} */}
+                                                                                                  )}
                                                                                                   {point}
                                                                                            </td>
                                                                                     );
