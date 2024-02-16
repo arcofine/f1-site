@@ -135,6 +135,35 @@ export default function CardTable({color, data, teams}) {
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
                                                                                                   {point}
+                                                                                                  {point !== "" && (
+                                                                                                         <>
+                                                                                                         <div  className="text-orange-500
+                                                                                                                          left-1
+                                                                                                                          p-1
+                                                                                                                          text-2xs
+                                                                                                                          items-center
+                                                                                                                          justify-center
+                                                                                                                          w-1
+                                                                                                                          h-2
+                                                                                                                          mb-1
+                                                                                                                          rounded-full
+                                                                                                                         " > Point Boni: {item.PTS_boni[i]}</div>
+                                                                                                         <div  className="text-orange-500
+                                                                                                                          left-1
+                                                                                                                          p-1
+                                                                                                                          text-2xs
+                                                                                                                          items-center
+                                                                                                                          justify-center
+                                                                                                                          w-1
+                                                                                                                          h-2
+                                                                                                                          mb-2
+                                                                                                                          rounded-full
+                                                                                                                         " > PowerStage: {item.Powersage[i]}</div>
+                                                                                                                </>
+                                                                                                         
+                                                                                                  
+                                                                                                  )}
+                                                                                                  
                                                                                            </td>
                                                                                     );
                                                                              })}
