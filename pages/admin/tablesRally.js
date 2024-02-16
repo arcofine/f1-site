@@ -7,7 +7,7 @@ import CardTableRally from "../../components/Cards/CardTableRally.js";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import Admin from "../../layouts/Admin.js";
 
 export default function TablesRally({tableRally}) {
        return (

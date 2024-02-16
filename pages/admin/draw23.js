@@ -7,7 +7,7 @@ import Script from "next/script";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import Admin from "../../layouts/Admin.js";
 
 export default function Draws() {
        return (

@@ -2,8 +2,8 @@ import React from "react";
 // import Script from "next/script";
 
 // components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import Footer from "components/Footers/Footer.js";
+import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import Footer from "../../components/Footers/Footer.js";
 
 // layout for page
 

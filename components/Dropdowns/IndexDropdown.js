@@ -14,7 +14,7 @@ const IndexDropdown = () => {
                             {
                                    name: "offset",
                                    options: {
-                                          offset: [-210, -5],
+                                          offset: [-310, -5],
                                    },
                             },
                      ],
@@ -74,7 +74,7 @@ const IndexDropdown = () => {
                                           Règlements
                                    </Link>
                             </div>
-                            <div>
+                            <div className="index-dropdown-separator">
                                    <span
                                           className={
                                                  "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
@@ -105,6 +105,22 @@ const IndexDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                                           }>
                                           Règlements
+                                   </Link>
+                            </div>
+                            <div>
+                                   <span
+                                          className={
+                                                 "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
+                                          }>
+                                          Rally - Saison 1 2024
+                                   </span>
+                                   <hr className="my-2 border-blueGray-300" />
+                                   <Link
+                                          href="/admin/tablesRally"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
+                                          }>
+                                          Classements
                                    </Link>
                             </div>
                      </div>

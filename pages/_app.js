@@ -5,7 +5,7 @@ import Head from "next/head";
 import Router from "next/router";
 import Script from "next/script";
 
-import PageChange from "components/PageChange/PageChange.js";
+import PageChange from "../components/PageChange/PageChange.js";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "styles/tailwind.css";

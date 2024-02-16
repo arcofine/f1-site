@@ -6,7 +6,7 @@ import CardTableF1 from "../../components/Cards/CardTableF1.js";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import Admin from "../../layouts/Admin.js";
 
 export default function TablesF1({championship, error}) {
        return (

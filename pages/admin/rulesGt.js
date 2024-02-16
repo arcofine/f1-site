@@ -2,11 +2,11 @@ import React from "react";
 
 // components
 
-import CardRules from "components/Cards/CardRules";
+import CardRules from "../../components/Cards/CardRules";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import Admin from "../../layouts/Admin.js";
 
 export default function RulesGt({championship, error}) {
        const [league, setLangue] = React.useState("gt");

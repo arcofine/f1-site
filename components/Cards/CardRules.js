@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import RuleF1 from "components/Rules/RuleF1";
-import RuleGt from "components/Rules/RuleGt";
+import RuleF1 from "../Rules/RuleF1";
+import RuleGt from "../Rules/RuleGt";
 
 // components
 
