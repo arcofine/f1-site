@@ -19,12 +19,28 @@ export default function CardTable({color, data, drivers,teams}) {
   // Calculate equal interval step (divide the range into equal parts)   
        let currentPosition = 0;
        let prevScore = null;
+       let sets = false;
+       let step = null;
+       
   // Assign positions based on sorted order and equal intervals
-       const standingsTable = sortedPlayers.map((player, index) => {
-         if (parseInt(player.Points) !== prevScore) {
-              prevScore = player.Points;  
-              currentPosition += 1;
-         } 
+       const standingsTable = sortedPlayers.map((player, index) => {;
+              
+              if (parseInt(player.Points) !== prevScore) {
+                     if (!sets) {
+                     prevScore = player.Points;  
+                            currentPosition += 1;  
+                            sets = false;        
+                     } else {
+                            console.log(step)
+                            currentPosition += step+1;
+                            sets = false;
+                            step = null;
+                     }
+                
+         } else  {
+                     sets = true;
+                     step +=1
+         }
               return {
               name: player.DRIVER,
               Points: player.Points,
