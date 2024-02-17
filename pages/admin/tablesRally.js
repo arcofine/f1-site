@@ -16,6 +16,9 @@ export default function TablesRally({tableRally}) {
                             
                             {(
                                    <>
+                                          <div className="w-full mb-12 px-4">
+                                                 <CardTableRally drivers data={tableRally} color="dark" />
+                                          </div>
                                           <div className=" w-full mb-12 px-4">
                                                  <CardTableRally teams data={tableRally} color="dark" />
                                           </div>

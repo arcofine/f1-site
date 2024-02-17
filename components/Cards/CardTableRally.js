@@ -6,10 +6,12 @@ import * as tools from "../../utils/common.js";
 
 // import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-export default function CardTable({color, data, teams}) {
+export default function CardTable({color, data, drivers,teams}) {
        const RALLYTEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["teams"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["Races"]);
-       const dataType = teams ? RALLYTEAMS : "";
+       const RALLYDRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver standings"]);
+       console.log(RALLYDRIVERS);
+       const dataType = teams ? RALLYTEAMS : RALLYDRIVERS;
 
        return (
               <>
@@ -58,7 +60,7 @@ export default function CardTable({color, data, teams}) {
                                                                                     ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
-                                                                      {teams ? "Team" : ""}
+                                                                      {teams ? "Team" : "Drivers"}
                                                                </th>
                                                                {query_RACES.map((race, i) => {
                                                                       return (
@@ -85,8 +87,10 @@ export default function CardTable({color, data, teams}) {
                                                                </th>
                                                         </tr>
                                                  </thead>
-                                                 <tbody>
-                                                        {dataType.map((item, i) => {
+                                                
+                                                 {teams === true &&(<tbody>
+                                                        {dataType.sort((a, b) => b.Points - a.Points).map((item, i) => {
+                                                               console.log(item)
                                                                return (
                                                                       <tr
                                                                              key={i + "_item"}
@@ -96,18 +100,18 @@ export default function CardTable({color, data, teams}) {
                                                                                                   ? "bg-blueGray-50  text-blueGray-500"
                                                                                                   : "bg-blueGray-200  text-blueGray-500"
                                                                                            : i % 2
-                                                                                           ? "bg-blueGray-700"
-                                                                                           : "bg-blueGray-800"
+                                                                                                  ? "bg-blueGray-700"
+                                                                                                  : "bg-blueGray-800"
                                                                              }>
                                                                              <th
-                                                                                    style={{flex: "0 0 5em"}}
+                                                                                    style={{ flex: "0 0 5em" }}
                                                                                     className=" table-row border-t-0 px-2 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0 text-left items-center">
                                                                                     <p className="flex-auto ml-0">
                                                                                            <span
                                                                                                   className={
                                                                                                          "text-center inline-flex items-center justify-center w-8 h-8 mb-0 rounded-full text-xs font-bold" +
                                                                                                          (color ===
-                                                                                                         "light"
+                                                                                                                "light"
                                                                                                                 ? "text-blueGray-500"
                                                                                                                 : "text-blueGray-200")
                                                                                                   }>
@@ -119,7 +123,7 @@ export default function CardTable({color, data, teams}) {
                                                                                     <b className="mb-0">
                                                                                            {teams
                                                                                                   ? item.Constructeur
-                                                                                                  : item.name}
+                                                                                                  : item.DRIVER}
                                                                                     </b>
 
                                                                                     {teams && (
@@ -137,7 +141,7 @@ export default function CardTable({color, data, teams}) {
                                                                                                   {point}
                                                                                                   {point !== "" && (
                                                                                                          <>
-                                                                                                         <div  className="text-orange-500
+                                                                                                                <div className="text-orange-500
                                                                                                                           left-1
                                                                                                                           p-1
                                                                                                                           text-2xs
@@ -148,7 +152,7 @@ export default function CardTable({color, data, teams}) {
                                                                                                                           mb-1
                                                                                                                           rounded-full
                                                                                                                          " > Point Boni: {item.PTS_boni[i]}</div>
-                                                                                                         <div  className="text-orange-500
+                                                                                                                <div className="text-orange-500
                                                                                                                           left-1
                                                                                                                           p-1
                                                                                                                           text-2xs
@@ -158,8 +162,8 @@ export default function CardTable({color, data, teams}) {
                                                                                                                           h-2
                                                                                                                           mb-2
                                                                                                                           rounded-full
-                                                                                                                         " > PowerStage: {item.Powersage[i]}</div>
-                                                                                                                </>
+                                                                                                                         " > PowerStage: {item.Powerstage[i]}</div>
+                                                                                                         </>
                                                                                                          
                                                                                                   
                                                                                                   )}
@@ -179,6 +183,98 @@ export default function CardTable({color, data, teams}) {
                                                                );
                                                         })}
                                                  </tbody>
+                                                 )
+                                                 }
+                                                 {drivers === true &&(<tbody>
+                                                        {dataType.sort((a, b) => b.Points - a.Points).map((item2, index) => {
+                                                               return (
+                                                                      <tr
+                                                                             key={index + "_item"}
+                                                                             className={
+                                                                                    color === "light"
+                                                                                           ? index % 2
+                                                                                                  ? "bg-blueGray-50  text-blueGray-500"
+                                                                                                  : "bg-blueGray-200  text-blueGray-500"
+                                                                                           : index % 2
+                                                                                                  ? "bg-blueGray-700"
+                                                                                                  : "bg-blueGray-800"
+                                                                             }>
+                                                                             <th
+                                                                                    style={{ flex: "0 0 5em" }}
+                                                                                    className=" table-row border-t-0 px-2 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0 text-left items-center">
+                                                                                    <p className="flex-auto ml-0">
+                                                                                           <span
+                                                                                                  className={
+                                                                                                         "text-center inline-flex items-center justify-center w-8 h-8 mb-0 rounded-full text-xs font-bold" +
+                                                                                                         (color ===
+                                                                                                                "light"
+                                                                                                                ? "text-blueGray-500"
+                                                                                                                : "text-blueGray-200")
+                                                                                                  }>
+                                                                                                  {item2.POS}
+                                                                                           </span>
+                                                                                    </p>
+                                                                             </th>
+                                                                             <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
+                                                                                    <b className="mb-0">
+                                                                                           {teams
+                                                                                                  ? item2.Constructeur
+                                                                                                  : item2.DRIVER}
+                                                                                    </b>
+                                                                             </td>
+                                                                             {item2.stage_points.map((point, i) => {
+                                                                                    return (
+                                                                                           <td
+                                                                                                  key={i + "_point"}
+                                                                                                  className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
+                                                                                                  {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
+                                                                                                  {point}
+                                                                                                  {point !== "" && (
+                                                                                                         <>
+                                                                                                                <div className="text-orange-500
+                                                                                                                          left-1
+                                                                                                                          p-3
+                                                                                                                          text-2xs
+                                                                                                                          items-center
+                                                                                                                          justify-center
+                                                                                                                          w-1
+                                                                                                                          h-2
+                                                                                                                          mb-1
+                                                                                                                          rounded-full
+                                                                                                                         " > Point Boni: {item2.PTS_boni[i]}</div>
+                                                                                                                <div className="text-orange-500
+                                                                                                                          left-1
+                                                                                                                          p-1
+                                                                                                                          text-2xs
+                                                                                                                          items-center
+                                                                                                                          justify-center
+                                                                                                                          w-1
+                                                                                                                          h-2
+                                                                                                                          mb-2
+                                                                                                                          rounded-full
+                                                                                                                         " > PowerStage: {item2.Powerstage[i]}</div>
+                                                                                                         </>
+                                                                                                         
+                                                                                                  
+                                                                                                  )}
+                                                                                                  
+                                                                                           </td>
+                                                                                    );
+                                                                             })}
+
+                                                                             <td className="border-t-0 px-3 align-middle text-center border-l border-r-0 text-sm font-bold whitespace-nowrap p-0">
+                                                                                    <div className="items-center">
+                                                                                           <p className="mr-2">
+                                                                                                  {item2.Points}
+                                                                                           </p>
+                                                                                    </div>
+                                                                             </td>
+                                                                      </tr>
+                                                               );
+                                                        })}
+                                                 </tbody>
+                                                 )
+                                                 }
                                           </table>
                                    </div>
                             </div>
