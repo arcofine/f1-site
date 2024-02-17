@@ -185,22 +185,22 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                                                                           text-2xs
                                                                                                                           items-center
                                                                                                                           justify-center
-                                                                                                                          w-1
+                                                                                                                          w-2
                                                                                                                           h-2
                                                                                                                           mb-1
                                                                                                                           rounded-full
-                                                                                                                         " > Point Boni: {item.PTS_boni[i]}</div>
+                                                                                                                         " > Boni: {item.PTS_boni[i]}</div>
                                                                                                                 <div className="text-orange-500
                                                                                                                           left-1
                                                                                                                           p-1
                                                                                                                           text-2xs
                                                                                                                           items-center
                                                                                                                           justify-center
-                                                                                                                          w-1
+                                                                                                                          w-2
                                                                                                                           h-2
                                                                                                                           mb-2
                                                                                                                           rounded-full
-                                                                                                                         " > PowerStage: {item.Powerstage[i]}</div>
+                                                                                                                         " > Power: {item.Powerstage[i]}</div>
                                                                                                          </>
                                                                                                          
                                                                                                   
@@ -276,22 +276,22 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                                                                           text-2xs
                                                                                                                           items-center
                                                                                                                           justify-center
-                                                                                                                          w-1
+                                                                                                                          w-2
                                                                                                                           h-2
                                                                                                                           mb-1
                                                                                                                           rounded-full
-                                                                                                                         " > Point Boni: {item2.PTS_boni[i]}</div>
+                                                                                                                         " > Boni: {item2.PTS_boni[i]}</div>
                                                                                                                 <div className="text-orange-500
                                                                                                                           left-1
                                                                                                                           p-1
                                                                                                                           text-2xs
                                                                                                                           items-center
                                                                                                                           justify-center
-                                                                                                                          w-1
+                                                                                                                          w-2
                                                                                                                           h-2
                                                                                                                           mb-2
                                                                                                                           rounded-full
-                                                                                                                         " > PowerStage: {item2.Powerstage[i]}</div>
+                                                                                                                         " > Power: {item2.Powerstage[i]}</div>
                                                                                                          </>
                                                                                                          
                                                                                                   
