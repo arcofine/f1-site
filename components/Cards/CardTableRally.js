@@ -9,10 +9,32 @@ import * as tools from "../../utils/common.js";
 export default function CardTable({color, data, drivers,teams}) {
        const RALLYTEAMS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["teams"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Teams Standings"]["Races"]);
-       const RALLYDRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver standings"]);
-       console.log(RALLYDRIVERS);
+       const RALLYDRIVERS = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver standings"]["Drivers"]);
        const dataType = teams ? RALLYTEAMS : RALLYDRIVERS;
-
+      
+       
+// Sort players by score (descending order)
+       const sortedPlayers = RALLYDRIVERS.sort((a, b) => b.Points - a.Points);
+       
+  // Calculate equal interval step (divide the range into equal parts)   
+       let currentPosition = 0;
+       let prevScore = null;
+  // Assign positions based on sorted order and equal intervals
+       const standingsTable = sortedPlayers.map((player, index) => {
+         if (parseInt(player.Points) !== prevScore) {
+              prevScore = player.Points;  
+              currentPosition += 1;
+         } 
+              return {
+              name: player.DRIVER,
+              Points: player.Points,
+              stage_points: player.stage_points,
+              PTS_boni: player.PTS_boni,
+              Powerstage: player.Powerstage,
+              position: currentPosition
+       }
+  });
+       
        return (
               <>
                      {query_RACES != null && (
@@ -33,7 +55,7 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                }>
                                                                {teams
                                                                       ? "Classement d'équipes"
-                                                                      : ""}
+                                                                      : "Classement de Pilotes"}
                                                         </h3>
                                                  </div>
                                           </div>
@@ -90,7 +112,7 @@ export default function CardTable({color, data, drivers,teams}) {
                                                 
                                                  {teams === true &&(<tbody>
                                                         {dataType.sort((a, b) => b.Points - a.Points).map((item, i) => {
-                                                               console.log(item)
+                                                               
                                                                return (
                                                                       <tr
                                                                              key={i + "_item"}
@@ -186,7 +208,8 @@ export default function CardTable({color, data, drivers,teams}) {
                                                  )
                                                  }
                                                  {drivers === true &&(<tbody>
-                                                        {dataType.sort((a, b) => b.Points - a.Points).map((item2, index) => {
+                                                        {standingsTable.map((item2, index) => {
+                                          
                                                                return (
                                                                       <tr
                                                                              key={index + "_item"}
@@ -211,7 +234,7 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                                                                 ? "text-blueGray-500"
                                                                                                                 : "text-blueGray-200")
                                                                                                   }>
-                                                                                                  {item2.POS}
+                                                                                                  { item2.position}
                                                                                            </span>
                                                                                     </p>
                                                                              </th>
@@ -219,15 +242,15 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                                     <b className="mb-0">
                                                                                            {teams
                                                                                                   ? item2.Constructeur
-                                                                                                  : item2.DRIVER}
+                                                                                                  : item2.name}
                                                                                     </b>
                                                                              </td>
-                                                                             {item2.stage_points.map((point, i) => {
+                                                                              {item2.stage_points.map((point, i) => {
                                                                                     return (
                                                                                            <td
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
-                                                                                                  {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
+
                                                                                                   {point}
                                                                                                   {point !== "" && (
                                                                                                          <>
@@ -260,7 +283,7 @@ export default function CardTable({color, data, drivers,teams}) {
                                                                                                   
                                                                                            </td>
                                                                                     );
-                                                                             })}
+                                                                             })} 
 
                                                                              <td className="border-t-0 px-3 align-middle text-center border-l border-r-0 text-sm font-bold whitespace-nowrap p-0">
                                                                                     <div className="items-center">
