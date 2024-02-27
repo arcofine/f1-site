@@ -1,5 +1,5 @@
 		//nmb de seconde
-		var timer=10;
+		var timer=15;
 		
 		
 		timer=timer*1000;
