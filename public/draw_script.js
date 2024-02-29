@@ -1,8 +1,11 @@
-		//nmb de seconde
-		var timer=15;
-		
-		
-		timer=timer*1000;
+		function setTimerTime()
+			{
+				//nmb de seconde
+				var timer=document.getElementById("timerTemps").value;
+				timer=timer*1000;
+				
+				return timer;
+			}
 		var countD=0;
 		var fullDrawList = [];
 		
@@ -23,13 +26,13 @@
 			{
 				fullDrawList = [];
 				
-				const $output = document.getElementById('chkF1File');
+				var $output = document.getElementById('chkF1File');
 				var file = document.getElementById('drawList').files[0];
 
 				var reader = new FileReader();
 				reader.onload = function(progressEvent) {
 				// Entire file
-				const text = this.result;
+				var text = this.result;
 					
 				if(text!="")	
 					{
@@ -140,7 +143,7 @@
 		
 		function removeId(arrId)
 			{
-				fullDrawList.splice(2, 1);
+				fullDrawList.splice(arrId, 1);
 				
 				for(i=0; i<fullDrawList.length; i++)
 					{
@@ -161,7 +164,7 @@
 		function processF1Files()
 			{
 				////shuffle array number of time of entries
-				
+				var timer=setTimerTime();
 				var currentDraw;
 				currentDraw="";
 				currentDraw=fullDrawList;
