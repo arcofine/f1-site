@@ -2,11 +2,11 @@ import React from "react";
 
 // components
 
-import CardLineChart from "components/Cards/CardLineChart.js";
+import CardLineChart from "../components/Cards/CardLineChart.js";
 
 // layout for page
 
-import La2 from "layouts/La2.js";
+import La2 from "../layouts/La2.js";
 
 export default function DashboardGt() {
        return (
