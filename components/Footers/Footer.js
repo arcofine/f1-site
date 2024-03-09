@@ -74,11 +74,18 @@ export default function Footer() {
                                                                href="https://www.emballagesbnc.ca"
                                                                target="_blank"
                                                                title=""
-                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/3 xs:w-1/2 px-3 xs:px-2 xs:py-6 flex items-center text-xs uppercase font-bold"
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 xs:px-2 xs:py-6 flex items-center text-xs uppercase font-bold"
                                                                rel="noreferrer">
                                                                <img alt="" src="/img/logo_bnc.png" />
                                                         </a>
-                                                         
+                                                         <a
+                                                               href="https://coffragesbouchard.com"
+                                                               target="_blank"
+                                                               title=""
+                                                               className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/2 px-3 xs:px-2 xs:py-6 flex items-center text-xs uppercase font-bold"
+                                                               rel="noreferrer">
+                                                               <img alt="" src="/img/logo_coffrageBW.png" />
+                                                        </a>
                                                         <a
                                                                href="https://www.solotech.com/"
                                                                target="_blank"
