@@ -49,7 +49,7 @@ export default function TablesF1({championship, error}) {
                                                  <CardTableF1 drivers data={championship} color="dark" />
                                           </div>
                                           <div className="w-full mb-12 px-4">
-                                                 <CardTableF1 teams data={championship} color="light" />
+                                                 <CardTableF1 teams data={championship} color="dark" />
                                           </div>
                                    </>
                             )}
