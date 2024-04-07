@@ -73,7 +73,7 @@ body {
       'Genos',
         sans-serif !important;
      ;
-     font-size: 3rem !important;
+     font-size: 2rem !important;
 }
 
 /*
@@ -1240,7 +1240,7 @@ select {
 }
 
 .bg-gray-f1{
-  background-color: #313030
+  background-color: #000000
 }
 
 .bg-white {
@@ -2173,17 +2173,17 @@ select {
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   line-height: 1.25rem;
 }
 
 .text-base {
-  font-size: 1rem;
+  font-size: 1.1rem !important;
   line-height: 1.5rem;
 }
 
 .text-lg {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
   line-height: 1.75rem;
 }
 
@@ -2325,6 +2325,10 @@ select {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-58{
+  margin-top: 58px;
 }
 
 .mr-1 {
@@ -2814,8 +2818,8 @@ select {
 }
 
 .px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-14 {
   padding-left: 4.5rem;
@@ -3101,8 +3105,8 @@ select {
   top: 68px;
 }
 
-.top-56-px {
-  top: 56px;
+.top-75-px {
+  top: 75px;
 }
 .left-145-px {
   left: 145px;
@@ -3640,6 +3644,12 @@ select {
 .w-8 {
   width: 2rem;
 }
+.logo-50{
+  width: 50px;
+}
+.logo-90{
+  width: 90px;
+}
 
 .w-10 {
   width: 2.5rem;
@@ -3906,6 +3916,16 @@ select {
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
 }
+@media (max-width: 430px) {
+  .xs\:top-75-px {
+    top: 54px !important;
+}
+}
+@media (max-width: 390px) {
+  .xs\:top-75-px {
+    top: 74px !important;
+}
+}
 
 @media (max-width: 639px) {
     .xs\:w-5\/12 {
@@ -3946,9 +3966,13 @@ select {
   .xs\:top-60-px{
     top:60px;
   }
-  .xs\:top-56-px {
-  top: 56px;
-}
+  .xs\:top-75-px {
+  top: 54px}
+
+  .xs\:pt-32 {
+    padding-top: 8rem;
+  }
+
 .xs\:hidden {
     display: none;
   }
@@ -3959,14 +3983,16 @@ select {
   }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
   .sm\:block {
     display: block;
   }
   .sm\:top-60-px{
     top:60px;
   }
-  
+  .sm\:pt-32 {
+    padding-top: 7.9rem;
+  }
 
   .sm\:mt-0 {
     margin-top: 0px;
@@ -3997,8 +4023,8 @@ select {
   .sm\:-mt-13 {
     margin-top: -13rem;
   }
-  .sm\:top-56-px{
-    top:56px;
+  .sm\:top-75-px{
+    top:72px;
   }
   .sm\:top-68-px{
     top:68px;
@@ -4019,15 +4045,18 @@ select {
    .md\:top-60-px{
     top:60px;
   }
+  .mde\:hidden {
+    display: none;
+  }
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .md\:block {
     display: block;
   }
-   .md\:top-56-px{
-    top:56px;
+   .md\:top-75-px{
+    top:72px;
   }
   .md\:top-60-px{
     top:60px;
