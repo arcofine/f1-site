@@ -1,14 +1,14 @@
 export const rf2Servers = [
         {
             "id": "main4",
-            "query": "https://herokuapp.com/<http://thirtheen-home.myddns.me:8803/live/get_data?name=rFactor2%20Dedicated.exe12232",
+            "query": "https://cors-anywhere.herokuapp.com/<http://thirtheen-home.myddns.me:8803/live/get_data?name=rFactor2%20Dedicated.exe12232",
             "url":"http://thirtheen-home.myddns.me:8803/live/>",
             "gameserver" :"76.67.137.178:65497",
             "imageUrl": "livetiming/assets/nascartruck.jpeg"
         }, 
         {
             "id": "main3",
-            "query": "https://herokuapp.com/<http://thirtheen-home.myddns.me:8802/live/get_data?name=rFactor2%20Dedicated.exe13048",
+            "query": "https://cors-anywhere.herokuapp.com/<http://thirtheen-home.myddns.me:8802/live/get_data?name=rFactor2%20Dedicated.exe13048",
             "url":"http://thirtheen-home.myddns.me:8802/live/>",
             "gameserver" :"70.83.149.208:64297",
             "imageUrl": "livetiming/assets/pcup2.jpg"
@@ -22,7 +22,7 @@ export const rf2Servers = [
         }, 
         {
             "id": "main1",
-            "query": "https://www.gt3sim.com/live/live/get_data?name=rFactor2%20Dedicated.exe19380",
+            "query": "https://www.gt3sim.com/live/get_data?name=rFactor2%20Dedicated.exe19380",
             "url":"https://www.gt3sim.com/live/",
             "gameserver" :"76.67.137.178:64297",
             "imageUrl": "livetiming/assets/gt.jpeg"
