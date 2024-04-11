@@ -1,6 +1,5 @@
 // Define the API URL
-import {rf2Servers as serverList} from './serverList.js';
-import {mockDrivers}  from './serverList.js';
+import {rf2Servers as serverList} from 'serverList.js';
 
 const widgetElement = document.getElementById('widgetF1sim');
 var widgetHTML = "";
