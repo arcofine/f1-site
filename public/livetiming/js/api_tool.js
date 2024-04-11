@@ -1,5 +1,5 @@
 // Define the API URL
-import {rf2Servers as serverList} from 'server_list.js';
+import {rf2Servers as serverList} from './server_list.js';
 
 const widgetElement = document.getElementById('widgetF1sim');
 var widgetHTML = "";
