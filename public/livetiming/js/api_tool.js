@@ -18,7 +18,7 @@ console.log(serverList);
 
 //Fetch data from RF2LA
 async function fetchData(server, index) {
-  await fetch((`https://api.allorigins.win/get?url=${encodeURIComponent(server.query)}`))
+  await fetch((`https://api.allorigins.win/get?url=${encodeURIComponent(server.query)}`), {cache:'no-store'})
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
