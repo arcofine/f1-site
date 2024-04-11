@@ -42,7 +42,7 @@ export default function Index() {
 
        return (
               <>
-                     <Script src={`/liveracers.js?v=${unique_id}`} />
+                    {/* <Script src={`/liveracers.js?v=${unique_id}`} /> */}
                      <IndexNavbar fixed />
 
                      <section
@@ -160,6 +160,7 @@ export default function Index() {
                             INSCRIS TOI MAINTENANT!
                      </a>
                                    </div>
+                                   
                             </div>
                      </section>
 

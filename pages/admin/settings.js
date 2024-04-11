@@ -12,7 +12,7 @@ import Admin from "../../layouts/Admin.js";
 export default function Settings() {
        return (
               <>
-                     <Script src="/liveracers.js" />
+                     {/* <Script src="/apiTool.js" /> */}
                      <div className="flex flex-wrap mt-24 py-10">
                             {/* <div className="w-full lg:w-8/12 px-4">
                                    <CardSettings />
@@ -20,14 +20,14 @@ export default function Settings() {
                             <div className="w-full lg:w-4/12 px-4">
                                    <CardProfile />
                             </div> */}
-                            <div className="w-full lg:w-4/12 px-4 ">
+                            {/* <div className="w-full lg:w-4/12 px-4 ">
                                    <div
-                                          id="lr-servers"
+                                          id="widgetF1sim"
                                           orientation="horizontal"
                                           className={
                                                  "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded "
                                           }></div>
-                            </div>
+                            </div> */}
                      </div>
               </>
        );

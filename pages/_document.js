@@ -14,6 +14,9 @@ class MyDocument extends Document {
                                    <meta name="revisit-after" content="30 days" />
                                    <link rel="shortcut icon" href="/img/brand/favicon.ico" />
                                    <link rel="apple-touch-icon" sizes="76x76" href="/img/brand/apple-icon.png" />
+                                   <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap" rel="stylesheet"/>
                             </Head>
                             <body className="bg-blueGray-400  text-blueGray-700 antialiased">
                                    <div id="page-transition"></div>
