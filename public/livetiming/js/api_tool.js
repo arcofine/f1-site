@@ -61,7 +61,7 @@ function createWidget(data) {
                 <h2 id='serverName_${server.id}'>${server.serverName}</h2>
                 <hr />
                 <div id='sessionType_${server.id}' class='pill ${parseInt(server.session) == 1 ? 'practice' : 'race'}'>
-                    <a href='steam://rungameid/365960//+connect ${serverList[i].gameserver} +password simul-canada24'> ${parseInt(server.session) == 1 ? 'Practice' : 'Race'}</a>
+                    <a href='steam://rungameid/365960//+connect ${serverList[i].gameserver} '> ${parseInt(server.session) == 1 ? 'Practice' : 'Race'}</a>
                 </div>
                 <div class='tokenInfo'>
                     <div class='price'>
