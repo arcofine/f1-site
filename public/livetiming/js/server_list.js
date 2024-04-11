@@ -1,31 +1,31 @@
 export const rf2Servers = [
-        {
-            "id": "main4",
-            "query": "http://thirtheen-home.myddns.me:8803/live/get_data?name=rFactor2%20Dedicated.exe12232",
-            "url":"http://thirtheen-home.myddns.me:8803/live/",
-            "gameserver" :"76.67.137.178:65497",
-            "imageUrl": "assets/nascartruck.jpeg"
-        }, 
-        {
-            "id": "main3",
-            "query": "http://thirtheen-home.myddns.me:8802/live/get_data?name=rFactor2%20Dedicated.exe13048",
-            "url":"http://thirtheen-home.myddns.me:8802/live/",
-            "gameserver" :"70.83.149.208:64297",
-            "imageUrl": "assets/pcup2.jpg"
-        },
+        // {
+        //     "id": "main4",
+        //     "query": "http://thirtheen-home.myddns.me:8803/live/get_data?name=rFactor2%20Dedicated.exe12232",
+        //     "url":"http://thirtheen-home.myddns.me:8803/live/",
+        //     "gameserver" :"76.67.137.178:65497",
+        //     "imageUrl": "livetiming/assets/nascartruck.jpeg"
+        // }, 
+        // {
+        //     "id": "main3",
+        //     "query": "http://thirtheen-home.myddns.me:8802/live/get_data?name=rFactor2%20Dedicated.exe13048",
+        //     "url":"http://thirtheen-home.myddns.me:8802/live/",
+        //     "gameserver" :"70.83.149.208:64297",
+        //     "imageUrl": "livetiming/assets/pcup2.jpg"
+        // },
         {
             "id": "main2",
-            "query": "https://www.f1sim.ca/live/get_data?name=rFactor2%20Dedicated.exe15184",
+            "query": "live/get_data?name=rFactor2%20Dedicated.exe15184",
             "url":"https://www.f1sim.ca/live/",
             "gameserver" :"76.67.137.178:65397",
-            "imageUrl": "assets/formula.jpg"
+            "imageUrl": "livetiming/assets/formula.jpg"
         }, 
         {
             "id": "main1",
-            "query": "https://www.gt3sim.com/live/get_data?name=rFactor2%20Dedicated.exe19380",
+            "query": "/live/get_data?name=rFactor2%20Dedicated.exe19380",
             "url":"https://www.gt3sim.com/live/",
             "gameserver" :"76.67.137.178:64297",
-            "imageUrl": "assets/gt.jpeg"
+            "imageUrl": "livetiming/assets/gt.jpeg"
         }
     ];
 export const mockDrivers = [
