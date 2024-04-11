@@ -18,7 +18,7 @@ console.log(serverList);
 
 //Fetch data from RF2LA
 async function fetchData(server, index) {
-  const urlCors= 'https://corsproxy.io/?' + encodeURIComponent(server.query);
+  const urlCors= 'https://thingproxy.freeboard.io/fetch/'+server.query;
   await fetch(urlCors)
     .then(response => {
       if (!response.ok) {
