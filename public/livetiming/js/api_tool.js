@@ -18,7 +18,8 @@ console.log(serverList);
 
 //Fetch data from RF2LA
 async function fetchData(server, index) {
-  await fetch(server.query)
+  const urlCors= 'https://corsproxy.io/?' + encodeURIComponent(server.query);
+  await fetch(urlCors)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
