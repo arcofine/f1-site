@@ -218,5 +218,5 @@ if (serverData.length != 0) serverData.splice(0, serverData.length);
 //Update data interval
 setInterval(() => {
   updateData()
-}, 100 * 60 * 15);
+}, 50 * 60 * 15);
 
