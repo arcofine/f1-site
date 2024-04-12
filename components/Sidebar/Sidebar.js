@@ -407,7 +407,7 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8802/live/"
+                                                               href="https://f1-site-7m3.vercel.app/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
@@ -417,7 +417,7 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="http://thirtheen-home.myddns.me:8803/live/"
+                                                               href="https://f1sim-wiget-m4.vercel.app/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
