@@ -26,7 +26,6 @@ async function fetchData(server, index) {
       return response.json();
     })
     .then(data => {
-      data = JSON.parse(data.contents); 
       serverData.push({
         id: serverList[index].id,
         url: serverList[index].url,
