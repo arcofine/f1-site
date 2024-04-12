@@ -387,32 +387,42 @@ export default function Sidebar() {
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN1"
+                                                               href="https://www.gt3sim.com/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur MAIN 1
+                                                              Serveur Multiclasse
                                                         </a>
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN2"
+                                                               href="https://www.f1sim.ca/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur MAIN 2
+                                                              Serveur F1
                                                         </a>
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
+                                                               href="http://thirtheen-home.myddns.me:8802/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur P1
+                                                              Serveur Porsche Cup
+                                                        </a>
+                                                 </li>
+                                                 <li className="items-center">
+                                                        <a
+                                                               href="http://thirtheen-home.myddns.me:8803/live/"
+                                                               target="_blank"
+                                                               rel="noreferrer"
+                                                               className={"text-xs uppercase py-1 font-bold block "}>
+                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
+                                                              Serveur Nascar Truck
                                                         </a>
                                                  </li>
                                           </ul>                            

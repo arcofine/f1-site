@@ -54,7 +54,7 @@ const LivetimeDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         Serveur Main 1
+                                         MultiClass
                                    </a>
                                     <a
                                           href="https://www.f1sim.ca/live/"
@@ -63,7 +63,7 @@ const LivetimeDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         Serveur Main 2
+                                         F1
                                    </a>
                                    <a
                                           href="http://thirtheen-home.myddns.me:8802/live/"
@@ -72,7 +72,7 @@ const LivetimeDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         Serveur Main 3
+                                         Porsche Cup
                                    </a>
                                    <a
                                           href="http://thirtheen-home.myddns.me:8803/live/"
@@ -81,7 +81,7 @@ const LivetimeDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         Serveur Main 4
+                                         Nascar Truck
                                    </a>
                             </div>
                      </div>
