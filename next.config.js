@@ -5,7 +5,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://f1simgt3.ddns.net:8805/:path*",
+                            destination: "http://thirtheen-home.myddns.me:8803/:path*",
                             
                      },
                      {
@@ -22,15 +22,7 @@ module.exports = {
                                    
                             
                      },
-                     {
-                            source: "/livetiming/:path*",
-                            destination: "http://thirtheen-home.myddns.me:8802/:path*",
-                            
-                     },
-                     //   {
-                     //          source: "/dashboardGt/:path*",
-                     //          destination: "http://thirtheen-home.myddns.me:8804/:path*",
-                     //   },
+
               ];
        },
 };
