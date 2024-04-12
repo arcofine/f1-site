@@ -2152,7 +2152,8 @@ select {
 }
 
 .h-500-px {
-  height: 500px;
+  //height: 500px;
+  height: auto;
 }
 
 .h-600-px {
