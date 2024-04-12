@@ -57,21 +57,6 @@ export default function Sidebar() {
                                                                }></i>
                                                         Derniers Résultats
                                                  </Link>
-                                                 {/* <a
-                                                        href="http://thirtheen-home.myddns.me:8802/championships/championship?cid=1"
-                                                        target="_blank"
-                                                        className={"text-xs uppercase py-1 font-bold block "}
-                                                        rel="noreferrer">
-                                                        <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
-                                                        Résultats
-                                                 </a> */}
-                                                 {/* <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation"
-                                                        target="_blank"
-                                                        className={"text-xs uppercase py-1 font-bold block "}
-                                                        rel="noreferrer">
-                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                 </a> */}
 
                                                  <Link
                                                         href="/admin/rulesF1"
@@ -120,13 +105,6 @@ export default function Sidebar() {
                                                         <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                         Résultats
                                                  </a>
-                                                 {/* <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20GT3"
-                                                        target="_blank"
-                                                        className={"text-xs uppercase py-1 font-bold block "}
-                                                        rel="noreferrer">
-                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Live Timing
-                                                 </a> */}
 
                                                  <Link
                                                         href="/admin/rulesGt"
@@ -151,7 +129,7 @@ export default function Sidebar() {
                                                         LIVE TIMING
                                                  </h5>
                                                  <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN1"
+                                                        href="https://www.gt3sim.com/live/"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
@@ -159,19 +137,26 @@ export default function Sidebar() {
                                                  </a>
 
                                                  <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
+                                                        href="https://www.f1sim.ca/live/"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
-                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur P1
+                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur Main 2
                                                  </a>
 
                                                   <a
-                                                        href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P2"
+                                                        href="http://thirtheen-home.myddns.me:8802/live/"
                                                         target="_blank"
                                                         className={"text-xs uppercase py-1 font-bold block "}
                                                         rel="noreferrer">
-                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur P2
+                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur Main 3
+                                                 </a>
+                                                 <a
+                                                        href="http://thirtheen-home.myddns.me:8803/live/"
+                                                        target="_blank"
+                                                        className={"text-xs uppercase py-1 font-bold block "}
+                                                        rel="noreferrer">
+                                                        <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur Main 4
                                                  </a>
                                           </div>
                                    </div>
@@ -224,32 +209,6 @@ export default function Sidebar() {
                                                                Classements
                                                         </Link>
                                                  </li>
-
-                                                 {/* <li className="items-center">
-                                                        <Link href="/admin/settings">
-                                                               <a
-                                                                      href="#pablo"
-                                                                      className={
-                                                                             "text-xs uppercase py-3 font-bold block " +
-                                                                             (router.pathname.indexOf(
-                                                                                    "/admin/settings"
-                                                                             ) !== -1
-                                                                                    ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                                                    : "text-blueGray-700 hover:text-blueGray-500")
-                                                                      }>
-                                                                      <i
-                                                                             className={
-                                                                                    "fas fa-tools mr-2 text-sm " +
-                                                                                    (router.pathname.indexOf(
-                                                                                           "/admin/settings"
-                                                                                    ) !== -1
-                                                                                           ? "opacity-75"
-                                                                                           : "text-blueGray-300")
-                                                                             }></i>{" "}
-                                                                      Statistiques de Pilotes
-                                                               </a>
-                                                        </Link>
-                                                 </li> */}
 
                                                  <li className="items-center">
                                                         {/* <a

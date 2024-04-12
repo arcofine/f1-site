@@ -48,7 +48,7 @@ const LivetimeDropdown = () => {
                             <div>
                                    
                                    <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN1"
+                                          href="https://www.gt3sim.com/live/"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
@@ -57,7 +57,7 @@ const LivetimeDropdown = () => {
                                          Serveur Main 1
                                    </a>
                                     <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20MAIN2"
+                                          href="https://www.f1sim.ca/live/"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
@@ -66,13 +66,22 @@ const LivetimeDropdown = () => {
                                          Serveur Main 2
                                    </a>
                                    <a
-                                          href="https://www.race-view.com/server?user_id=arcofine&server_id=F1%20Simulation%20P1"
+                                          href="http://thirtheen-home.myddns.me:8802/live/"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         Serveur P1
+                                         Serveur Main 3
+                                   </a>
+                                   <a
+                                          href="http://thirtheen-home.myddns.me:8803/live/"
+                                          target="_blank"
+                                          className={
+                                                 "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
+                                          }
+                                          rel="noreferrer">
+                                         Serveur Main 4
                                    </a>
                             </div>
                      </div>
