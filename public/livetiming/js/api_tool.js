@@ -18,7 +18,7 @@ console.log(serverList);
 
 //Fetch data from RF2LA
 async function fetchData(server, index) {
-  await fetch((`https://api.allorigins.win/get?url=${encodeURIComponent(server.query)}`), {cache:'no-store'})
+  await fetch('https://f1sim-widget.arcofine.workers.dev/?url='+(server.query), {cache:'no-store'})
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -137,25 +137,6 @@ function updateDriversList(arr){
 
 // Define a comparison function for sorting
 
-function generateDriversList(server){
-  //Loop Pilots List
-  document.getElementById('pilotList_'+server.id).innerHTML =""; 
-  if(server.pilotsSize != 0)
-  for (let i = 0; i < server.pilotsSize; i++) {
-     document.getElementById('pilotList_'+server.id).innerHTML += `
-    <div class='items'>
-                  <div class='box-items'
-                        <div class='description'>
-                            <ins>${server.livePilots[i]?.mDriverName.toString().substring(0,server.livePilots[i]?.mDriverName.toString().indexOf(' '))}</ins> 
-                            ${server.livePilots[i]?.mDriverName?.toString().substring(server.livePilots[i]?.mDriverName.toString().indexOf(' ')+1)}
-                        </div> ${server.livePilots[i]?.mBestLapTime != -1 ? 
-                        `<div class='bestlap'>${timerCalc(true, server.livePilots[i]?.mBestLapTime)} </div>` :
-                        `<div class='bestlap'>00:00.000</div>`}
-                </div>  </div>`
-                ;      
-  }
-}
-
 function timerCalc (lapTime, current, end){
 if(lapTime){
   let timeLeft = parseFloat(current);
@@ -173,6 +154,8 @@ if(lapTime){
   return time;
 }else{
   let timeLeft = parseInt(end) - parseInt(current);
+  if(timeLeft < 0) {
+    return 'Loading...'}else{
   let hours = Math.floor(timeLeft / 3600);
   timeLeft %= 3600;
   let minutes = Math.floor(timeLeft / 60);
@@ -185,6 +168,7 @@ if(lapTime){
   let time = hours + ":" + minutes + ":" + seconds;
   
   return time;
+    }
 }
 };
 
@@ -208,7 +192,7 @@ if (serverData.length != 0) serverData.splice(0, serverData.length);
   //Update Timer
   document.getElementById('timer_'+server.id).innerHTML=timerCalc(false, server.endTime, server.currentTime);
   //Update Pilots list
-      if (server.pilotsSize == 0 ) {
+      if (server.pilotsSize === 0 ) {
         document.getElementById('pilotList_'+server.id).innerHTML="";
        }else{
         updateDriversList(serverData); 
@@ -218,5 +202,5 @@ if (serverData.length != 0) serverData.splice(0, serverData.length);
 //Update data interval
 setInterval(() => {
   updateData()
-}, 100 * 60 * 15);
+}, 10 * 60 * 15);
 

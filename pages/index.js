@@ -52,12 +52,11 @@ export default function Index() {
                             className="relative xs:pt-32 sm:pt-32 items-center flex flex-col  bg-slate-900 bg-no-repeat bg-left bg-cover">
                             <div className="w-full h-full bg-blueGray-900 absolute opacity-80 z-0 top-0"></div>
 
-                            <div className=" container w-full mt-58 mx-auto items-center flex flex-wrap z-2">
+                            <div className=" container w-full mt-58 xs:mt-58 sm:mt-58 mx-auto items-center flex flex-wrap z-2">
                                    <div className=" mx-auto items-center absolute flex flex-wrap z-2"></div>
-                                   <div className="w-full relative px-0 flex">
-                                          {/* <div
+                                   <div
                                                  className={
-                                                        "absolute mx-auto top-0 -mt-13 left-38 lg:hidden md:hidden sm:hidden "
+                                                        " mx-auto top-0 -mt-13 left-38"
                                                  }>
                                                  <form
                                                         action="https://www.paypal.com/donate"
@@ -84,7 +83,9 @@ export default function Index() {
                                                                height="1"
                                                         />
                                                  </form>
-                                          </div> */}
+                                          </div>
+                                   <div className="w-full relative px-0 flex">
+                                          
                                       
                                           <div className="container mx-auto max-w-950-px ws:max-w-580-px xs:hidden sm:hidden">
                                                  <YouTube
@@ -110,33 +111,7 @@ export default function Index() {
                                           
                                    </div>
                                    <div className="flex flex-col mx-auto items-center justify-center mt-5 z-50">
-                                   <form
-                                                        action="https://www.paypal.com/donate"
-                                                        method="post"
-                                                        target="_top"
-                                                        style={{ position: "absolute", bottom: "-55px", left: "45.7%"
-                                                           }}>
-                                                        <input
-                                                               type="hidden"
-                                                               name="hosted_button_id"
-                                                               value="B2DJ9MA4VQMPJ"
-                                                        />
-                                                        <input
-                                                               type="image"
-                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                                                               border="0"
-                                                               name="submit"
-                                                               title="PayPal - The safer, easier way to pay online!"
-                                                               alt="Donate with PayPal button"
-                                                        />
-                                                        <img
-                                                               alt=""
-                                                               border="0"
-                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
-                                                               width="1"
-                                                               height="1"
-                                                        />
-                                                 </form> 
+                                  
                                           <a
                             className="text-blueGray-300
                                           text-center
@@ -163,7 +138,7 @@ export default function Index() {
                                    
                             </div>
                      </section>
-
+                  
                      <Footer />
               </>
        );
