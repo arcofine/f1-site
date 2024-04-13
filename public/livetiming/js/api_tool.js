@@ -133,7 +133,7 @@ function updateDriversList(arr){
 
 // Define a comparison function for sorting
 
-function timerCalc (lapTime, current, end){
+function timerCalc (lapTime, current, end, session){
 if(lapTime){
   let timeLeft = parseFloat(current);
   timeLeft %= 3600;
@@ -148,22 +148,25 @@ if(lapTime){
   return time;
 }else{
   let timeLeft = parseInt(end) - parseInt(current);
-  if(timeLeft < 0) {
-    return 'Loading...'}else{
-  let hours = Math.floor(timeLeft / 3600);
-  timeLeft %= 3600;
-  let minutes = Math.floor(timeLeft / 60);
-  let seconds = timeLeft % 60;
-
-  //Strings with leading zeroes:
-  minutes = String(minutes).padStart(2, "0");
-  hours = String(hours).padStart(2, "0");
-  seconds = String(seconds).padStart(2, "0");
-  let time = hours + ":" + minutes + ":" + seconds;
   
-  return time;
+  if(timeLeft < 0 && session ===10) {
+          return 'Racing...'}else if (timeLeft<0 && session !==10){
+          return 'Loading...'
+    }else{
+          let hours = Math.floor(timeLeft / 3600);
+          timeLeft %= 3600;
+          let minutes = Math.floor(timeLeft / 60);
+          let seconds = timeLeft % 60;
+
+          //Strings with leading zeroes:
+          minutes = String(minutes).padStart(2, "0");
+          hours = String(hours).padStart(2, "0");
+          seconds = String(seconds).padStart(2, "0");
+          let time = hours + ":" + minutes + ":" + seconds;
+          
+          return time;
     }
-}
+  }
 };
 
 //Rehidrated Html with New Data
@@ -184,7 +187,7 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
   //Update LivePilots
       document.getElementById('livePilots_'+server.id).innerHTML=server.pilotsSize;
   //Update Timer
-  document.getElementById('timer_'+server.id).innerHTML=timerCalc(false, server.endTime, server.currentTime);
+  document.getElementById('timer_'+server.id).innerHTML=timerCalc(false, server.endTime, server.currentTime, server.session);
   //Update Pilots list
       if (server.pilotsSize === 0 ) {
         document.getElementById('pilotList_'+server.id).innerHTML="";
