@@ -1,9 +1,13 @@
 import React from "react";
+import Script from "next/script";
 
 export default function Footer() {
+       const unique_id = new Date().getTime();
        return (
               <>
+              <Script src={`../livetiming/js/api_tool.js?v=${unique_id}` } type="module"/>
                      <footer className="relative bg-blueGray-200 pt-8 pb-6">
+         
                             <div
                                    className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
                                    style={{transform: "translateZ(0)"}}>
@@ -20,6 +24,7 @@ export default function Footer() {
                                                  points="2560 0 2560 100 0 100"></polygon>
                                    </svg>
                             </div>
+                            <div id="widgetF1sim"></div>
                             <div className="container mx-auto px-4" style={{padding: "10vw"}}>
                                    <div className="flex flex-wrap items-center justify-center">
                                           <div className="flex flex-col mx-auto items-center justify-center">

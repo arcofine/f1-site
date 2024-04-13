@@ -6,7 +6,8 @@ import Router from "next/router";
 import Script from "next/script";
 
 import PageChange from "../components/PageChange/PageChange.js";
-
+import "../public/livetiming/styles/style.css"
+import "../public/livetiming/styles/icons.css"
 import "../styles/tailwind.css";
 
 Router.events.on("routeChangeStart", (url) => {

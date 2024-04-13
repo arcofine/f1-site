@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, {useEffect, useRef} from "react";
 import Link from "next/link";
-import Script from "next/script";
 import YouTube from "react-youtube";
 
 import IndexNavbar from "../components/Navbars/IndexNavbar.js";
@@ -42,7 +41,7 @@ export default function Index() {
 
        return (
               <>
-                    {/* <Script src={`/liveracers.js?v=${unique_id}`} /> */}
+                    
                      <IndexNavbar fixed />
 
                      <section
@@ -138,7 +137,7 @@ export default function Index() {
                                    
                             </div>
                      </section>
-                  
+                    
                      <Footer />
               </>
        );

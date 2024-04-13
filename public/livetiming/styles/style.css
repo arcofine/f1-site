@@ -20,8 +20,8 @@ body {
   h2{
     padding: 0;
     margin: 0;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+    font-size: 0.95rem !important;
+    margin-bottom: 8px !important;
   }
 
   code {
@@ -61,8 +61,9 @@ body {
     .main{
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       padding: 1rem;
+      color:#eee;
       .tokenImage{
         border-radius: .5rem;
         max-width: 100%;
