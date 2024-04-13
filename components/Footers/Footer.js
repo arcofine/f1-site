@@ -25,7 +25,7 @@ export default function Footer() {
                                    </svg>
                             </div>
                             <div id="widgetF1sim"></div>
-                            <div className="container mx-auto px-4" style={{padding: "10vw"}}>
+                            <div className="container mx-auto px-4" style={{padding: "18px 10vw"}}>
                                    <div className="flex flex-wrap items-center justify-center">
                                           <div className="flex flex-col mx-auto items-center justify-center">
                                                  <h2 className="text-md text-blueGray-500 font-semibold mb-2">
