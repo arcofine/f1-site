@@ -3,9 +3,7 @@ import {rf2Servers as serverList} from './server_list.js';
 
 const widgetElement = document.getElementById('widgetF1sim');
 var widgetHTML = "";
-let listeDriver="";
 var serverData = [];
-console.log(serverList);
 
 //App Init
 (async function () {
@@ -59,8 +57,8 @@ function createWidget(data) {
             <div class='main'>
                 <h2 id='serverName_${server.id}'>${server.serverName}</h2>
                 <hr />
-                <div id='sessionType_${server.id}' class='pill ${parseInt(server.session) == 1 ? 'practice' : 'race'}'>
-                    <a href='steam://rungameid/365960//+connect ${serverList[i].gameserver} '> ${parseInt(server.session) == 1 ? 'Practice' : 'Race'}</a>
+                <div id='sessionType_${server.id}' class='pill ${parseInt(server.session) === 1 ? 'practice' : parseInt(server.session) === 5?'qualify':parseInt(server.session) === 9?'warmup':'race'}'>
+                    <a href='steam://rungameid/365960//+connect'> ${parseInt(server.session) === 1 ? 'Practice' : parseInt(server.session) === 5?'Qualify':parseInt(server.session) === 9?'Warmup':'Race'}</a>
                 </div>
                 <div class='tokenInfo'>
                     <div class='price'>
@@ -68,7 +66,7 @@ function createWidget(data) {
                     </div>
                     <div id='weather_${server.id}'  class='duration'>
                           <p>${server.trackTemp.toString().split('.')[0]}° </p>
-                          <i class="fa-solid weather">${parseInt(server.trackWeather) == 0 ? '&#xf185' : '&#xf740'}</i>
+                          <i class="fa-solid weather">${parseInt(server.trackWeather) === 0 ? '&#xf185' : '&#xf740'}</i>
                     </div>
                 </div>
      
@@ -108,14 +106,13 @@ function updateDriversList(arr){
 
   arr.forEach(data => {
     document.getElementById('pilotList_'+data.id).innerHTML =""; 
-  if(data.pilotsSize != 0){ 
+  if(data.pilotsSize !== 0){ 
   const op = data.livePilots.sort((a, b) => {
     // Compare the x property values
     if (a.mBestLapTime < 0 &&  b.mBestLapTime >=0) return 1; // a comes before b
     if (a.mBestLapTime >=0 && b.mBestLapTime < 0) return -1; // a comes after b
     return a.mBestLapTime - b.mBestLapTime; // a and b are equal
   });
-  console.log(op);
   op.forEach(server=> {
     document.getElementById('pilotList_'+data.id).innerHTML += `
     <div class='items'>
@@ -123,7 +120,7 @@ function updateDriversList(arr){
                         <div class='description'>
                             <ins>${server.mDriverName.toString().substring(0,server?.mDriverName.toString().indexOf(' '))}</ins> 
                             ${server.mDriverName?.toString().substring(server.mDriverName.toString().indexOf(' ')+1)}
-                        </div> ${server.mBestLapTime != -1 ? 
+                        </div> ${server.mBestLapTime !== -1 ? 
                         `<div class='bestlap'>${timerCalc(true, server?.mBestLapTime)} </div>` :
                         `<div class='bestlap'>00:00.000</div>`}
                 </div>  </div>`
@@ -139,14 +136,12 @@ function updateDriversList(arr){
 function timerCalc (lapTime, current, end){
 if(lapTime){
   let timeLeft = parseFloat(current);
-  let hours = Math.floor(timeLeft / 3600);
   timeLeft %= 3600;
   let minutes = Math.floor(timeLeft / 60);
   let seconds = (timeLeft % 60).toFixed(3);
 
   //Strings with leading zeroes:
   minutes = String(minutes).padStart(2, "0");
-  hours = String(hours).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
   let time = minutes + ":" + seconds;
   
@@ -173,19 +168,19 @@ if(lapTime){
 
 //Rehidrated Html with New Data
 async function updateData () {
-if (serverData.length != 0) serverData.splice(0, serverData.length);
+if (serverData.length !== 0) serverData.splice(0, serverData.length);
   await Promise.all(serverList.map(async (server, i) => {
     await fetchData(server, i, true);
   }));
   serverData.forEach(function (server, i) {
   //Update Session
-      document.getElementById('sessionType_'+server.id).innerHTML=`<a href='steam://rungameid/365960//+connect ${server.gameserver}'> ${parseInt(server.session) == 1 ? 'Practice' : 'Race'}</a>`;
-      document.getElementById('sessionType_'+server.id).setAttribute('class', parseInt(server.session) == 1 ? 'pill practice' : 'pill race');
+      document.getElementById('sessionType_'+server.id).innerHTML=`<a href='steam://rungameid/365960//+connect' > ${parseInt(server.session) === 1 ? 'practice' : parseInt(server.session) === 5?'qualify':parseInt(server.session) === 9?'warmup':'race'}</a>`;
+      document.getElementById('sessionType_'+server.id).setAttribute('class', parseInt(server.session) === 1 ? 'pill practice' : parseInt(server.session) === 5 ?'pill qualify':parseInt(server.session) === 9 ?'pill warmup' : 'pill race');
   //Update Circuit
       document.getElementById('circuit_'+server.id).innerHTML=server.trackname.toString().split(' - ')[0];
   //Update Weather
       document.getElementById('weather_'+server.id).innerHTML=`<p>${server.trackTemp.toString().split('.')[0]}°</p>
-              <i class="fa-solid weather">${parseInt(server.trackWeather) == 0 ? '&#xf185' : '&#xf740'}</i>`;
+              <i class="fa-solid weather">${parseInt(server.trackWeather) === 0 ? '&#xf185' : '&#xf740'}</i>`;
   //Update LivePilots
       document.getElementById('livePilots_'+server.id).innerHTML=server.pilotsSize;
   //Update Timer
