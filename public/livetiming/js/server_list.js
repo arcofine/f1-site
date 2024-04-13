@@ -2,7 +2,7 @@ export const rf2Servers = [
         {
             "id": "main4",
             "query": "https://f1sim-wiget-m4.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe12232",
-            "url":"http://thirtheen-home.myddns.me:8803/live/",
+            "url":"https://f1sim-wiget-m4.vercel.app/live/",
             "gameserver" :"76.67.137.178:65497",
             "imageUrl": "livetiming/assets/nascartruck.jpeg"
         }, 
