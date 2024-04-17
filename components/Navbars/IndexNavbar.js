@@ -63,7 +63,7 @@ export default function Navbar(props) {
                                                         <SubscribeDropdown />
                                                  </li>
                                                  <li className="flex items-center">
-                                                        <IndexDropdown />
+                                                        <IndexDropdown cat="Tableau de Bord" />
                                                  </li>
                                                  <li className="flex items-center">
                                                         <LivetimeDropdown />
