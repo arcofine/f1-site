@@ -4,7 +4,6 @@ import Script from "next/script";
 import SubscribeDropdown from "../Dropdowns/SubscribeDropdown";
 import LivetimeDropdown from "../Dropdowns/LivetimeDropdown"
 
-// components
 
 import IndexDropdown from "../Dropdowns/IndexDropdown.js";
 
@@ -36,40 +35,19 @@ export default function Navbar(props) {
                                           <div className="flex ">
                                                  <button
                                                         className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-red-400 text-blueGray-100 focus:outline-none"
-                                                        type="button"
-                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
-                                                 >
+                                                        type="button">
                                                         <SubscribeDropdown />
                                                  </button>
                                                  <button
                                                         className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
                                                         type="button"
-                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
                                                  >
-                                                        {/* <Link
-                                                        href="/admin/dashboard"
-                                                        className={
-                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                        }>
-                                                        Tableau de Bord
-                                                 </Link> */}
-                                                        <IndexDropdown />
-                                                        {/* <i className="fas fa-bars"></i> */}
+                                                        <IndexDropdown cat="Tableau de Bord" />
                                                  </button>
                                                  <button
                                                         className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
-                                                        type="button"
-                                                        //  onClick={() => setNavbarOpen(!navbarOpen)}
-                                                 >
-                                                        {/* <Link
-                                                        href="/admin/dashboard"
-                                                        className={
-                                                               "text-white text-md py-1 px-2 font-bold block w-full whitespace-nowrap bg-transparent "
-                                                        }>
-                                                        Tableau de Bord
-                                                 </Link> */}
+                                                        type="button" >
                                                         <LivetimeDropdown />
-                                                        {/* <i className="fas fa-bars"></i> */}
                                                  </button>
                                           </div>
                                    </div>
@@ -121,33 +99,6 @@ export default function Navbar(props) {
                             </div>
                      </nav>
                      <nav className="lg:top-68-px xs:top-75-px sm:top-75-px md:top-75-px  fixed z-40 w-full flex flex-col flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
-                     {/* <div className="flex flex-col mx-auto items-center justify-center mt-2 mb-2">
-                                                 <form
-                                                        action="https://www.paypal.com/donate"
-                                                        method="post"
-                                                        target="_top">
-                                                        <input
-                                                               type="hidden"
-                                                               name="hosted_button_id"
-                                                               value="B2DJ9MA4VQMPJ"
-                                                        />
-                                                        <input
-                                                               type="image"
-                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                                                               border="0"
-                                                               name="submit"
-                                                               title="PayPal - The safer, easier way to pay online!"
-                                                               alt="Donate with PayPal button"
-                                                        />
-                                                        <img
-                                                               alt=""
-                                                               border="0"
-                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
-                                                               width="1"
-                                                               height="1"
-                                                        />
-                                                 </form>
-                                          </div> */}
                      <div className="flex flex-col mx-auto items-center justify-center mt-2 mb-2">
                                           <a
                             className="text-blueGray-300
@@ -172,33 +123,6 @@ export default function Navbar(props) {
                                    CLIQUEZ ICI POUR JOINDRE NOTRE COMMUNAUTÉ
                      </a>
                                    </div>
-                            {/* <div className={"top-0 -mt-4 py-2 mx-4"}>
-                            <form
-                                                        action="https://www.paypal.com/donate"
-                                                        method="post"
-                                                        target="_top">
-                                                        <input
-                                                               type="hidden"
-                                                               name="hosted_button_id"
-                                                               value="B2DJ9MA4VQMPJ"
-                                                        />
-                                                        <input
-                                                               type="image"
-                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                                                               border="0"
-                                                               name="submit"
-                                                               title="PayPal - The safer, easier way to pay online!"
-                                                               alt="Donate with PayPal button"
-                                                        />
-                                                        <img
-                                                               alt=""
-                                                               border="0"
-                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
-                                                               width="1"
-                                                               height="1"
-                                                        />
-                                                 </form>
-                            </div> */}
                             
                      </nav>
               </>

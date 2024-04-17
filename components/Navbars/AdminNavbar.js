@@ -16,26 +16,7 @@ export default function Navbar() {
                                           F1 Simulation - Saison 1 2024
                                    </a>
                             </div>
-                            <p className="flex-auto ml-0">
-                                   <span
-                                          className="text-blueGray-200
-                                                                                                  text-center
-                                                                                                  inline-flex
-                                                                                                  items-center
-                                                                                                  justify-center
-                                                                                                  w-1
-                                                                                                  px-12
-                                                                                                  h-8
-                                                                                                  mb-0
-                                                                                                  shadow-lg
-                                                                                                  rounded-full
-                                                                                                  text-sm
-                                                                                                  font-bold
-                                                                                                  bg-red-500
-                                                                                                 ">
-                                          BETA
-                                   </span>
-                            </p>
+                            
                      </nav>
                      {/* End Navbar */}
               </>

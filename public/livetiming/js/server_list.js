@@ -11,14 +11,14 @@ export const rf2Servers = [
             "query": "https://f1-site-7m3.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe13048",
             "url":"https://f1-site-7m3.vercel.app/live/",
             "gameserver" :"70.83.149.208:64297",
-            "imageUrl": "livetiming/assets/pcup2.jpg"
+            "imageUrl": "livetiming/assets/pcup2.jpeg"
         },
         {
             "id": "main2",
             "query": "https://www.f1sim.ca/live/get_data?name=rFactor2%20Dedicated.exe15184",
             "url":"https://www.f1sim.ca/live/",
             "gameserver" :"76.67.137.178:65397",
-            "imageUrl": "livetiming/assets/formula.jpg"
+            "imageUrl": "livetiming/assets/formula.jpeg"
         }, 
         {
             "id": "main1",

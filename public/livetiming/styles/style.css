@@ -46,7 +46,7 @@ body {
         width: 300px; 
         height: 187px; 
         object-fit: cover;
-        object-position: 100% 51%;
+        object-position: 100% -3%;
     }
     hr{
       width: 100%;

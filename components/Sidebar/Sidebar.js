@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import {useRouter} from "next/router";
+import LivetimeDropdown from "../Dropdowns/LivetimeDropdown"
+import IndexDropdown from "../Dropdowns/IndexDropdown.js";
 
 export default function Sidebar() {
        const [collapseShow] = React.useState("hidden");
@@ -18,7 +20,13 @@ export default function Sidebar() {
                                           </Link>
                                    </div>
                                    <div className="lg:hidden md:hidden flex flex-row">
-                                          <div className="mr-4">
+                                   <button className="cursor-pointer text-xl leading-none px-2 py-0 mr-2 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
+                                                        type="button">
+                                          <IndexDropdown cat="Catégories"/>
+                                          </button>
+                                          {/* <LivetimeDropdown /> */}
+
+                                          {/* <div className="mr-4">
                                                  <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-red-500 no-underline">
                                                         F1
                                                  </h5>
@@ -158,7 +166,7 @@ export default function Sidebar() {
                                                         rel="noreferrer">
                                                         <i className={"fas fa-tools mr-2 text-sm "}></i> Serveur Main 4
                                                  </a>
-                                          </div>
+                                          </div> */}
                                    </div>
                                    {/* Collapse */}
                                    <div
@@ -181,7 +189,7 @@ export default function Sidebar() {
                                           <hr className="my-4 md:min-w-full" />
                                           {/* Heading */}
                                           <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-                                                 Tableau de bord
+                                                 Categories
                                           </h6>
                                           {/* Navigation */}
                                           <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-red-500 no-underline">

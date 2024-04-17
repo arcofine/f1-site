@@ -176,6 +176,7 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
     await fetchData(server, i, true);
   }));
   serverData.forEach(function (server, i) {
+    if(document.getElementById('sessionType_'+server.id)!=null){
   //Update Session
       document.getElementById('sessionType_'+server.id).innerHTML=`<a href='steam://rungameid/365960//+connect' > ${parseInt(server.session) === 1 ? 'practice' : parseInt(server.session) === 5?'qualify':parseInt(server.session) === 9?'warmup':'race'}</a>`;
       document.getElementById('sessionType_'+server.id).setAttribute('class', parseInt(server.session) === 1 ? 'pill practice' : parseInt(server.session) === 5 ?'pill qualify':parseInt(server.session) === 9 ?'pill warmup' : 'pill race');
@@ -194,7 +195,9 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
        }else{
         updateDriversList(serverData); 
        }
+      }
     })
+  
   };
 //Update data interval
 setInterval(() => {
