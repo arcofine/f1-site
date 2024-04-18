@@ -395,10 +395,10 @@ export default function Sidebar() {
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
                                                  <li className="items-center">
                                                         <Link
-                                                               href="/admin/tablesRally"
+                                                               href="/admin/tablesPorsche"
                                                                className={
                                                                       "text-xs uppercase pt-2 pb-1 font-bold block " +
-                                                                      (router.pathname.indexOf("/admin/tablesRally") !== -1
+                                                                      (router.pathname.indexOf("/admin/tablesPorsche") !== -1
                                                                              ? "text-lightBlue-500 hover:text-lightBlue-600"
                                                                              : "text-blueGray-700 hover:text-blueGray-500")
                                                                }>
@@ -416,8 +416,9 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://www.gt3sim.com/admin/dashboardGt"
-                                                               target="_self"
+                                                               href="https://f1-site-7m3.vercel.app/championships/championship?cid=5"
+                                                               target="_blank"
+                                                               rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-poll mr-2 text-sm "}></i> Derniers
                                                                Résultats
