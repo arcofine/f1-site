@@ -406,7 +406,7 @@ export default function Sidebar() {
                                                                       className={
                                                                              "fas fa-flag-checkered mr-2 text-sm " +
                                                                              (router.pathname.indexOf(
-                                                                                    "/admin/tablesRally"
+                                                                                    "/admin/tablesPorsche"
                                                                              ) !== -1
                                                                                     ? "opacity-75"
                                                                                     : "text-blueGray-300")
