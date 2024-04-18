@@ -36,7 +36,7 @@ const IndexDropdown = ({cat}) => {
                             }}>
                             {cat}
                      </a>
-                     <div class="flex flex-row">
+                     <div className="flex flex-row">
                             <div
                             ref={popoverDropdownRef}
                             className={
@@ -141,16 +141,16 @@ const IndexDropdown = ({cat}) => {
                                                  Règlements
                                           </Link>
                                    </div> */}
-                                   {/* <div className="">
+                                   <div className="">
                                           <span
                                                  className={
                                                         "text-md pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-red-500"
                                                  }>
-                                                 Nascar Truck - Saison 1 2024
+                                                 Porsche Cup- Saison 1 2024
                                           </span>
                                           <hr className="my-2 border-blueGray-300" />
                                           <Link
-                                                 href="/admin/tablesF1"
+                                                 href="/admin/tablesPorsche"
                                                  className={
                                                         "hover:text-blueGray-500 text-sm py-1 px-4 font-normal block w-full whitespace-nowrap bg-transparent "
                                                  }>
@@ -158,21 +158,21 @@ const IndexDropdown = ({cat}) => {
                                           </Link>
 
                                           <Link
-                                                 href="https://f1sim-wiget-m4.vercel.app/championships" target="_blank"
+                                                 href="https://f1-site-7m3.vercel.app/championships/championship?cid=5" target="_blank"
                                                  className={
                                                         "hover:text-blueGray-500 text-sm py-1 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                                                  }>
                                                  Derniers résultats
                                           </Link>
                                           
-                                          <Link
+                                          {/* <Link
                                                  href="/admin/rulesF1"
                                                  className={
                                                         "hover:text-blueGray-500 text-sm py-1 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                                                  }>
                                                  Règlements
-                                          </Link>
-                                   </div> */}
+                                          </Link> */}
+                                   </div>
                                    <div>
                                           <span
                                                  className={
