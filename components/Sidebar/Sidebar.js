@@ -389,7 +389,7 @@ export default function Sidebar() {
                                                  </li> */}
                                           </ul>
                                            <hr className="mt-3 mb-36" />
-                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-teal-500 no-underline">
+                                          <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-yellow-500 no-underline">
                                                  Porsche Cup
                                           </h5>
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
