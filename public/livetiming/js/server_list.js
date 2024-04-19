@@ -43,21 +43,6 @@ let serverList2 = [
         "gameserver" :"76.67.137.178:64297",
     }
 ];
-var server = [
-    {
-        "query": "https://f1sim-wiget-m4.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe12232",
-    }, 
-    {
-        "query": "https://f1-site-7m3.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe13048",
-    },
-    {
-        "query": "https://www.f1sim.ca/live/get_data?name=rFactor2%20Dedicated.exe15184",
-
-    }, 
-    {
-        "query": "https://www.gt3sim.com/live/get_data?name=rFactor2%20Dedicated.exe19380",
-    }
-];
 
 async function fetchData(){
     await Promise.all(serverList2.map(async (server, i) => {
@@ -65,6 +50,7 @@ async function fetchData(){
       }));
       console.log(serverList2);
 }
+
   async function getServers(s,i){
 
     await fetch('https://f1sim-widget.arcofine.workers.dev/?url='+(s.query), {cache:'no-store'})
@@ -76,17 +62,15 @@ async function fetchData(){
       return response.json();
     })
     .then((data) => {
-        let test;
+        let image;
         serverList2.forEach(element => {
             if(urlOrigin.includes(element.url)){
                 element.id = data.mScoringInfo.mServerName.split('- ')[1];
                 element.query = urlOrigin.split('url=')[1];
-                test = imageRel.find(o => o.id === data.mScoringInfo.mServerName.split('- ')[1]);
-                element.imageUrl = test.imageUrl;
+                image = imageRel.find(o => o.id === data.mScoringInfo.mServerName.split('- ')[1]);
+                element.imageUrl = image.imageUrl;
             }
-        });
-
-      
+        });      
     })
     .catch(error => {
       console.error('Error:', error);
@@ -97,40 +81,6 @@ async function fetchData(){
 export const rf2Servers = ()=>{ 
 fetchData();
 return serverList2;
-    // return ([
-    //     {
-    //         "pid":"12232",
-    //         "id": "main4",
-    //         "query": "https://f1sim-wiget-m4.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe12232",
-    //         "url":"https://f1sim-wiget-m4.vercel.app/live/",
-    //         "gameserver" :"76.67.137.178:65497",
-    //         "imageUrl": "livetiming/assets/nascartruck.jpeg"
-    //     }, 
-    //     {
-    //         "pid":"13048",
-    //         "id": "main3",
-    //         "query": "https://f1-site-7m3.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe13048",
-    //         "url":"https://f1-site-7m3.vercel.app/live/",
-    //         "gameserver" :"70.83.149.208:64297",
-    //         "imageUrl": "livetiming/assets/pcup2.jpeg"
-    //     },
-    //     {
-    //         "pid":"15184",
-    //         "id": "main2",
-    //         "query": "https://www.f1sim.ca/live/get_data?name=rFactor2%20Dedicated.exe15184",
-    //         "url":"https://www.f1sim.ca/live/",
-    //         "gameserver" :"76.67.137.178:65397",
-    //         "imageUrl": "livetiming/assets/formula.jpeg"
-    //     }, 
-    //     {
-    //         "pid":"19380",
-    //         "id": "main1",
-    //         "query": "https://www.gt3sim.com/live/get_data?name=rFactor2%20Dedicated.exe19380",
-    //         "url":"https://www.gt3sim.com/live/",
-    //         "gameserver" :"76.67.137.178:64297",
-    //         "imageUrl": "livetiming/assets/gt.jpeg"
-    //     }
-    // ])
 };
 export const mockDrivers = [
     {
