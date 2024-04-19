@@ -64,7 +64,7 @@ function createWidget(data) {
                 <h2 id='serverName_${server.id}'>${server.serverName}</h2>
                 <hr />
                 <div id='sessionType_${server.id}' class='pill ${parseInt(server.session) === 1 ? 'practice' : parseInt(server.session) === 5?'qualify':parseInt(server.session) === 9?'warmup':'race'}'>
-                    <a href='steam://rungameid/365960//+connect'> ${parseInt(server.session) === 1 ? 'Practice' : parseInt(server.session) === 5?'Qualify':parseInt(server.session) === 9?'Warmup':'Race'}</a>
+                    <a href='steam://rungameid/365960//+connect'> ${parseInt(server.session) === 1 ? 'practice' : parseInt(server.session) === 5?'qualify':parseInt(server.session) === 9?'warmup':'race'}</a>
                 </div>
                 <div class='tokenInfo'>
                     <div class='price'>
