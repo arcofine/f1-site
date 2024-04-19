@@ -48,7 +48,7 @@ async function fetchData(){
     await Promise.all(serverList2.map(async (server, i) => {
         await getServers(server, i);  
       }));
-      console.log(serverList2);
+      return(serverList2);
 }
 
   async function getServers(s,i){
@@ -78,9 +78,9 @@ async function fetchData(){
 }
 
 
-export const rf2Servers = ()=>{ 
-fetchData();
-return serverList2;
+export const rf2Servers = async()=>{ 
+let test = await fetchData();
+return test;
 };
 export const mockDrivers = [
     {

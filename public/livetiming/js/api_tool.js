@@ -4,17 +4,21 @@ import {rf2Servers as servers} from './server_list.js';
 const widgetElement = document.getElementById('widgetF1sim');
 var widgetHTML = "";
 var serverData = [];
-let serverList =servers();
+let serverList;
 
 //App Init
 (async function () {
 
-  await Promise.all(serverList.map(async (server, i) => {
-    await fetchData(server, i);  
-  }));
-  if(serverData) await createWidget(serverData);  
-  
+ serverList =  await servers();
+ await Promise.all(serverList.map(async (server, i) => {
+  await fetchData(server, i);  
+}));
+if(serverData) await createWidget(serverData);  
+
 })();
+
+
+
 
 //Fetch data from RF2LA
 async function fetchData(server, index) {
@@ -201,9 +205,16 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
     })
   
   };
+
+
+  const refresh =async function(callback){
+    serverList = await servers();
+    callback();  
+  }
+  
+  
 //Update data interval
 setInterval(() => {
-  servers();
-  updateData();
+  refresh(updateData);
 }, 10 * 60 * 15);
 
