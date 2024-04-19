@@ -1,12 +1,14 @@
 // Define the API URL
-import {rf2Servers as serverList} from './server_list.js';
+import {rf2Servers as servers} from './server_list.js';
 
 const widgetElement = document.getElementById('widgetF1sim');
 var widgetHTML = "";
 var serverData = [];
+let serverList =servers();
 
 //App Init
 (async function () {
+
   await Promise.all(serverList.map(async (server, i) => {
     await fetchData(server, i);  
   }));
@@ -44,7 +46,7 @@ async function fetchData(server, index) {
     })
     .catch(error => {
       console.error('Error:', error);
-    });;
+    });
 }
 
 //Render Hydrated HTML
@@ -201,6 +203,7 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
   };
 //Update data interval
 setInterval(() => {
-  updateData()
+  servers();
+  updateData();
 }, 10 * 60 * 15);
 
