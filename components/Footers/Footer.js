@@ -5,7 +5,7 @@ export default function Footer() {
        const unique_id = new Date().getTime();
        return (
               <>
-              <Script src={`../livetiming/js/api_tool.js?v=${unique_id}` } type="module"/>
+              {/* <Script src={`../livetiming/js/api_tool.js?v=${unique_id}` } type="module"/> */}
                      <footer className="relative bg-blueGray-200 pt-8 pb-6">
          
                             <div
