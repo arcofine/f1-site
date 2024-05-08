@@ -208,7 +208,7 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
 
 
   const refresh =async function(callback){
-    serverList = await servers();
+    //serverList = await servers();
     callback();  
   }
   
@@ -216,5 +216,5 @@ if (serverData.length !== 0) serverData.splice(0, serverData.length);
 //Update data interval
 setInterval(() => {
   refresh(updateData);
-}, 10 * 60 * 15);
+}, 60 * 60 * 15);
 

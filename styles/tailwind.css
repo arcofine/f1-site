@@ -3091,6 +3091,9 @@ select {
 .top-5-px {
   top: 8px;
 }
+.top-10-px {
+  top: 10px;
+}
 
 .top-25-px {
   top: 25px;
@@ -3102,6 +3105,9 @@ select {
 
 .top-95-px {
   top: 95px;
+}
+.top-50-px {
+  top: 50px;
 }
 .top-68-px {
   top: 68px;

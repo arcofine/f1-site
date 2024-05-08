@@ -82,6 +82,7 @@ export const rf2Servers = async()=>{
 let test = await fetchData();
 return test;
 };
+
 export const mockDrivers = [
     {
         "mID": 2,

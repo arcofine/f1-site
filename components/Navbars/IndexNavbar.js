@@ -44,11 +44,41 @@ export default function Navbar(props) {
                                                  >
                                                         <IndexDropdown cat="Tableau de Bord" />
                                                  </button>
-                                                 <button
+                                                 {/* <button
                                                         className="cursor-pointer text-xl leading-none px-2 py-0 border-transparent rounded bg-transparent block lg:hidden outline-none bg-blueGray-900 focus:outline-none"
                                                         type="button" >
                                                         <LivetimeDropdown />
-                                                 </button>
+                                                 </button> */}
+                                                  <div
+                                                 className={
+                                                        " mx-auto top-0 mt-2 lg:hidden" 
+                                                 }>
+                                                 <form
+                                                        action="https://www.paypal.com/donate"
+                                                        method="post"
+                                                        target="_top">
+                                                        <input
+                                                               type="hidden"
+                                                               name="hosted_button_id"
+                                                               value="B2DJ9MA4VQMPJ"
+                                                        />
+                                                        <input
+                                                               type="image"
+                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                                               border="0"
+                                                               name="submit"
+                                                               title="PayPal - The safer, easier way to pay online!"
+                                                               alt="Donate with PayPal button"
+                                                        />
+                                                        <img
+                                                               alt=""
+                                                               border="0"
+                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
+                                                               width="1"
+                                                               height="1"
+                                                        />
+                                                 </form>
+                                          </div>
                                           </div>
                                    </div>
                                    <div
@@ -65,9 +95,39 @@ export default function Navbar(props) {
                                                  <li className="flex items-center">
                                                         <IndexDropdown cat="Tableau de Bord" />
                                                  </li>
-                                                 <li className="flex items-center">
+                                                 <div
+                                                 className={
+                                                        " mx-auto top-0 mt-2 "
+                                                 }>
+                                                 <form
+                                                        action="https://www.paypal.com/donate"
+                                                        method="post"
+                                                        target="_top">
+                                                        <input
+                                                               type="hidden"
+                                                               name="hosted_button_id"
+                                                               value="B2DJ9MA4VQMPJ"
+                                                        />
+                                                        <input
+                                                               type="image"
+                                                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                                               border="0"
+                                                               name="submit"
+                                                               title="PayPal - The safer, easier way to pay online!"
+                                                               alt="Donate with PayPal button"
+                                                        />
+                                                        <img
+                                                               alt=""
+                                                               border="0"
+                                                               src="https://www.paypal.com/en_CA/i/scr/pixel.gif"
+                                                               width="1"
+                                                               height="1"
+                                                        />
+                                                 </form>
+                                          </div>
+                                                 {/* <li className="flex items-center">
                                                         <LivetimeDropdown />
-                                                 </li>
+                                                 </li> */}
                                                  <li className="flex items-center lg:block"></li>
                                                  <li className="flex items-center">
                                                         <a
@@ -98,11 +158,12 @@ export default function Navbar(props) {
                                    </div>
                             </div>
                      </nav>
-                     <nav className="lg:top-68-px xs:top-75-px sm:top-75-px md:top-75-px  fixed z-40 w-full flex flex-col flex-wrap items-end justify-end xs:px-6 px-12 py-1 navbar-expand-lg bg-gray-f1 shadow">
+                     <nav className="lg:top-68-px xs:top-75-px sm:top-75-px md:top-75-px  fixed z-40 w-full flex flex-col flex-wrap items-end justify-end xs:px-6 px-12 py-4 navbar-expand-lg bg-gray-f1 shadow">
                      <div className="flex flex-col mx-auto items-center justify-center mt-2 mb-2">
                                           <a
-                            className="text-blueGray-300
-                                          text-center
+                            className="
+                                          absolute
+                                          top-10-px                                  
                                           inline-flex
                                           items-center
                                           justify-center
@@ -110,17 +171,11 @@ export default function Navbar(props) {
                                           px-12
                                           h-14
                                           mb-0
-                                          shadow-lg
-                                          text-base
-                                          font-bold
-                                          border-2
-                                          hover:text-blueGray-500
-                                          roboto
                                           "
                             href="https://discord.gg/FHuMrCcTCS"
                             target="_blank"
                             rel="noreferrer">
-                                   CLIQUEZ ICI POUR JOINDRE NOTRE COMMUNAUTÉ
+                                  <img src="/img/rseat_logo_part.png" alt="rseat" width="180"/>
                      </a>
                                    </div>
                             
