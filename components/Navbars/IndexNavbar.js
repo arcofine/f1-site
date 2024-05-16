@@ -172,7 +172,7 @@ export default function Navbar(props) {
                                           h-14
                                           mb-0
                                           "
-                            href="https://discord.gg/FHuMrCcTCS"
+                            href="https://rseat.net/"
                             target="_blank"
                             rel="noreferrer">
                                   <img src="/img/rseat_logo_part.png" alt="rseat" width="180"/>
