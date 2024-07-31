@@ -73,7 +73,7 @@ export async function getServerSideProps({
 }) {
        try {
               const data = await fetch(
-                     "http://f1simgt3.ddns.net:8805/championships/export_standings_json.json?cid=1"
+                     "http://theovox-rdp.ddns.net:8802/championships/export_standings_json.json?cid=1"
               );
               const championship = await data.json();
               return {props: {championship}};
