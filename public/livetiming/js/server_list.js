@@ -1,36 +1,36 @@
 var serverData = [];
 let urlOrigin;
 const imageRel = [
+    // {
+    //     "id": "MAIN 4",
+    //     "imageUrl": "livetiming/assets/nascartruck.jpeg"
+    // }, 
+    // { 
+    //     "id": "MAIN 3",
+    //     "imageUrl": "livetiming/assets/pcup2.jpeg"
+    // },
     {
-        "id": "MAIN 4",
-        "imageUrl": "livetiming/assets/nascartruck.jpeg"
-    }, 
-    { 
-        "id": "MAIN 3",
-        "imageUrl": "livetiming/assets/pcup2.jpeg"
-    },
-    {
-        "id": "MAIN 2",
+        "id": "Race 2",
         "imageUrl": "livetiming/assets/formula.jpeg"
     }, 
     {
-        "id": "MAIN 1",
+        "id": "Race 1",
         "imageUrl": "livetiming/assets/gt.jpeg"
     }
 ]
 let serverList2 = [
-    {
+    // {
   
-        "query": "https://f1sim-wiget-m4.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe12232",
-        "url":"https://f1sim-wiget-m4.vercel.app/live/",
-        "gameserver" :"76.67.137.178:65497",
-    }, 
-    {
+    //     "query": "https://f1sim-wiget-m4.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe12232",
+    //     "url":"https://f1sim-wiget-m4.vercel.app/live/",
+    //     "gameserver" :"76.67.137.178:65497",
+    // }, 
+    // {
 
-        "query": "https://f1-site-7m3.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe13048",
-        "url":"https://f1-site-7m3.vercel.app/live/",
-        "gameserver" :"70.83.149.208:64297",
-    },
+    //     "query": "https://f1-site-7m3.vercel.app/live/get_data?name=rFactor2%20Dedicated.exe13048",
+    //     "url":"https://f1-site-7m3.vercel.app/live/",
+    //     "gameserver" :"70.83.149.208:64297",
+    // },
     {
 
         "query": "https://www.f1sim.ca/live/get_data?name=rFactor2%20Dedicated.exe15184",
