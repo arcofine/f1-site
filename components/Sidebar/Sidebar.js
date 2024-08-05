@@ -434,22 +434,12 @@ export default function Sidebar() {
                                           <ul className="md:flex-col md:min-w-full flex flex-col list-none ">
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://www.gt3sim.com/live/"
+                                                               href="https://f1sim-wiget-m4.vercel.app/live/"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur Multiclasse
-                                                        </a>
-                                                 </li>
-                                                 <li className="items-center">
-                                                        <a
-                                                               href="https://www.f1sim.ca/live/"
-                                                               target="_blank"
-                                                               rel="noreferrer"
-                                                               className={"text-xs uppercase py-1 font-bold block "}>
-                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur F1
+                                                              SSC - Race 1
                                                         </a>
                                                  </li>
                                                  <li className="items-center">
@@ -459,17 +449,7 @@ export default function Sidebar() {
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
                                                                <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur Porsche Cup
-                                                        </a>
-                                                 </li>
-                                                 <li className="items-center">
-                                                        <a
-                                                               href="https://f1sim-wiget-m4.vercel.app/live/"
-                                                               target="_blank"
-                                                               rel="noreferrer"
-                                                               className={"text-xs uppercase py-1 font-bold block "}>
-                                                               <i className={"fas fa-tools mr-2 text-sm "}></i> Live
-                                                              Serveur Nascar Truck
+                                                              SSC - Race 2
                                                         </a>
                                                  </li>
                                           </ul>                            
