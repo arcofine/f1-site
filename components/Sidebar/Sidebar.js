@@ -416,7 +416,7 @@ export default function Sidebar() {
                                                  </li>
                                                  <li className="items-center">
                                                         <a
-                                                               href="https://f1-site-7m3.vercel.app/championships/championship?cid=4"
+                                                               href="https://f1-site-7m3.vercel.app/championships/championship?cid=3"
                                                                target="_blank"
                                                                rel="noreferrer"
                                                                className={"text-xs uppercase py-1 font-bold block "}>
