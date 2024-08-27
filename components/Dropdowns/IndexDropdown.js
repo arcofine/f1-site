@@ -158,7 +158,7 @@ const IndexDropdown = ({cat}) => {
                                           </Link>
 
                                           <Link
-                                                 href="https://f1-site-7m3.vercel.app/championships/championship?cid=4" target="_blank"
+                                                 href="https://f1-site-7m3.vercel.app/championships/championship?cid=3" target="_blank"
                                                  className={
                                                         "hover:text-blueGray-500 text-sm py-1 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                                                  }>
