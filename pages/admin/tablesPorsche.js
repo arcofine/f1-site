@@ -70,7 +70,7 @@ export async function getServerSideProps({
        defaultLocale,
 }) {
        try {
-              const data = await fetch("https://f1-site-7m3.vercel.app/championships/export_standings_json.json?cid=3");
+              const data = await fetch("https://f1-site-7m3.vercel.app/championships/export_standings_json.json?cid=4");
               const championship = await data.json();
               return {props: {championship}};
        } catch (err) {
