@@ -22,7 +22,7 @@ class RuleEnglish extends Component {
                                           Français
                                    </a>
                                    <a
-                                          href="https://drive.google.com/file/d/1tatM4JUtE_DxyBAF_4Eq8kbcGFIO46ZB/view?usp=drive_link"
+                                          href="https://drive.google.com/file/d/1g6dzu7L10ez28rQ3nHGd3U2TsM5H3ZsB/view?usp=drive_link"
                                           target="_blank"
                                           rel="noreferrer"
                                           className="button-54">
