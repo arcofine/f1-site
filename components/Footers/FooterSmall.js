@@ -16,7 +16,7 @@ export default function FooterSmall(props) {
                                                         <a
                                                                href="https://www.creative-tim.com?ref=nnjs-footer-small"
                                                                className="text-white hover:text-blueGray-300 text-sm font-semibold py-1">
-                                                               F1 Simulation
+                                                               Simsports Canada
                                                         </a>
                                                  </div>
                                           </div>
