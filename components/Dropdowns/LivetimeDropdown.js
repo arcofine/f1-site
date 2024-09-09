@@ -54,7 +54,7 @@ const LivetimeDropdown = () => {
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
                                           }
                                           rel="noreferrer">
-                                         MultiClass
+                                         GT3 PRO/AM
                                    </a>
                                     <a
                                           href="https://www.f1sim.ca/live/"
