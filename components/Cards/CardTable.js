@@ -10,7 +10,7 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
        const DRIVERSPRO = tools.GET_TABLE_CONTENT(data["Class GT3-PRO"]["Driver Standings"]["drivers"]);
        const DRIVERSAM= tools.GET_TABLE_CONTENT(data["Class GT3-AM"]["Driver Standings"]["drivers"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
-       const dataType = driversPRO ? DRIVERSPRP : DRIVERSAM;
+       const dataType = driversPRO ? DRIVERSPRO : DRIVERSAM;
 
        return (
               <>
@@ -31,8 +31,8 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                              : "text-white")
                                                                }>
                                                                {driversPRO
-                                                                      ? "Classement de Pilotes GT3"
-                                                                      : "Classement de Pilotes LMP2"}
+                                                                      ? "Classement de Pilotes PRO"
+                                                                      : "Classement de Pilotes AM"}
                                                         </h3>
                                                  </div>
                                           </div>
