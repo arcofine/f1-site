@@ -46,10 +46,10 @@ export default function TablesGt({championship, error}) {
                             {!error && (
                                    <>
                                           <div className="lg:w-6/12 w-full mb-12 px-4">
-                                                 <CardTable driversGT data={championship} color="dark" />
+                                                 <CardTable driversPRO data={championship} color="dark" />
                                           </div>
                                           <div className="lg:w-6/12 w-full mb-12 px-4">
-                                                 <CardTable driversLMP data={championship} color="light" />
+                                                 <CardTable driversAM data={championship} color="light" />
                                           </div>
                                    </>
                             )}
@@ -72,7 +72,7 @@ export async function getServerSideProps({
        defaultLocale,
 }) {
        try {
-              const data = await fetch("http://f1simgt3.ddns.net:8804/championships/export_standings_json.json?cid=2");
+              const data = await fetch("http://theovox-rdp.ddns.net:8803/championships/export_standings_json.json?cid=3");
               const championship = await data.json();
               return {props: {championship}};
        } catch (err) {
