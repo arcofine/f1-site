@@ -11,7 +11,7 @@ export async function getServerSideProps({
        defaultLocale,
 }) {
        console.log("Logging : " + res);
-       const data = await fetch("http://f1simgt3.ddns.net:8805/championships/export_standings_json.json?cid=1");
+       const data = await fetch("http://theovox-rdp.ddns.net:8803/championships/championship?cid=3");
        const championship = await data.json();
        return {props: {championship}};
 }
