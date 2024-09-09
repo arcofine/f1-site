@@ -30,7 +30,7 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                              ? "text-blueGray-700"
                                                                              : "text-white")
                                                                }>
-                                                               {driversGT
+                                                               {driversPRO
                                                                       ? "Classement de Pilotes GT3"
                                                                       : "Classement de Pilotes LMP2"}
                                                         </h3>
@@ -59,7 +59,7 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                                     ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
                                                                                     : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                                                                       }>
-                                                                      {driversGT ? "Pilote" : "Pilote"}
+                                                                      {driversPRO ? "Pilote" : "Pilote"}
                                                                </th>
                                                                {query_RACES.map((race, i) => {
                                                                       return (
@@ -118,14 +118,14 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                              </th>
                                                                              <td className="border-t-0 px-0 py-1 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                     <b className="mb-0">
-                                                                                           {driversGT
+                                                                                           {driversPRO
                                                                                                   ? item.name
                                                                                                   : item.team_name}
                                                                                     </b>
 
-                                                                                    {driversLMP && (
+                                                                                    {driversAM && (
                                                                                           <b className="mb-0">
-                                                                                           {driversLMP
+                                                                                           {driversAM
                                                                                                   ? item.name
                                                                                                   : item.team_name}
                                                                                     </b>
@@ -137,7 +137,7 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                                                   key={i + "_point"}
                                                                                                   className="border-t-0 text-center relative py-2 px-3 align-middle border-l border-blueGray-600 border-r-0 text-xs whitespace-nowrap p-0">
                                                                                                   {/* <i className="fas fa-circle text-orange-500 mr-2"></i>{" "} */}
-                                                                                                  {/* {driversGT ? driversGT : driversLMP && ( */}
+                                                                                                  {/* {driversPRO ? driversPRO : driversAM && ( */}
                                                                                                          <span
                                                                                                                 className="text-orange-500
                                                                                                                           left-1
