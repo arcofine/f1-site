@@ -2,7 +2,7 @@
        "name": "f1sim-site",
        "homepage": "https://www.f1sim.ca",
        "version": "1.5.0",
-       "description": "F1 Simulation - Site web championnat en ligne",
+       "description": "Simsports Canada - Site web championnat en ligne",
        "repository": "https://github.com/arcofine/f1-site.git",
        "license": "MIT",
        "dependencies": {
