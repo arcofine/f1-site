@@ -31,8 +31,8 @@ export default function CardTable({color, data, driversPRO, driversAM}) {
                                                                              : "text-white")
                                                                }>
                                                                {driversPRO
-                                                                      ? "Classement de Pilotes GT3"
-                                                                      : "Classement de Pilotes LMP2"}
+                                                                      ? "Classement de Pilotes PRO"
+                                                                      : "Classement de Pilotes AM"}
                                                         </h3>
                                                  </div>
                                           </div>
