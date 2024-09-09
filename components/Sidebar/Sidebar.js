@@ -95,7 +95,7 @@ export default function Sidebar() {
                                           </div>
                                           <div>
                                                  <h5 className="md:min-w-full text-blueGray-100 text-xs uppercase font-bold block p-1 bg-blueGray-700 no-underline">
-                                                        MultiClass
+                                                        GT3 PRO/AM
                                                  </h5>
                                                  <Link
                                                         href="/admin/tablesGt"
