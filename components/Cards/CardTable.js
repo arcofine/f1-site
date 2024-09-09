@@ -6,11 +6,11 @@ import * as tools from "../../utils/common.js";
 
 // import TableDropdown from "components/Dropdowns/TableDropdown.js";
 
-export default function CardTable({color, data, driversGT, driversLMP}) {
-       const DRIVERSGT = tools.GET_TABLE_CONTENT(data["Class GT3"]["Driver Standings"]["drivers"]);
-       const DRIVERSLMP= tools.GET_TABLE_CONTENT(data["Class LMP2"]["Driver Standings"]["drivers"]);
+export default function CardTable({color, data, driversPRO, driversAM}) {
+       const DRIVERSPRO = tools.GET_TABLE_CONTENT(data["Class GT3-PRO"]["Driver Standings"]["drivers"]);
+       const DRIVERSAM= tools.GET_TABLE_CONTENT(data["Class GT3-AM"]["Driver Standings"]["drivers"]);
        const query_RACES = tools.GET_TABLE_CONTENT(data["Class Overall"]["Driver Standings"]["races"]);
-       const dataType = driversGT ? DRIVERSGT : DRIVERSLMP;
+       const dataType = driversPRO ? DRIVERSPRP : DRIVERSAM;
 
        return (
               <>
