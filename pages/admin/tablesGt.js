@@ -46,10 +46,10 @@ export default function TablesGt({championship, error}) {
                             {!error && (
                                    <>
                                           <div className="w-full mb-12 px-4">
-                                                 <CardTable driversGT data={championship} color="dark" />
+                                                 <CardTable driversPRO data={championship} color="dark" />
                                           </div>
                                           <div className="w-full mb-12 px-4">
-                                                 <CardTable driversLMP data={championship} color="dark" />
+                                                 <CardTable driversAM data={championship} color="dark" />
                                           </div>
                                    </>
                             )}
