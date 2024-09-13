@@ -19,7 +19,7 @@ export default function CardLineChart({mode}) {
        useEffect(() => {
               const fetchData = async () => {
                      try {
-                            const testURL = await fetch("/championships/championship?cid=2");
+                            const testURL = await fetch("/championships/championship?cid=3");
                             setData(testURL.status);
                             console.log(testURL.status);
                             return testURL;
@@ -58,7 +58,7 @@ export default function CardLineChart({mode}) {
                                                         height: "100vw",
                                                  }}>
                                                  <Iframe
-                                                        url="/championships/championship?cid=2"
+                                                        url="/championships/championship?cid=3"
                                                         width="100%"
                                                         height="100%"
                                                         id=""
