@@ -92,12 +92,12 @@ export default function Footer() {
                                                                <img alt="" src="/img/logo_coffrageBW.png" />
                                                         </a>
                                                         <a
-                                                               href="https://www.solotech.com/"
+                                                               href="https://axin.ca/"
                                                                target="_blank"
                                                                title=""
                                                                className="hover:text-blueGray-500 text-blueGray-700 w-1/4 xs:w-1/3 px-3 flex items-center text-xs uppercase font-bold"
                                                                rel="noreferrer">
-                                                               <img alt="" src="/img/solotech-white.png" />
+                                                               <img alt="" src="/img/logo-Axin-Blanc.png" />
                                                         </a>
                                                         
                                                  <div className="flex flex-wrap mx-auto items-center justify-center">
