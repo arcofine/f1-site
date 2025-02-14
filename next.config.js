@@ -5,7 +5,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://f1simgt3.ddns.net:8805/:path*",
+                            destination: "http://206.172.240.123:8774/:path*",
                             
                      },
                      {
