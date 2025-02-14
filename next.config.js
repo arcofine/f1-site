@@ -5,7 +5,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://thirtheen-home.myddns.me:8802/:path*",
+                            destination: "http://206.172.240.123:8773/:path*",
                             
                      },
                      {
