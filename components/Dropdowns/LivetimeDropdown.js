@@ -66,7 +66,7 @@ const LivetimeDropdown = () => {
                                          F1
                                    </a>
                                    <a
-                                          href="http://thirtheen-home.myddns.me:8802/live/"
+                                          href="http://206.172.240.123:8774/"
                                           target="_blank"
                                           className={
                                                  "hover:text-blueGray-500 text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent  "
