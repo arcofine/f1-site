@@ -5,7 +5,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://206.172.240.123:8774/:path*",
+                            destination: "http://142.120.193.175:8774/:path*",
                             
                      },
                      {
