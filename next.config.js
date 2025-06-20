@@ -5,7 +5,7 @@ module.exports = {
               return [
                      {
                             source: "/:path*",
-                            destination: "http://142.120.193.175:8774/:path*",
+                            destination: "http://simsportscanada.servep2p.com:8774/:path*",
                             
                      },
                      {
